@@ -1,0 +1,107 @@
+<!-- background.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Background</title>
+</head>
+<body>
+  <script src="background.js"></script>
+</body>
+</html>
+
+<!-- in_game.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Apex Events Tracker</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+      overflow: hidden;
+    }
+    .container {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    h2 {
+      margin: 0 0 10px 0;
+      font-size: 18px;
+    }
+    .status {
+      padding: 10px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    .events {
+      flex: 1;
+      overflow-y: auto;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 12px;
+    }
+    .event {
+      padding: 5px;
+      margin-bottom: 5px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 3px;
+    }
+    .event.kill { border-left: 3px solid #ff4444; }
+    .event.death { border-left: 3px solid #888888; }
+    .event.damage { border-left: 3px solid #ff9944; }
+    .timestamp {
+      color: #888;
+      font-size: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Apex Events Tracker</h2>
+    <div class="status" id="status">
+      Status: <span id="statusText">Active</span>
+    </div>
+    <div class="events" id="eventsList">
+      <div class="event">Waiting for events...</div>
+    </div>
+  </div>
+  
+  <script>
+    // Display recent events in the overlay
+    let maxEvents = 20;
+    
+    function addEventToDisplay(event) {
+      const eventsList = document.getElementById('eventsList');
+      const eventDiv = document.createElement('div');
+      eventDiv.className = `event ${event.name || ''}`;
+      
+      const time = new Date(event.timestamp).toLocaleTimeString();
+      const eventName = event.name || event.type;
+      const eventData = event.data ? JSON.stringify(event.data) : '';
+      
+      eventDiv.innerHTML = `
+        <strong>${eventName}</strong>
+        <span class="timestamp">${time}</span><br>
+        ${eventData ? `<small>${eventData.substring(0, 100)}</small>` : ''}
+      `;
+      
+      if (eventsList.children.length > maxEvents) {
+        eventsList.removeChild(eventsList.lastChild);
+      }
+      
+      eventsList.insertBefore(eventDiv, eventsList.firstChild);
+    }
+    
+    // Listen for messages from background script if needed
+    console.log('In-game overlay loaded');
+  </script>
+</body>
+</html>

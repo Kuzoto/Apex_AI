@@ -1,0 +1,69 @@
+{
+  "manifest_version": 1,
+  "type": "WebApp",
+  "meta": {
+    "name": "Apex Events Tracker",
+    "author": "Your Name",
+    "version": "1.0.0",
+    "minimum-overwolf-version": "0.193.0",
+    "description": "Tracks Apex Legends game events and sends to Python",
+    "dock_button_title": "Apex Tracker",
+    "icon": "IconMouseNormal.png",
+    "icon_gray": "IconMouseGray.png",
+    "launcher_icon": "desktop-icon.ico"
+  },
+  "permissions": [
+    "GameInfo",
+    "Extensions"
+  ],
+  "data": {
+    "start_window": "background",
+    "windows": {
+      "background": {
+        "file": "background.html",
+        "is_background_page": true,
+        "allow_local_file_access": true
+      },
+      "desktop": {
+        "file": "desktop.html",
+        "desktop_only": true,
+        "native_window": true,
+        "resizable": false,
+        "transparent": true,
+        "size": {
+          "width": 400,
+          "height": 300
+        },
+        "start_position": {
+          "top": 100,
+          "left": 100
+        }
+      },
+      "in_game": {
+        "file": "in_game.html",
+        "in_game_only": true,
+        "focus_game_takeover": "ReleaseOnHidden",
+        "size": {
+          "width": 400,
+          "height": 300
+        },
+        "start_position": {
+          "top": 100,
+          "left": 100
+        }
+      }
+    },
+    "game_targeting": {
+      "type": "dedicated",
+      "game_ids": [21566]
+    },
+    "game_events": [21566],
+    "hotkeys": {
+      "toggle_window": {
+        "title": "Toggle Window",
+        "action-type": "custom",
+        "default": "Ctrl+Shift+A"
+      }
+    }
+  }
+}
