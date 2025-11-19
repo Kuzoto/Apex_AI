@@ -1,0 +1,17 @@
+{"events":[{"name":"damage","data":"{\r\n  \"targetName\": \"TangentTerminator\",\r\n  \"damageAmount\": \"30.000000\",\r\n  \"armor\": \"false\",\r\n  \"headshot\": \"false\"\r\n}"}]}
+{"match_info":{"tabs":"{\"kills\":0,\"assists\":0,\"teams\":7,\"players\":19,\"damage\":70,\"cash\":null}"}}
+{"me":{"inUse":"{\"inUse\":\"R-99\"}"}}
+{"me":{"totalDamageDealt":"83"}}
+{"me":{"totalDamageDealt":"96"}}
+{"events":[{"name":"damage","data":"{\r\n  \"targetName\": \"TangentTerminator\",\r\n  \"damageAmount\": \"13.000000\",\r\n  \"armor\": \"false\",\r\n  \"headshot\": \"false\"\r\n}"}]}
+{"events":[{"name":"damage","data":"{\r\n  \"targetName\": \"TangentTerminator\",\r\n  \"damageAmount\": \"13.000000\",\r\n  \"armor\": \"false\",\r\n  \"headshot\": \"false\"\r\n}"}]}
+{"match_info":{"tabs":"{\"kills\":0,\"assists\":0,\"teams\":7,\"players\":18,\"damage\":122,\"cash\":null}"}}
+{"events":[{"name":"damage","data":"{\r\n  \"targetName\": \"TangentTerminator\",\r\n  \"damageAmount\": \"13.000000\",\r\n  \"armor\": \"false\",\r\n  \"headshot\": \"false\"\r\n}"}]}
+{"me":{"totalDamageDealt":"148"}}
+{"match_info":{"tabs":"{\"kills\":0,\"assists\":0,\"teams\":7,\"players\":18,\"damage\":140,\"cash\":null}"}}
+{"me":{"inventory_5":"{\"name\":\"unknown_166\",\"amount\":\"58\"}"}}
+{"me":{"ultimate_cooldown":"{\"ultimate_cooldown\":\"80\"}"}}
+{"me":{"totalDamageDealt":"161"}}
+{"me":{"totalDamageDealt":"171"}}
+{"me":{"totalDamageDealt":"184"}}
+{"match_info":{"tabs":"{\"kills\":0,\"assists\":0,\"teams\":7,\"players\":18,\"damage\":176,\"cash\":null}"}}

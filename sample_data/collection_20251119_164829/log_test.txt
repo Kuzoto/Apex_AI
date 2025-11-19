@@ -1,0 +1,17 @@
+{"events":[{"name":"damage","data":"{\r\n  \"targetName\": \"TangentTerminator\",\r\n  \"damageAmount\": \"13.000000\",\r\n  \"armor\": \"false\",\r\n  \"headshot\": \"false\"\r\n}"}]}
+{"me":{"totalDamageDealt":"223"}}
+{"me":{"totalDamageDealt":"236"}}
+{"match_info":{"tabs":"{\"kills\":0,\"assists\":0,\"teams\":7,\"players\":17,\"damage\":228,\"cash\":null}"}}
+{"match_info":{"tabs":"{\"kills\":0,\"assists\":0,\"teams\":6,\"players\":16,\"damage\":228,\"cash\":null}"}}
+{"me":{"inventory_5":"{\"name\":\"unknown_166\",\"amount\":\"40\"}"}}
+{"me":{"totalDamageDealt":"246"}}
+{"me":{"totalDamageDealt":"259"}}
+{"match_info":{"tabs":"{\"kills\":1,\"assists\":0,\"teams\":6,\"players\":15,\"damage\":240,\"cash\":null}"}}
+{"me":{"inventory_8":"{\"name\":\"unknown_221\",\"amount\":\"6\"}"}}
+{"me":{"inventory_9":"{\"name\":\"unknown_221\",\"amount\":\"2\"}"}}
+{"me":{"inventory_5":"{\"name\":\"unknown_166\",\"amount\":\"31\"}"}}
+{"me":{"inUse":"{\"inUse\":\"mp_weapon_agnostic_karambit_primary\"}"}}
+{"me":{"ultimate_cooldown":"{\"ultimate_cooldown\":\"85\"}"}}
+{"me":{"inUse":"{\"inUse\":\"Sentinel\"}"}}
+{"match_info":{"teammate_1":"{\"name\":\"DevDynamo\",\"state\":\"knocked_out\"}"}}
+{"me":{"inUse":"{\"inUse\":\"mp_weapon_agnostic_karambit_primary\"}"}}

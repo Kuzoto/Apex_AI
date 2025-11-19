@@ -1,0 +1,2 @@
+{"me":{"ultimate_cooldown":"{\"ultimate_cooldown\":\"45\"}"}}
+{"me":{"inUse":"{\"inUse\":\"mp_weapon_agnostic_karambit_primary\"}"}}

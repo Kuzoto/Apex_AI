@@ -1,0 +1,2 @@
+{"me":{"inUse":"{\"inUse\":\"R-99\"}"}}
+{"me":{"ultimate_cooldown":"{\"ultimate_cooldown\":\"40\"}"}}

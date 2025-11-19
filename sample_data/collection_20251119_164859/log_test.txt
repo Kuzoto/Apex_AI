@@ -1,0 +1,7 @@
+{"me":{"inUse":"{\"inUse\":\"Sentinel\"}"}}
+{"me":{"ultimate_cooldown":"{\"ultimate_cooldown\":\"100\"}"}}
+{"events":[{"name":"damage","data":"{\r\n  \"targetName\": \"ProbabilityProwler\",\r\n  \"damageAmount\": \"76.000000\",\r\n  \"armor\": \"false\",\r\n  \"headshot\": \"true\"\r\n}"}]}
+{"match_info":{"tabs":"{\"kills\":1,\"assists\":0,\"teams\":5,\"players\":13,\"damage\":366,\"cash\":null}"}}
+{"me":{"inUse":"{\"inUse\":\"R-99\"}"}}
+{"me":{"totalDamageDealt":"398"}}
+{"match_info":{"tabs":"{\"kills\":1,\"assists\":0,\"teams\":5,\"players\":13,\"damage\":376,\"cash\":null}"}}

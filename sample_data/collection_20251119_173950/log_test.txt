@@ -1,0 +1,2 @@
+{"me":{"inUse":"{\"inUse\":\"mp_weapon_agnostic_karambit_primary\"}"}}
+{"me":{"inUse":"{\"inUse\":\"VK-47 Flatline\"}"}}

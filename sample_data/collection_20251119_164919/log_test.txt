@@ -1,0 +1,1 @@
+{"me":{"inUse":"{\"inUse\":\"mp_weapon_agnostic_karambit_primary\"}"}}

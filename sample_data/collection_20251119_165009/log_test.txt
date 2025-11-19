@@ -1,0 +1,4 @@
+{"match_info":{"teammate_1":"{\"name\":\"DevDynamo\",\"state\":\"alive\"}"}}
+{"me":{"inventory_1":"{\"name\":\"unknown_170\",\"amount\":\"23\"}"}}
+{"events":[{"name":"damage","data":"{\r\n  \"targetName\": \"CoefficientConqueror\",\r\n  \"damageAmount\": \"20.000000\",\r\n  \"armor\": \"false\",\r\n  \"headshot\": \"false\"\r\n}"}]}
+{"match_info":{"tabs":"{\"kills\":3,\"assists\":0,\"teams\":2,\"players\":null,\"damage\":696,\"cash\":null}"}}

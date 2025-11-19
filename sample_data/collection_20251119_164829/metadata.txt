@@ -1,0 +1,8 @@
+Collection Time: 2025-11-19 16:48:29
+Collection Number: 16
+Recording Duration: 10 seconds
+Monitor: 2
+Log File Copied: True
+Log Lines: 17
+Frames Copied: 11
+Video File: gameplay_recording.mp4

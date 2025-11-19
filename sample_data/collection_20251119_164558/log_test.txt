@@ -1,0 +1,6 @@
+{"game_info":{"phase":"landed"}}
+{"me":{"ultimate_cooldown":"{\"ultimate_cooldown\":\"0\"}"}}
+{"me":{"weapons":"{\"weapon0\":\"RE-45 Auto\",\"weapon1\":\"unknown\"}"}}
+{"me":{"inUse":"{\"inUse\":\"RE-45 Auto\"}"}}
+{"me":{"inventory_0":"{\"name\":\"unknown_167\",\"amount\":\"36\"}"}}
+{"me":{"inventory_3":"{\"name\":\"unknown_219\",\"amount\":\"4\"}"}}

@@ -1,0 +1,17 @@
+{"events":[{"name":"kill","data":"4"}]}
+{"events":[{"name":"damage","data":"{\r\n  \"targetName\": \"StatisticSharpshooter\",\r\n  \"damageAmount\": \"13.000000\",\r\n  \"armor\": \"true\",\r\n  \"headshot\": \"false\"\r\n}"}]}
+{"me":{"totalDamageDealt":"831"}}
+{"match_info":{"tabs":"{\"kills\":4,\"assists\":0,\"teams\":2,\"players\":null,\"damage\":899,\"cash\":null}"}}
+{"me":{"totalDamageDealt":"844"}}
+{"match_info":{"tabs":"{\"kills\":4,\"assists\":0,\"teams\":2,\"players\":null,\"damage\":912,\"cash\":null}"}}
+{"me":{"totalDamageDealt":"857"}}
+{"me":{"totalDamageDealt":"870"}}
+{"events":[{"name":"damage","data":"{\r\n  \"targetName\": \"StatisticSharpshooter\",\r\n  \"damageAmount\": \"13.000000\",\r\n  \"armor\": \"false\",\r\n  \"headshot\": \"false\"\r\n}"}]}
+{"me":{"totalDamageDealt":"896"}}
+{"match_info":{"tabs":"{\"kills\":4,\"assists\":0,\"teams\":2,\"players\":null,\"damage\":964,\"cash\":null}"}}
+{"me":{"inventory_4":"{\"name\":\"unknown_166\",\"amount\":\"44\"}"}}
+{"me":{"totalDamageDealt":"912"}}
+{"events":[{"name":"damage","data":"{\r\n  \"targetName\": \"StatisticSharpshooter\",\r\n  \"damageAmount\": \"16.000000\",\r\n  \"armor\": \"false\",\r\n  \"headshot\": \"true\"\r\n}"}]}
+{"events":[{"name":"damage","data":"{\r\n  \"targetName\": \"StatisticSharpshooter\",\r\n  \"damageAmount\": \"16.000000\",\r\n  \"armor\": \"false\",\r\n  \"headshot\": \"true\"\r\n}"}]}
+{"me":{"totalDamageDealt":"957"}}
+{"match_info":{"tabs":"{\"kills\":4,\"assists\":0,\"teams\":2,\"players\":null,\"damage\":1025,\"cash\":null}"}}

@@ -1,0 +1,18 @@
+{"me":{"inventory_4":"{\"name\":\"unknown_166\",\"amount\":\"35\"}"}}
+{"events":[{"name":"damage","data":"{\r\n  \"targetName\": \"StatisticSharpshooter\",\r\n  \"damageAmount\": \"13.000000\",\r\n  \"armor\": \"false\",\r\n  \"headshot\": \"false\"\r\n}"}]}
+{"match_info":{"tabs":"{\"kills\":4,\"assists\":0,\"teams\":2,\"players\":null,\"damage\":1026,\"cash\":null}"}}
+{"events":[{"name":"knockdown","data":""}]}
+{"me":{"totalDamageDealt":"983"}}
+{"me":{"totalDamageDealt":"996"}}
+{"me":{"totalDamageDealt":"1009"}}
+{"me":{"totalDamageDealt":"1022"}}
+{"me":{"totalDamageDealt":"1035"}}
+{"me":{"totalDamageDealt":"1048"}}
+{"events":[{"name":"damage","data":"{\r\n  \"targetName\": \"StatisticSharpshooter\",\r\n  \"damageAmount\": \"13.000000\",\r\n  \"armor\": \"false\",\r\n  \"headshot\": \"false\"\r\n}"}]}
+{"match_info":{"tabs":"{\"kills\":4,\"assists\":0,\"teams\":2,\"players\":null,\"damage\":1117,\"cash\":null}"}}
+{"me":{"totalDamageDealt":"1077"}}
+{"match_info":{"tabs":"{\"kills\":5,\"assists\":0,\"teams\":2,\"players\":null,\"damage\":1126,\"cash\":null}"}}
+{"me":{"inventory_4":"{\"name\":\"unknown_166\",\"amount\":\"17\"}"}}
+{"me":{"inUse":"{\"inUse\":\"mp_weapon_agnostic_karambit_primary\"}"}}
+{"me":{"inUse":"{\"inUse\":\"Sentinel\"}"}}
+{"me":{"inUse":"{\"inUse\":\"mp_weapon_charge_gauntlet\"}"}}

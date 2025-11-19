@@ -1,0 +1,20 @@
+{"me":{"inUse":"{\"inUse\":\"Sentinel\"}"}}
+{"match_info":{"tabs":"{\"kills\":2,\"assists\":0,\"teams\":4,\"players\":null,\"damage\":476,\"cash\":null}"}}
+{"me":{"inUse":"{\"inUse\":\"R-99\"}"}}
+{"me":{"totalDamageDealt":"515"}}
+{"me":{"totalDamageDealt":"528"}}
+{"me":{"totalDamageDealt":"541"}}
+{"me":{"totalDamageDealt":"554"}}
+{"events":[{"name":"damage","data":"{\r\n  \"targetName\": \"SequenceSlayer\",\r\n  \"damageAmount\": \"13.000000\",\r\n  \"armor\": \"false\",\r\n  \"headshot\": \"false\"\r\n}"}]}
+{"events":[{"name":"damage","data":"{\r\n  \"targetName\": \"SequenceSlayer\",\r\n  \"damageAmount\": \"13.000000\",\r\n  \"armor\": \"false\",\r\n  \"headshot\": \"false\"\r\n}"}]}
+{"me":{"totalDamageDealt":"593"}}
+{"match_info":{"tabs":"{\"kills\":2,\"assists\":0,\"teams\":4,\"players\":null,\"damage\":567,\"cash\":null}"}}
+{"events":[{"name":"damage","data":"{\r\n  \"targetName\": \"SequenceSlayer\",\r\n  \"damageAmount\": \"13.000000\",\r\n  \"armor\": \"false\",\r\n  \"headshot\": \"false\"\r\n}"}]}
+{"me":{"totalDamageDealt":"619"}}
+{"me":{"totalDamageDealt":"632"}}
+{"events":[{"name":"damage","data":"{\r\n  \"targetName\": \"SequenceSlayer\",\r\n  \"damageAmount\": \"10.000000\",\r\n  \"armor\": \"false\",\r\n  \"headshot\": \"false\"\r\n}"}]}
+{"me":{"totalDamageDealt":"655"}}
+{"match_info":{"tabs":"{\"kills\":3,\"assists\":0,\"teams\":3,\"players\":null,\"damage\":626,\"cash\":null}"}}
+{"me":{"inventory_4":"{\"name\":\"unknown_166\",\"amount\":\"64\"}"}}
+{"me":{"inventory_10":"{}"}}
+{"me":{"inUse":"{\"inUse\":\"Health/Shield\"}"}}
