@@ -153,7 +153,7 @@ Please analyze the screenshots that follow and provide a detailed summary of wha
                     "content": content
                 }
             ],
-            max_completion_tokens=4000
+            max_completion_tokens=8000
         )
         
         print("Received response from OpenAI")
@@ -172,12 +172,12 @@ def main():
     )
     
     parser.add_argument(
-        "log_file",
+        "--log_file",
         help="Path to the log file containing game events"
     )
     
     parser.add_argument(
-        "frames_folder",
+        "--frames_folder",
         help="Path to the folder containing screenshot frames"
     )
     

@@ -43,6 +43,12 @@ def should_take_screenshot(json_obj):
             if teammate_key in match_info:
                 return True, f"match_info_{teammate_key}"
     
+    if "me" in json_obj:
+        me = json_obj["me"]
+
+        if "inUse" in me:
+            return True, "inUse"
+    
     return False, None
 
 def take_screenshot(folder, event_type):
