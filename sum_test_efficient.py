@@ -1,11 +1,40 @@
+"""
+Apex Legends Gameplay Video Analyzer with JSON Log Support (Efficient Version)
+
+This script analyzes gameplay videos and correlates them with JSON log data from the game API.
+It supports two frame extraction methods:
+
+1. Uniform sampling: Extracts evenly-spaced frames from the video
+2. Keyframe extraction: Uses video-keyframe-detector to intelligently extract the most 
+   representative frames based on peak detection of frame differences
+   (reduces redundancy and focuses on important moments - can reduce frames by 60-80%)
+
+Usage:
+    # Basic usage with uniform sampling
+    python sum_test_efficient.py --video gameplay.mp4 --log log.txt
+
+    # With intelligent keyframe extraction (install: pip install video-keyframe-detector matplotlib)
+    python sum_test_efficient.py --video gameplay.mp4 --log log.txt --use_keyframes --num_keyframes 25
+"""
+
 import cv2
 import base64
 import os
 import json
 import argparse
+import tempfile
+import shutil
 from pathlib import Path
 from openai import OpenAI
 import keyenv
+
+# Try to import video-keyframe-detector for keyframe extraction
+try:
+    from KeyFrameDetector.key_frame_detector import keyframeDetection
+    KEYFRAME_DETECTOR_AVAILABLE = True
+except ImportError:
+    KEYFRAME_DETECTOR_AVAILABLE = False
+    print("Warning: video-keyframe-detector not installed. Install with 'pip install video-keyframe-detector' for keyframe extraction.")
 
 def get_base64_size_mb(b64_string):
     """Calculate the size of a base64 string in MB."""
@@ -162,9 +191,137 @@ def format_game_events(parsed_events):
     
     return '\n'.join(summary_parts)
 
+def extract_keyframes_with_detector(video_path, num_keyframes=50, max_dimension=1280, threshold=0.6):
+    """
+    Extract keyframes from video using video-keyframe-detector library.
+    
+    This detector uses peak detection on frame differences to identify the most
+    representative and significant frames that describe movement or main events.
+    
+    Args:
+        video_path: Path to the video file
+        num_keyframes: Maximum number of keyframes to extract
+        max_dimension: Maximum width or height for resizing
+        threshold: Threshold for peak detection (0.0-1.0, higher = fewer keyframes)
+    
+    Returns:
+        List of base64-encoded keyframe images
+    """
+    if not KEYFRAME_DETECTOR_AVAILABLE:
+        print("video-keyframe-detector not available, falling back to uniform frame extraction")
+        return extract_frames_with_size_limit(video_path, max_dimension=max_dimension, max_frames=num_keyframes)
+    
+    print(f"Extracting up to {num_keyframes} keyframes using video-keyframe-detector...")
+    
+    # Create temporary directory for keyframes
+    temp_dir = tempfile.mkdtemp(prefix="keyframes_")
+    
+    try:
+        # Get video info first
+        cap = cv2.VideoCapture(str(video_path))
+        total_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
+        fps = cap.get(cv2.CAP_PROP_FPS)
+        duration = total_frames / fps if fps > 0 else 0
+        cap.release()
+        
+        print(f"Video info: {total_frames} frames, {fps:.1f} fps, {duration:.2f}s duration")
+        
+        # Extract keyframes using the detector
+        print(f"Detecting keyframes (threshold={threshold})...")
+        keyframeDetection(
+            source=str(video_path),
+            dest=temp_dir,
+            Thres=threshold,
+            plotMetrics=False,
+            verbose=False
+        )
+        
+        # Load extracted keyframes (they're saved in a 'keyFrames' subdirectory)
+        keyframes_dir = Path(temp_dir) / "keyFrames"
+        keyframe_files = sorted(keyframes_dir.glob("*.jpg")) if keyframes_dir.exists() else []
+        
+        if not keyframe_files:
+            print(f"Warning: No keyframes extracted, trying lower threshold...")
+            # Try with lower threshold
+            keyframeDetection(
+                source=str(video_path),
+                dest=temp_dir,
+                Thres=max(0.2, threshold - 0.3),
+                plotMetrics=False,
+                verbose=False
+            )
+            keyframe_files = sorted(keyframes_dir.glob("*.jpg")) if keyframes_dir.exists() else []
+        
+        if not keyframe_files:
+            print("Warning: Still no keyframes extracted, falling back to uniform sampling")
+            return extract_frames_with_size_limit(
+                video_path, 
+                max_dimension=max_dimension, 
+                max_frames=num_keyframes
+            )
+        
+        print(f"Extracted {len(keyframe_files)} keyframes")
+        
+        # Limit to requested number of keyframes if we got more
+        if len(keyframe_files) > num_keyframes:
+            print(f"Limiting from {len(keyframe_files)} to {num_keyframes} keyframes")
+            # Select evenly spaced keyframes
+            indices = [int(i * len(keyframe_files) / num_keyframes) for i in range(num_keyframes)]
+            keyframe_files = [keyframe_files[i] for i in indices]
+        
+        print(f"Processing {len(keyframe_files)} keyframes")
+        
+        frames_base64 = []
+        total_size_mb = 0
+        
+        for i, img_path in enumerate(keyframe_files):
+            # Read image
+            img = cv2.imread(str(img_path))
+            
+            if img is None:
+                continue
+            
+            # Get original dimensions
+            orig_height, orig_width = img.shape[0], img.shape[1]
+            
+            # Resize if needed
+            if max(orig_height, orig_width) > max_dimension:
+                scale = max_dimension / max(orig_height, orig_width)
+                new_width = int(orig_width * scale)
+                new_height = int(orig_height * scale)
+                img = cv2.resize(img, (new_width, new_height), interpolation=cv2.INTER_AREA)
+                
+                # Print resize info for first frame
+                if i == 0:
+                    print(f"Resizing frames: {orig_width}x{orig_height} → {new_width}x{new_height}")
+            
+            # Encode as JPEG with good quality/size balance
+            _, buffer = cv2.imencode('.jpg', img, [cv2.IMWRITE_JPEG_QUALITY, 75])
+            frame_b64 = base64.b64encode(buffer).decode('utf-8')
+            frame_size_mb = get_base64_size_mb(frame_b64)
+            
+            frames_base64.append(frame_b64)
+            total_size_mb += frame_size_mb
+            
+            if (i + 1) % 10 == 0:
+                print(f"Processed {i+1}/{len(keyframe_files)} keyframes ({total_size_mb:.1f} MB so far)")
+        
+        print(f"\nLoaded {len(frames_base64)} keyframes")
+        print(f"Total size: {total_size_mb:.2f} MB")
+        print(f"Average frame size: {total_size_mb/len(frames_base64):.3f} MB")
+        
+        return frames_base64
+    
+    finally:
+        # Clean up temporary directory
+        try:
+            shutil.rmtree(temp_dir)
+        except Exception as e:
+            print(f"Warning: Could not remove temp directory {temp_dir}: {e}")
+
 def extract_frames_with_size_limit(video_path, max_size_mb=45, max_dimension=1280, max_frames=None):
     """
-    Extract frames from a video while staying under a size limit.
+    Extract frames from a video while staying under a size limit (uniform sampling).
     
     Args:
         video_path: Path to the video file
@@ -203,7 +360,7 @@ def extract_frames_with_size_limit(video_path, max_size_mb=45, max_dimension=128
         print(f"Frames will be resized to: {new_width}x{new_height}")
     
     # Encode sample frame and check size
-    _, buffer = cv2.imencode('.jpg', sample_frame, [cv2.IMWRITE_JPEG_QUALITY, 85])
+    _, buffer = cv2.imencode('.jpg', sample_frame, [cv2.IMWRITE_JPEG_QUALITY, 75])
     sample_b64 = base64.b64encode(buffer).decode('utf-8')
     sample_size_mb = get_base64_size_mb(sample_b64)
     
@@ -246,7 +403,7 @@ def extract_frames_with_size_limit(video_path, max_size_mb=45, max_dimension=128
             frame = cv2.resize(frame, (new_width, new_height), interpolation=cv2.INTER_AREA)
         
         # Encode frame as JPEG
-        _, buffer = cv2.imencode('.jpg', frame, [cv2.IMWRITE_JPEG_QUALITY, 85])
+        _, buffer = cv2.imencode('.jpg', frame, [cv2.IMWRITE_JPEG_QUALITY, 75])
         frame_b64 = base64.b64encode(buffer).decode('utf-8')
         frame_size_mb = get_base64_size_mb(frame_b64)
         
@@ -387,6 +544,26 @@ def main():
     )
     
     parser.add_argument(
+        "--use_keyframes",
+        action="store_true",
+        help="Use video-keyframe-detector for intelligent keyframe extraction (requires 'pip install video-keyframe-detector')"
+    )
+    
+    parser.add_argument(
+        "--num_keyframes",
+        type=int,
+        default=50,
+        help="Maximum number of keyframes to extract (default: 50)"
+    )
+    
+    parser.add_argument(
+        "--keyframe_threshold",
+        type=float,
+        default=0.6,
+        help="Threshold for keyframe detection (0.0-1.0, higher = fewer keyframes, default: 0.6)"
+    )
+    
+    parser.add_argument(
         "--output",
         help="Output file path for the summary (optional)"
     )
@@ -426,12 +603,23 @@ def main():
     
     # Extract frames from video
     print("Processing video...\n")
-    frames = extract_frames_with_size_limit(
-        args.video,
-        max_size_mb=args.max_size_mb,
-        max_dimension=args.max_dimension,
-        max_frames=args.max_frames
-    )
+    
+    if args.use_keyframes:
+        # Use video-keyframe-detector for intelligent keyframe extraction
+        frames = extract_keyframes_with_detector(
+            args.video,
+            num_keyframes=args.num_keyframes,
+            max_dimension=args.max_dimension,
+            threshold=args.keyframe_threshold
+        )
+    else:
+        # Use uniform frame extraction
+        frames = extract_frames_with_size_limit(
+            args.video,
+            max_size_mb=args.max_size_mb,
+            max_dimension=args.max_dimension,
+            max_frames=args.max_frames
+        )
     
     if not frames:
         print("Error: No frames extracted!")
