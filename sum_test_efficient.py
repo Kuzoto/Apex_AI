@@ -1,20 +1,31 @@
 """
-Apex Legends Gameplay Video Analyzer with JSON Log Support (Efficient Version)
+Apex Legends Gameplay Video Analyzer (Efficient Version)
 
-This script analyzes gameplay videos and correlates them with JSON log data from the game API.
-It supports two frame extraction methods:
+This script analyzes gameplay videos with optional log file support.
+It supports multiple optimization features:
 
+Frame Extraction:
 1. Uniform sampling: Extracts evenly-spaced frames from the video
 2. Keyframe extraction: Uses video-keyframe-detector to intelligently extract the most 
    representative frames based on peak detection of frame differences
    (reduces redundancy and focuses on important moments - can reduce frames by 60-80%)
 
+Log Processing:
+1. Plain text: Reads log file as-is (default)
+2. JSON parsing: Parses and formats JSON game events with --parse_json flag
+
 Usage:
-    # Basic usage with uniform sampling
+    # Basic usage (plain text log, uniform sampling)
     python sum_test_efficient.py --video gameplay.mp4 --log log.txt
 
-    # With intelligent keyframe extraction (install: pip install video-keyframe-detector matplotlib)
+    # With JSON parsing
+    python sum_test_efficient.py --video gameplay.mp4 --log log.txt --parse_json
+
+    # With keyframe extraction (install: pip install video-keyframe-detector matplotlib)
     python sum_test_efficient.py --video gameplay.mp4 --log log.txt --use_keyframes --num_keyframes 25
+    
+    # All optimizations enabled
+    python sum_test_efficient.py --video gameplay.mp4 --log log.txt --parse_json --use_keyframes --num_keyframes 25
 """
 
 import cv2
@@ -564,6 +575,12 @@ def main():
     )
     
     parser.add_argument(
+        "--parse_json",
+        action="store_true",
+        help="Parse JSON log data and format it (default: treat log as plain text)"
+    )
+    
+    parser.add_argument(
         "--output",
         help="Output file path for the summary (optional)"
     )
@@ -579,27 +596,48 @@ def main():
         raise FileNotFoundError(f"Video file not found: {args.video}")
     
     print("="*60)
-    print("APEX LEGENDS GAMEPLAY ANALYZER (with JSON Log Support)")
+    print("APEX LEGENDS GAMEPLAY ANALYZER")
     print("="*60)
     print(f"Video: {args.video}")
     print(f"Log: {args.log if args.log else 'None'}")
+    print(f"JSON Parsing: {'Enabled' if args.parse_json else 'Disabled (plain text)'}")
     print(f"Model: {args.model}")
     print("="*60)
     print()
     
-    # Parse JSON log if provided
+    # Process log file if provided
     game_events_text = ""
     if args.log:
-        raw_text, parsed_events = parse_json_log(args.log)
-        game_events_text = format_game_events(parsed_events)
-        
-        if game_events_text:
-            print("\n" + "="*60)
-            print("PARSED GAME EVENTS")
-            print("="*60)
-            print(game_events_text)
-            print("="*60)
-            print()
+        if args.parse_json:
+            # Parse as JSON and format
+            raw_text, parsed_events = parse_json_log(args.log)
+            game_events_text = format_game_events(parsed_events)
+            
+            if game_events_text:
+                print("\n" + "="*60)
+                print("PARSED GAME EVENTS (JSON)")
+                print("="*60)
+                print(game_events_text)
+                print("="*60)
+                print()
+        else:
+            # Read as plain text
+            try:
+                with open(args.log, 'r', encoding='utf-8') as f:
+                    game_events_text = f.read()
+                
+                if game_events_text:
+                    print("\n" + "="*60)
+                    print("LOG CONTENT (Plain Text)")
+                    print("="*60)
+                    print(game_events_text[:500])  # Show first 500 chars
+                    if len(game_events_text) > 500:
+                        print(f"... ({len(game_events_text)} total characters)")
+                    print("="*60)
+                    print()
+            except Exception as e:
+                print(f"Warning: Could not read log file: {e}")
+                game_events_text = ""
     
     # Extract frames from video
     print("Processing video...\n")

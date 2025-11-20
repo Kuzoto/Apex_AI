@@ -42,12 +42,18 @@ python sample_sum.py \
 python sum_test.py
 ```
 
-### Analyze recorded video + JSON token reduction +  keyframe extraction
+### Analyze recorded video (efficient with keyframe extraction)
 ```bash
-# Basic usage
+# Basic usage (log as plain text)
+python sum_test_efficient.py \
+  --video sample_data/collection_20251119_165050/gameplay_recording.mp4 \
+  --log sample_data/collection_20251119_165050/log_test.txt
+
+# With JSON parsing (for structured game events)
 python sum_test_efficient.py \
   --video sample_data/collection_20251119_165050/gameplay_recording.mp4 \
   --log sample_data/collection_20251119_165050/log_test.txt \
+  --parse_json
 
 # With intelligent keyframe extraction (requires: pip install video-keyframe-detector)
 python sum_test_efficient.py \
@@ -56,5 +62,6 @@ python sum_test_efficient.py \
   --use_keyframes \
   --num_keyframes 25 \
   --keyframe_threshold 0.4 \
+  --parse_json
 ```
 
