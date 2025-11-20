@@ -157,6 +157,25 @@ Please analyze the screenshots that follow and provide a detailed summary of wha
         )
         
         print("Received response from OpenAI")
+
+        # Print usage information
+        if response.usage:
+            print("\n" + "="*60)
+            print("USAGE STATISTICS")
+            print("="*60)
+            print(f"Prompt tokens: {response.usage.prompt_tokens:,}")
+            print(f"Completion tokens: {response.usage.completion_tokens:,}")
+            print(f"Total tokens: {response.usage.total_tokens:,}")
+            
+            # Check for cached tokens (prompt caching feature)
+            if hasattr(response.usage, 'prompt_tokens_details') and response.usage.prompt_tokens_details:
+                details = response.usage.prompt_tokens_details
+                if hasattr(details, 'cached_tokens') and details.cached_tokens:
+                    print(f"Cached tokens: {details.cached_tokens:,}")
+                    print(f"Tokens saved by caching: {details.cached_tokens:,}")
+            
+            print("="*60 + "\n")
+
         summary = response.choices[0].message.content
         return summary
     
