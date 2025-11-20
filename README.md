@@ -26,13 +26,27 @@ pip install -r requirements.txt
 OPENAI_API_KEY=your_openai_api_key_here
 ```
 
-## Sample run
+## Usage
 
+### Analyze pre-captured screenshots + logs
 ```bash
 python sample_sum.py \
   --log_file sample_data/collection_20251119_164558/log_test.txt \
   --frames_folder sample_data/collection_20251119_164558/frames \
-  --model gpt-5.1 \
+  --model gpt-5 \
   --output my_gameplay_summary.txt
+```
+
+### Analyze recorded video (basic)
+```bash
+python sum_test.py
+```
+
+### Analyze recorded video + JSON logs
+```bash
+python sum_test_toon.py \
+  --video sample_data/collection_20251119_165050/gameplay_recording.mp4 \
+  --log sample_data/collection_20251119_165050/log_test.txt \
+  --output summary.txt
 ```
 
