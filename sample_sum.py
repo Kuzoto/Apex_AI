@@ -177,7 +177,7 @@ Please analyze the screenshots that follow and provide a detailed summary of wha
             print("="*60 + "\n")
 
         summary = response.choices[0].message.content
-        return summary
+        return summary, response
     
     except Exception as e:
         print(f"Error calling OpenAI API: {e}")
@@ -241,7 +241,7 @@ def main():
     
     # Generate summary
     print("\n" + "="*60)
-    summary = summarize_with_openai(log_content, frames, api_key, args.model)
+    summary, response = summarize_with_openai(log_content, frames, api_key, args.model)
     
     if summary:
         print("="*60)
@@ -260,7 +260,14 @@ def main():
                     f.write(f"Frames Folder: {args.frames_folder}\n")
                     f.write(f"Number of Frames: {len(frames)}\n")
                     f.write(f"Log Size: {len(log_content)} characters\n")
-                    f.write(f"Model: {args.model}\n")
+                    f.write(f"Model: {args.model}\n\n")
+                    if response.usage:
+                        f.write("\n" + "="*60 + "\n")
+                        f.write("TOKEN USAGE STATISTICS:\n")
+                        f.write("="*60 + "\n")
+                        f.write(f"Prompt tokens: {response.usage.prompt_tokens:,}\n")
+                        f.write(f"Completion tokens: {response.usage.completion_tokens:,}\n")
+                        f.write(f"Total tokens: {response.usage.total_tokens:,}\n")
                     f.write("\n" + "="*60 + "\n\n")
                     f.write(summary)
                 print(f"\nSummary saved to: {output_path}")

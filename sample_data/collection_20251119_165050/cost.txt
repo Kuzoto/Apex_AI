@@ -1,0 +1,2 @@
+total: $0.20
+total tokens: 16942 (matches prompt tokens)

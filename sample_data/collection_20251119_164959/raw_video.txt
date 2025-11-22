@@ -1,0 +1,53 @@
+Video: sample_data\collection_20251119_164959\gameplay_recording.mp4
+Log: None
+Number of Frames: 181
+Model: gpt-5
+
+
+============================================================
+TOKEN USAGE STATISTICS:
+============================================================
+Prompt tokens: 12,715
+Completion tokens: 3,821
+Total tokens: 16,536
+
+============================================================
+
+GAMEPLAY SUMMARY:
+============================================================
+Here’s a clear rundown of what the frames show from this Apex Legends endgame at Gravity Engine (Olympus):
+
+Overall context
+- It’s the final fight: 2 squads left (your full trio vs. the last team).
+- You’re playing Loba, holding a Sentinel (2 rounds loaded, 55 spare; you never charge it with a bat during these frames). Your secondary appears to be a close-range SMG.
+- Your team includes a Seer (notable for repeated scans/tactical beams). The other teammate looks like a support/anchor (likely Lifeline).
+- The enemy team includes at least a Gibraltar (a blue Dome is up early on) and a Seer (the wide-brim hat silhouette seen more than once). An enemy Loba is also highly likely (you get the “enemy Black Market” tip and a red ping icon appears ~12 m ahead marking it).
+
+Early sequence (holding the interior platform)
+- Location: Gravity Engine’s upper platform and ramps.
+- A Gibraltar Dome is active ahead near the central ramp/cover. You hold a long angle with the Sentinel toward enemies playing below/on the far side of the ramp.
+- Your Seer sends out tactical scans (blue beam across the lane), repeatedly revealing enemy positions. Red silhouettes of enemies pop up behind cover and while they’re moving.
+- You peek over railings and cover but do not take a shot with the Sentinel yet.
+
+Mid-rotation (shifting right for a better angle)
+- You back off the initial lane and push right, skirting along railings and stacked containers to find a new sightline.
+- An enemy Black Market is indicated and pinged around 12 meters ahead on your right side, suggesting the enemy team is looting/rearming mid-standoff.
+- You take some chip fire (red vignette/health tick) while crossing sightlines and immediately play cover, staying disciplined with positioning.
+- You climb up along stacked crates/railing sections to gain elevation for a safer, off-angle view downward into the enemy’s pocket.
+
+Contact below and tracking the Seer
+- From high ground, you catch a clean visual on an enemy Seer moving below near the overturned/large cover and forklift area.
+- Multiple times you ADS with the Sentinel and track the Seer (often 20–35 meters), but each time the target ducks behind cover or breaks LOS before you fire.
+- Your Seer’s info keeps updating enemy movements; you maintain overwatch while teammates adjust positions (one teammate rotates low/right, staying active but not over-committing).
+
+Late setup (final angles and pressure)
+- You reposition onto a tall stack of white crates for maximum height and a tight off-angle on the last team’s cover.
+- You re-ADS on the enemy Seer near the “CAUTION” marking on the ground (roughly 23–35 meters) as they momentarily leave cover.
+- Before a shot is taken in these frames, the enemy tucks back in again. You maintain trigger discipline, keep the off-angle, and get ready to punish the next peek while your teammates continue to pressure and flank.
+
+Key takeaways
+- Your squad plays for information and elevation: Seer provides constant reveals, you anchor with a Sentinel from strong high ground, and a teammate works a flank on the right.
+- The enemy tries to stabilize behind a Gibraltar Dome and an enemy Loba’s Black Market, suggesting they were low on resources and looking to reset.
+- Across the shown sequence, you don’t fire the Sentinel; instead, you reposition several times to secure better lines without overexposing, waiting for a clean, fight-swinging shot.
+
+In short: It’s a disciplined endgame setup. Your team leverages Seer scans and high ground to contain the last squad, while the enemy uses a Gibby bubble and Black Market to survive. You methodically reposition for a decisive Sentinel angle, ready to capitalize on the next expose.

@@ -1,0 +1,62 @@
+Video: sample_data\collection_20251119_164558\gameplay_recording.mp4
+Log: None
+Number of Frames: 168
+Model: gpt-5
+
+
+============================================================
+TOKEN USAGE STATISTICS:
+============================================================
+Prompt tokens: 11,805
+Completion tokens: 4,966
+Total tokens: 16,771
+
+============================================================
+
+GAMEPLAY SUMMARY:
+============================================================
+Here’s a concise, event-by-event breakdown of what happens in these frames of Apex Legends (Bot Royale):
+
+Overview
+- Mode: Bot Royale (play against bot squads in a smaller, faster BR variant).
+- Map/POI: Olympus — Gravity Engine. “Grow Towers” is visible in the distance during the drop.
+- Squad: Trio. Player POV is c0okies3, with teammates ShadyDracoXD (Jumpmaster) and DevDynamo.
+- Squads left: 9 at the start of the drop, then 8 by the time you land/loot.
+
+Drop and Landing
+- Your squad follows Jumpmaster ShadyDracoXD from the dropship toward Gravity Engine.
+- You stay tethered to the Jumpmaster most of the way, then break off and aim for the rooftop section with the circular central hub and surrounding catwalks.
+- All three teammates land on the roof with good spacing: ShadyDracoXD targets the center hub; DevDynamo touches down off to the left; you land near an outer catwalk/hatch area on the roof.
+
+Early Looting Sequence
+- You run straight to an orange/white supply bin on the rooftop and open it.
+- Items seen/picked up around the bin:
+  - RE-45 Burst (3-round burst sidearm) — you equip it.
+  - A Med Kit — you pick it up.
+  - Energy Ammo x36 — initially flagged “Not compatible with any of your weapons.”
+- After a moment, you pull out an energy sidearm/weapon (your HUD shows 15 in mag with 36 reserve Energy Ammo), making energy ammo compatible. You then have both a sidearm and energy ammo in your inventory.
+- You briefly inspect your melee/Heirloom while looting and viewing tutorial prompts. The game displays tooltips about loot bins, ammo compatibility, and Med Kits.
+
+Positioning and Team Activity
+- You remain on the rooftop at the Gravity Engine, scanning the area and loot on the ground near the central hub.
+- A ground weapon (an SMG) is in front of ShadyDracoXD by a roof hatch; you look at it but keep your current loadout.
+- DevDynamo is looting and moving across the roof.
+- You mark/request Energy Ammo at one point, but otherwise keep looting quietly.
+
+Combat/Encounters
+- No combat occurs in these frames. No shots at enemies, no incoming fire, and no enemy squad contact on the roof.
+- Kill count for the squad remains 0. The only shots fired are a couple of test shots at the floor while evaluating the weapon (not at enemies).
+- Squads drop from 9 to 8 while you’re looting (action likely elsewhere on the map).
+
+Status as these frames end
+- Location: Still on the Gravity Engine rooftop.
+- Ring: Early-game; ring countdown tutorial prompts are visible.
+- Team: All three alive, white (Level 1) EVO shields, full health. Inventory includes a Med Kit and mixed ammo; you’re holding an energy sidearm with a small mag.
+- Plan implied: Finish rooftop sweep, move into the interior of Gravity Engine for more loot, then rotate.
+
+Notable details
+- Skydive emote/music is shown on the right (Prodigy Split: Sparrow).
+- Tutorial hints pop up about tactical usage, loot bins, and med kits (standard for the mode/first-time context).
+- The drop is uncontested, giving your squad a clean, safe start.
+
+In short: Your trio takes a safe, uncontested drop onto Gravity Engine, spreads across the roof, opens a supply bin, equips an RE-45 Burst, then swaps to/loots an energy sidearm plus a Med Kit. No fights break out; the squad stabilizes gear on the roof and looks ready to rotate inside for more loot as the ring timer progresses.

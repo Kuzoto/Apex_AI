@@ -1,0 +1,71 @@
+Video: sample_data\collection_20251119_164919\gameplay_recording.mp4
+Log: sample_data\collection_20251119_164919\log_test.txt
+Number of Frames: 17
+Model: gpt-5
+
+
+============================================================
+TOKEN USAGE STATISTICS:
+============================================================
+Prompt tokens: 1,335
+Completion tokens: 5,157
+Total tokens: 6,492
+
+============================================================
+
+GAME EVENTS DATA:
+============================================================
+Total Events: 1
+
+=== PLAYER STATUS ===
+  Using: mp_weapon_agnostic_karambit_primary
+
+============================================================
+
+GAMEPLAY SUMMARY:
+============================================================
+Here’s what the clip shows and how it lines up with the game data:
+
+1) Key actions and events on screen
+- Initial state and context
+  - Round: Round 1 is closing (timer ~8:28 to ~8:24 remaining).
+  - Teams: Only 5 squads left already.
+  - HUD constantly shows “Press Z to Upgrade,” indicating Season 20 armor upgrade system is active. Your shield bar reads “NEXT LVL ~324 EVO” at one point (blue evo needing 324 to purple).
+  - Kill feed shows multiple players dying to the Ring during this sequence.
+
+- Movement and objective
+  - You spend much of the clip with your melee/knife out, sprinting and sliding between cover and down a road toward a teammate’s death location (purple death box on the road with “RECOVER 55s” above it).
+  - A Mobile Respawn Beacon is visible and appears freshly deployed (dust cloud around it). You check it briefly, then continue down to secure the banner.
+
+- Banner recovery
+  - You switch to your firearm as you approach the purple death box, then interact to pick up your teammate’s banner (“BANNER RECOVERY +75” appears on screen), which also grants +75 EVO toward armor progression.
+  - After grabbing the banner, you turn back uphill toward the beacon to begin the respawn.
+
+- No combat
+  - No shots fired and no enemy contact in the shown frames.
+  - No looting beyond grabbing the banner.
+
+2) Correlation with the provided game data
+- Data event: “Using: mp_weapon_agnostic_karambit_primary”
+  - This matches what’s shown: you frequently have a karambit-style knife out, consistent with moving between objectives while your weapon is holstered.
+- Weapons visible in HUD and hands
+  - Primary/secondary: Sentinel (sniper) in one slot and a light-weapon AR in the other (showing 18 rounds in magazine, consistent with a base R-301).
+  - You mostly traverse with the knife out; you briefly pull out the AR around the death box, then holster again.
+- Game phase and systems
+  - Round 1 closing, 5 squads left aligns with the on-screen UI.
+  - Season 20 armor upgrade prompt (“Press Z to Upgrade”) and the EVO progress readout (“NEXT LVL … EVO”) are repeatedly visible.
+  - Banner recovery grants EVO (+75), matching the on-screen notification.
+
+3) Important moments
+- Movement: Rapid repositioning from high ground to the roadway, sliding and sprinting with melee equipped.
+- Team interaction: Clear objective to recover a teammate’s banner (“DevyDemon”); teammate “ShadowLuka” is alive and nearby. A respawn beacon is pinged (~130–150m) and a Mobile Respawn Beacon is already deployed near your path (you inspect it before grabbing the banner).
+- Objective success: Banner successfully retrieved before the timer expires, setting up a respawn.
+- No combat/looting: No engagements or inventory looting besides the banner pickup; attention is on recovery and repositioning.
+
+4) Sequence and outcome
+- Start: On elevated ground overlooking an urban area; Round 1 closing; 5 squads left; armor upgrade prompt active.
+- Mid: Head toward the purple death box with “RECOVER 55s.” You pass a freshly deployed Mobile Respawn Beacon (dust still visible), then continue to the box.
+- Action: Recover your teammate’s banner; gain +75 EVO.
+- End: Turn back uphill toward the beacon to respawn your teammate. No shots fired, no damage taken, no enemies spotted. The squad ends the clip with two alive plus one banner, preparing to respawn during late Round 1.
+
+Overall: This is a clean banner recovery and regroup play. The single logged event (using the karambit/knife) matches the visual emphasis on holstering for traversal, while your actual loadout (Sentinel + likely R-301) is visible but not used in combat in this segment. Outcome: banner secured; team poised to respawn with the ring still closing and a very small lobby remaining.

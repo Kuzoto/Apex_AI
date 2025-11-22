@@ -107,7 +107,7 @@ class EventSummarizer:
             return "No events or frames to summarize."
         
         client = OpenAI(api_key=self.api_key)
-        
+
         # Build the content array
         content = []
         

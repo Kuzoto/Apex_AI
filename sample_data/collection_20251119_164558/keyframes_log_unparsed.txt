@@ -1,0 +1,85 @@
+Video: sample_data\collection_20251119_164558\gameplay_recording.mp4
+Log: sample_data\collection_20251119_164558\log_test.txt
+Number of Frames: 14
+Model: gpt-5
+
+
+============================================================
+TOKEN USAGE STATISTICS:
+============================================================
+Prompt tokens: 1,212
+Completion tokens: 4,306
+Total tokens: 5,518
+
+============================================================
+
+GAME EVENTS DATA:
+============================================================
+{"game_info":{"phase":"landed"}}
+{"me":{"ultimate_cooldown":"{\"ultimate_cooldown\":\"0\"}"}}
+{"me":{"weapons":"{\"weapon0\":\"RE-45 Auto\",\"weapon1\":\"unknown\"}"}}
+{"me":{"inUse":"{\"inUse\":\"RE-45 Auto\"}"}}
+{"me":{"inventory_0":"{\"name\":\"unknown_167\",\"amount\":\"36\"}"}}
+{"me":{"inventory_3":"{\"name\":\"unknown_219\",\"amount\":\"4\"}"}}
+
+============================================================
+
+GAMEPLAY SUMMARY:
+============================================================
+Here’s a frame-by-frame style breakdown and how it ties back to the provided API data.
+
+1) What happens in the video
+- Drop and landing:
+  - The squad (3 players) is in Bot Royale and follows the Jumpmaster (you’re “Following ShadyDevo”). You all glide toward the Gravity Engine POI and land on its rooftop near a pair of loot bins and a roof hatch/zipline area.
+- Early loot:
+  - You open an orange supply bin on the roof.
+  - You look at Energy Ammo x36; a tooltip explicitly says it’s not compatible with your current weapons.
+  - You equip a pistol from the bin: RE-45 (the pickup tooltip briefly says “RE-45 Burst,” but your HUD shows RE-45 Auto once equipped).
+  - Your weapon HUD shows RE-45 with 15 in the mag and 36 reserve ammo (light ammo).
+  - A Med Kit is either on the ground or in your crosshair; a tutorial prompt appears: “This Med Kit will completely refill your Health.”
+  - Teammate loot/pings appear: a nearby weapon is pinged (e.g., G7 Scout and a Nemesis Burst AR are visible in different frames).
+- Legend/tactical prompts:
+  - A prompt appears for Loba’s tactical: “Place a bracelet to teleport to a new location within line of sight,” confirming your legend is Loba.
+- Situation at the end of the clip:
+  - No shots fired, no enemy contact seen or heard. The squad is grouped on the Gravity Engine rooftop continuing to loot and orient.
+
+2) Correlation with the game data
+- Phase: The API says phase="landed". Visually, you’ve just finished the drop and are on the roof opening bins, which matches “landed.”
+- Weapons:
+  - API: weapon0="RE-45 Auto", weapon1="unknown", inUse="RE-45 Auto".
+  - Video: You equip and hold an RE-45, and the second slot looks empty/unset. No secondary weapon is used, matching weapon1 unknown and inUse RE-45 Auto.
+  - The brief “RE-45 Burst” label in the pickup prompt appears to be a mode/tool-tip quirk in Bot Royale; the HUD and API both reflect RE-45 Auto.
+- Ultimate:
+  - API: ultimate_cooldown "0". At match start this typically means no cooldown timer is running (you haven’t used it yet). Visually, your ultimate meter appears to be charging (Loba’s Black Market), which is normal right after landing.
+- Inventory:
+  - API: inventory_0: unknown_167 amount 36. In the frames, you look directly at Energy Ammo x36 and the game tells you it’s not compatible. That strongly suggests unknown_167 = Energy Ammo (36).
+  - API: inventory_3: unknown_219 amount 4. You also see a Med Kit prompt on screen. While the HUD doesn’t explicitly show which stack this is, a stack of 4 at this stage is most likely small consumables (e.g., 4 Syringes or 4 Shield Cells). The med kit tutorial prompt indicates healing items are present nearby, but the exact identity of unknown_219 can’t be confirmed from the frames alone.
+
+3) Important moments
+- Movement:
+  - Coordinated drop following the Jumpmaster, clean descent to the Gravity Engine rooftop. No split-off; the team stays tight.
+- Looting:
+  - Immediate bin open on landing.
+  - Equip RE-45 and gather initial ammo.
+  - Considered Energy Ammo (x36) but it’s incompatible with your current loadout.
+  - Teammate pings weapons (G7 Scout, Nemesis Burst AR appear), indicating good early communication about upgrades.
+- Legend usage:
+  - Loba’s tactical/ultimate prompts are visible; no tactical or ultimate is deployed yet.
+- Combat:
+  - None in this segment. No gunfire, no enemy silhouettes or damage taken.
+- Team interactions:
+  - You follow Jumpmaster to a safe rooftop and begin systematic looting together.
+  - Pings and proximity indicate the squad is coordinated and gearing up before rotating.
+
+4) Sequence of events and outcome
+- Sequence:
+  - Midair: Bot Royale overlay appears; you’re following the Jumpmaster toward Gravity Engine.
+  - Landing: Touch down on the rooftop by the loot bins.
+  - First loot: Open bin; inspect Energy Ammo (can’t use). Equip RE-45.
+  - Consolidate: HUD shows RE-45 with 15/36; teammate runs past and pings weapons; a Med Kit prompt appears; Loba tactical tip shows.
+- Outcome:
+  - The team secures a safe landing and begins early looting with no opposition.
+  - You’re armed with an RE-45 Auto, have some reserve ammo, and carry at least one stack of 36 Energy Ammo you can’t use yet plus a small stack of 4 consumables (likely syringes or cells).
+  - No eliminations or damage traded; the squad is set to continue looting/rotating inside Gravity Engine.
+
+In short: the frames show a clean, coordinated drop into Gravity Engine in Bot Royale, immediate loot of an RE-45, some incompatible Energy Ammo spotted, teammate weapon pings, and early-game setup with Loba—no combat engagement before the clip ends. This aligns with the API: landed phase, RE-45 Auto in hand, second slot empty, ultimate not on cooldown yet, and a 36-count ammo stack matching the Energy Ammo seen on screen.

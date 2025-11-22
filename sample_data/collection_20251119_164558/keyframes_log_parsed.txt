@@ -1,0 +1,87 @@
+Video: sample_data\collection_20251119_164558\gameplay_recording.mp4
+Log: sample_data\collection_20251119_164558\log_test.txt
+Number of Frames: 14
+Model: gpt-5
+
+
+============================================================
+TOKEN USAGE STATISTICS:
+============================================================
+Prompt tokens: 1,191
+Completion tokens: 3,498
+Total tokens: 4,689
+
+============================================================
+
+GAME EVENTS DATA:
+============================================================
+Total Events: 6
+
+=== GAME STATE ===
+  phase: landed
+
+=== WEAPONS ===
+  weapon0: RE-45 Auto
+  weapon1: unknown
+
+=== PLAYER STATUS ===
+  ultimate_cooldown: {"ultimate_cooldown":"0"}
+  Using: RE-45 Auto
+
+=== INVENTORY ===
+  inventory_0: unknown_167 x36
+  inventory_3: unknown_219 x4
+
+============================================================
+
+GAMEPLAY SUMMARY:
+============================================================
+Here’s a frame-by-frame style breakdown, tied to the provided game data.
+
+1) Key actions and events shown
+- Drop and landing:
+  - The squad is dropping into Olympus, heading for the Gravity Engine POI. The on-screen banner identifies the limited-time mode as “BOT ROYALE.”
+  - You are following the jumpmaster (ShadyDevx0) and land together on the rooftop near the rotating fan structure and a large orange loot bin.
+- Initial loot:
+  - You spot Energy Ammo x36 on the rooftop. The tooltip explicitly says it’s not compatible with your current weapons.
+  - You open/loot a container and equip an RE-45 (shown with a prompt calling it “RE-45 BURST,” though it’s functionally the RE-45 sidearm in this mode).
+  - After equipping, your HUD shows 15 rounds in the mag with 36 in reserve for the RE-45.
+- Test fire and team interaction:
+  - You fire a couple of shots (mag drops from 15 to 13).
+  - A teammate runs by and pings another ground weapon (SMG/AR silhouette); you haven’t picked up a second gun yet.
+- Item/ability tutorial prompts:
+  - A right-side tip explains “This Mist will temporarily refill your Health,” introducing a healing item specific to the mode.
+  - Another tip reads “Place a translocater to portal you to enemies within the area,” indicating your legend’s tactical/ultimate tutorial for this LTM.
+
+2) Correlation to the provided game data
+- Phase: The API says phase: landed. This matches the visuals: you’ve completed the drop and are actively looting the roof at Gravity Engine.
+- Weapons:
+  - weapon0: RE-45 Auto → Matches the video: you equip and are “Using: RE-45 Auto.” You also fire it.
+  - weapon1: unknown → Matches the HUD: your second slot is empty; you haven’t picked up a second weapon yet.
+- Player status:
+  - ultimate_cooldown: "0" → Lines up with the early-match tutorial prompts in this LTM; your ultimate appears available/ready at start or has no initial cooldown here.
+- Inventory:
+  - inventory_0: unknown_167 x36 → Visible as Energy Ammo x36 on-screen. It is “Not compatible with any of your weapons,” consistent since the RE-45 uses Light Ammo. So unknown_167 = Energy Ammo.
+  - inventory_3: unknown_219 x4 → Likely the “Mist” healing charges introduced by the mode (the on-screen tip calls out Mist healing). So unknown_219 probably corresponds to Mist x4.
+
+3) Important moments identified
+- Drop coordination: Following the jumpmaster down to Gravity Engine; team lands together cleanly.
+- Early looting:
+  - Spot and evaluate Energy Ammo (not useful yet).
+  - Secure a first weapon (RE-45). This is a key early safety step.
+- First shots:
+  - Two test rounds fired from the RE-45 (mag shows 15 → 13), verifying the weapon and possibly checking recoil/sound.
+- Team communication:
+  - A teammate pings a weapon nearby, signaling loot sharing and encouraging you to upgrade or fill the second slot.
+- Ability/item onboarding:
+  - LTM-specific prompts explain Mist (temporary health refill) and a “translocater” ability/portal mechanic; indicates you have access to healing and mobility/engagement tools early.
+
+4) Sequence of events and outcome
+- 1:29–1:26: In-air approach to Gravity Engine; “BOT ROYALE” banner displayed; team is grouped and following the jumpmaster.
+- 1:25–1:23: Touchdown on the Gravity Engine rooftop near a large orange supply bin and circular fan structure.
+- 1:22: You look at Energy Ammo x36; tooltip states it’s incompatible with your current weapon loadout.
+- Immediately after: You loot a bin/ground cache and equip an RE-45. HUD shows 15 in mag, 36 reserve for the pistol.
+- You take two test shots (mag to 13). No enemies visible; no damage taken.
+- A teammate (ShadyDevx0) pings a nearby weapon. You still have only the RE-45 equipped at this point.
+- Tutorial tips for Mist healing and a “translocater portal” ability appear, and your ultimate cooldown is effectively ready per the data (cooldown = 0).
+- Outcome: Safe, uncontested landing and initial loadout secured (RE-45 only). You’re positioned to continue looting for a second weapon and compatible ammo. No combat or eliminations occur in these frames; the squad remains intact and begins the early-game loot phase in Bot Royale.

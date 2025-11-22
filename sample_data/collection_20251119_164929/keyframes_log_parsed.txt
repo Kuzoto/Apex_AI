@@ -1,0 +1,111 @@
+Video: sample_data\collection_20251119_164929\gameplay_recording.mp4
+Log: sample_data\collection_20251119_164929\log_test.txt
+Number of Frames: 4
+Model: gpt-5
+
+
+============================================================
+TOKEN USAGE STATISTICS:
+============================================================
+Prompt tokens: 905
+Completion tokens: 5,070
+Total tokens: 5,975
+
+============================================================
+
+GAME EVENTS DATA:
+============================================================
+Total Events: 20
+
+=== PLAYER STATUS ===
+  Using: Sentinel
+  Using: R-99
+  totalDamageDealt: 515
+  totalDamageDealt: 528
+  totalDamageDealt: 541
+  totalDamageDealt: 554
+  totalDamageDealt: 593
+  totalDamageDealt: 619
+  totalDamageDealt: 632
+  totalDamageDealt: 655
+  Using: Health/Shield
+
+=== INVENTORY ===
+  inventory_4: unknown_166 x64
+  inventory_10: unknown x?
+
+=== OTHER EVENTS ===
+  {'match_info': {'tabs': '{"kills":2,"assists":0,"teams":4,"players":null,"damage":476,"cash":null}'}}
+  {'events': [{'name': 'damage', 'data': '{\r\n  "targetName": "SequenceSlayer",\r\n  "damageAmount": "13.000000",\r\n  "armor": "false",\r\n  "headshot": "false"\r\n}'}]}
+  {'events': [{'name': 'damage', 'data': '{\r\n  "targetName": "SequenceSlayer",\r\n  "damageAmount": "13.000000",\r\n  "armor": "false",\r\n  "headshot": "false"\r\n}'}]}
+  {'match_info': {'tabs': '{"kills":2,"assists":0,"teams":4,"players":null,"damage":567,"cash":null}'}}
+  {'events': [{'name': 'damage', 'data': '{\r\n  "targetName": "SequenceSlayer",\r\n  "damageAmount": "13.000000",\r\n  "armor": "false",\r\n  "headshot": "false"\r\n}'}]}
+  {'events': [{'name': 'damage', 'data': '{\r\n  "targetName": "SequenceSlayer",\r\n  "damageAmount": "10.000000",\r\n  "armor": "false",\r\n  "headshot": "false"\r\n}'}]}
+  {'match_info': {'tabs': '{"kills":3,"assists":0,"teams":3,"players":null,"damage":626,"cash":null}'}}
+
+============================================================
+
+GAMEPLAY SUMMARY:
+============================================================
+Here’s what the frames show and how they line up with the telemetry you provided.
+
+1) What’s happening on screen
+- Setting and phase:
+  - Map looks like Olympus (pink cherry blossoms and clean white architecture).
+  - Round 1 is closing (HUD shows Round 1 – Closing with ~9:18–9:16 remaining), and there are 4 squads left. That’s an early ring but a very reduced lobby, so mid/late fight pacing despite early zone.
+
+- Positioning and environment:
+  - You’re holding a lane from behind rock/cover with Wattson fences stretched across the choke in front of you. Those fences are creating denial in the approach you’re watching.
+  - Compass headings shift from ~232° to ~206° across the frames, suggesting you peek/strafe along the edge of cover.
+
+- Weapons and actions:
+  - You’re on Sentinel initially, aiming down a mid-range lane. The Sentinel HUD shows “Hold T to Charge,” meaning the rifle isn’t currently charged; you could expend a shield cell to charge it for higher-damage shots.
+  - You take incoming fire while ADS with the Sentinel (third frame shows heavy red vignette and incoming-hit indicator from the front). Your shields/health get chunked.
+  - You quick-swap to the R-99 (last frame shows 18 in-mag, indicating no extended mag) to prepare for closer-range pressure or a fast follow-up if someone pushes your cover.
+
+- Team status:
+  - The on-screen prompt “Respawn Teammates at Beacons” is active, which means you’re holding at least one teammate’s banner and can bring them back.
+  - The green marker to the right appears to be a respawn-related icon/marker. The squad panel on the left supports that at least one teammate is out and awaiting respawn.
+
+- Combat state:
+  - Kill feed at top-right is active (multiple bleed-outs), indicating other squads are trading while you’re in this hold/peek exchange.
+  - You’re under pressure as you peek the fence lane. The immediate decision to swap from Sentinel to R-99 suggests you anticipate a close-range threat or want faster DPS than a bolt-action allows while getting pushed.
+
+2) Correlation with the game data
+- Weapons:
+  - Visuals match the data entries: Using: Sentinel and Using: R-99. The Sentinel’s charge prompt and the R-99’s 18-round mag are clearly visible.
+
+- Damage progression:
+  - The API shows a run of totalDamageDealt increasing (515 → 528 → 541 → 554 → 593 → 619 → 632 → 655) and match_info snapshots rising 476 → 567 → 626. This implies you land several smaller packets of damage and possibly a bigger hit later in the sequence.
+  - The specific damage events show multiple “armor": false hits for 13 and 10 to SequenceSlayer. That pattern is consistent with SMG flesh damage after an armor break—very likely your R-99 connecting with body/leg shots once the target was on health. The R-99 swap seen in the frames lines up with this.
+
+- Kills and squads:
+  - The match_info tabs move from kills: 2 to kills: 3 and teams: 4 to teams: 3. On screen during these frames it still shows 4 squads left, which fits the timing: these frames are right before the lobby ticks down and you secure the third kill later in the clip.
+
+- Inventory:
+  - Inventory shows unknown_166 x64 and an unknown item in slot 10. The 64 stack is likely an ammo stack (the exact type is unclear from the dump), and you clearly have resources to potentially charge the Sentinel (the “Hold T to Charge” prompt appears). The data line Using: Health/Shield suggests you did use a heal/shield sometime in this sequence or just after taking damage, which aligns with getting tagged while peeking.
+
+3) Key moments in the clip
+- Combat:
+  - Anchor and hold: You anchor behind cover, aim with the Sentinel down a fenced lane to control space and threaten mid-range peeks.
+  - Under fire: You take direct return fire while scoped, forcing a quick swap to your R-99 for immediate defensive DPS or to deter a push.
+  - Follow-up damage (from data): Subsequent hits for 13/13/13/10 flesh to SequenceSlayer point to you cleaning up a low target with the R-99.
+
+- Movement and positioning:
+  - Small lateral strafe/peek adjustments (232° → 206°) to search for a safe angle around the Wattson fences without fully exposing to the lane’s return fire.
+
+- Team play:
+  - You’ve recovered at least one banner and have the option to respawn a teammate at a beacon. The green marker indicates awareness/ping of a respawn point or teammate banner location.
+
+- Resource/weapon management:
+  - Sentinel is uncharged during the peek; you opt not to spend a shield cell mid-fight to charge it, instead swapping to the R-99 under pressure.
+
+4) Sequence and outcome
+- Sequence in these frames:
+  - Peek with Sentinel at mid-range → take significant damage while ADS → immediate swap to R-99 to stabilize and prepare for a close/mid engagement.
+  - Maintain awareness of respawn objective with a banner in pocket.
+
+- Outcome per data:
+  - After these frames, you continue the fight: total damage rises into the 600s, kill count moves from 2 to 3, and squads reduce from 4 to 3. That indicates you survive this exchange, contribute additional damage (including several flesh hits on SequenceSlayer), and secure another elimination as the lobby thins.
+
+In short: This is a tense mid-range hold on Olympus during Round 1’s close with only 4 squads left. You try to leverage the Sentinel over Wattson-fenced terrain, get beamed on a peek, then correctly swap to the R-99 to handle immediate pressure. Shortly after, you add meaningful damage, finish a player (your third kill), and the lobby drops to three squads while you still have the option to respawn a teammate.

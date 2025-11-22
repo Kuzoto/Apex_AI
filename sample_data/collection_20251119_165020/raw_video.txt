@@ -1,0 +1,45 @@
+Video: sample_data\collection_20251119_165020\gameplay_recording.mp4
+Log: None
+Number of Frames: 184
+Model: gpt-5
+
+
+============================================================
+TOKEN USAGE STATISTICS:
+============================================================
+Prompt tokens: 12,925
+Completion tokens: 5,044
+Total tokens: 17,969
+
+============================================================
+
+GAMEPLAY SUMMARY:
+============================================================
+Here’s a concise play-by-play of what the frames show from this Apex Legends endgame sequence:
+
+Context
+- Map/position: Rooftop/gantry area on Olympus (Hammond-style yellow silos, cherry tree nearby).
+- Ring/state: 2 squads left, ring timer ticking down; you’re in the final fight zone.
+- Squad: Your team is full (all 3 alive).
+- Loadout seen: Sentinel (sniper) + a close-range automatic (SMG/AR). Your shields are low (HUD tip appears).
+
+Engagement
+- You open at very close range (~9–14 m) with a scoped Sentinel shot and land 70 damage on an enemy Seer (wide-brim hat, blue outfit).
+- You immediately disengage the scope, swap to your close-range gun, and finish the duel with a short burst. Damage readouts show 153 damage inflicted in the engagement, culminating in a “KNOCKED DOWN +150” on ShadyDre3XD.
+- A teammate chips in a bit of damage (you can see a “13” tick) and is covering the push while you secure the down.
+
+Downed enemy → Finisher
+- You approach the downed Seer. The white interaction ring appears and you activate a finisher.
+- The finisher animation is the “soccer ball juggle and kick” style, which strongly indicates you’re playing Mirage (the outfit and the theatrical, ball‑kick finisher match his kit).
+- The sequence plays out fully: you juggle the red/white ball, style on the downed Seer, then rocket a kick that drops them for good.
+- Tactical payoff: Performing the finisher recharges your shields (useful here because your shields were low).
+
+Key takeaways and decisions
+- Clean close-quarters snipe-to-SMG swap: You quick-scoped a body shot (70) and immediately swapped to secure the knock—textbook for Sentinel in tight spaces.
+- Finisher choice: Risky with only two squads left, but you had teammate cover and needed shields; the finisher safely topped you up before the next duel.
+- Outcome: One enemy from the last squad is eliminated. The remaining enemies (if any) are off-screen. The ring is closing soon, so you’ve regained shields right before the next push/peek.
+
+What likely happens next (recommended follow-ups)
+- Armor swap off the deathbox if it’s safer/faster than batting cells.
+- Reload both weapons during/after the finisher’s end lag.
+- Regroup with teammates, clear angles for the remaining opponent(s), and play cover around the yellow silos as the ring closes.

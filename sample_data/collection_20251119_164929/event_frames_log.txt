@@ -1,0 +1,52 @@
+Log File: sample_data\collection_20251119_164929\log_test.txt
+Frames Folder: sample_data\collection_20251119_164929\frames
+Number of Frames: 19
+Log Size: 1568 characters
+Model: gpt-5
+
+
+============================================================
+TOKEN USAGE STATISTICS:
+============================================================
+Prompt tokens: 1,913
+Completion tokens: 3,238
+Total tokens: 5,151
+
+============================================================
+
+Here’s a concise, event-by-event summary of the fight and match progression based on the logs and screenshots:
+
+Starting state
+- Round: 1 (ring closing)
+- Squads left: 4
+- Your stats before the fight: 2 kills, 0 assists, 476 damage (tabs)
+- Weapons: Previously using Sentinel, then swapped to R-99
+- Team: All three teammates alive
+
+Engagement vs “SequenceSlayer” (bearing ~205°)
+- You take position behind cover and open fire with the R-99.
+- Hit sequence shown on screen: cumulative damage rises 52 → 78 → 91 → 104 → 140 → 153.
+- “Enemy Shield Broken” appears during the spray, then you continue landing flesh damage.
+- Logs record multiple flesh hits on SequenceSlayer (13, 13, 13, 10 — all non-armor, non-headshot).
+- You reload mid-fight and finish the engagement.
+
+Knock and wipe
+- You knock SequenceSlayer: on-screen text shows “KNOCKED DOWN SEQUENCESLAYER (+150)” and “153 DAMAGE INFLICTED.”
+- Moments later, “SQUAD WIPE +100” appears — the enemy squad is eliminated.
+
+Post-fight status and progression
+- You become the new Kill Leader with 3 kills.
+- Squads left drop from 4 to 3.
+- Damage totals update:
+  - Match tab damage: 476 → 626 (+150 this engagement).
+  - Internal totalDamageDealt: 515 → 655 (+140 recorded in those increments; consistent with the ~150 shown in the kill banner).
+- You switch to healing (“Health/Shield” in use).
+- Team status: Your whole squad remains alive; no downs or respawns on your side.
+- Inventory note: A pickup/update is logged (unknown_166 x64), likely ammo.
+
+Quick timeline (approx. ring timer 9:17 → 9:12)
+- Spot target at 205°, beam with R-99, crack shields, land flesh shots.
+- Knock SequenceSlayer (153 damage in the fight).
+- Enemy squad gets wiped.
+- You take Kill Leader with 3 total kills; squads left: 3.
+- You begin healing to stabilize for the next rotation.

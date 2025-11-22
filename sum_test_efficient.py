@@ -304,7 +304,7 @@ def extract_keyframes_with_detector(video_path, num_keyframes=50, max_dimension=
                 
                 # Print resize info for first frame
                 if i == 0:
-                    print(f"Resizing frames: {orig_width}x{orig_height} → {new_width}x{new_height}")
+                    print(f"Resizing frames: {orig_width}x{orig_height} to {new_width}x{new_height}")
             
             # Encode as JPEG with good quality/size balance
             _, buffer = cv2.imencode('.jpg', img, [cv2.IMWRITE_JPEG_QUALITY, 75])
@@ -510,7 +510,7 @@ Be specific and detailed in your analysis."""
         print("="*60 + "\n")
     
     summary = response.choices[0].message.content
-    return summary
+    return summary, response
 
 def main():
     parser = argparse.ArgumentParser(
@@ -665,7 +665,7 @@ def main():
     
     # Get summary from OpenAI
     print("\n" + "="*60)
-    summary = summarize_video_with_openai(frames, game_events_text, API_KEY, args.model)
+    summary, response = summarize_video_with_openai(frames, game_events_text, API_KEY, args.model)
     
     # Print results
     print("="*60)
@@ -683,7 +683,14 @@ def main():
                 f.write(f"Video: {args.video}\n")
                 f.write(f"Log: {args.log if args.log else 'None'}\n")
                 f.write(f"Number of Frames: {len(frames)}\n")
-                f.write(f"Model: {args.model}\n")
+                f.write(f"Model: {args.model}\n\n")
+                if response.usage:
+                    f.write("\n" + "="*60 + "\n")
+                    f.write("TOKEN USAGE STATISTICS:\n")
+                    f.write("="*60 + "\n")
+                    f.write(f"Prompt tokens: {response.usage.prompt_tokens:,}\n")
+                    f.write(f"Completion tokens: {response.usage.completion_tokens:,}\n")
+                    f.write(f"Total tokens: {response.usage.total_tokens:,}\n")
                 f.write("\n" + "="*60 + "\n\n")
                 
                 if game_events_text:

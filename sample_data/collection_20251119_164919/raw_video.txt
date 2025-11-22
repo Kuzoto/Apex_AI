@@ -1,0 +1,61 @@
+Video: sample_data\collection_20251119_164919\gameplay_recording.mp4
+Log: None
+Number of Frames: 183
+Model: gpt-5
+
+
+============================================================
+TOKEN USAGE STATISTICS:
+============================================================
+Prompt tokens: 12,855
+Completion tokens: 6,506
+Total tokens: 19,361
+
+============================================================
+
+GAMEPLAY SUMMARY:
+============================================================
+Here’s a clear, event-by-event rundown of what happens across these frames of Apex Legends gameplay:
+
+Context and setup
+- Map/area: Looks like Olympus (the Rift/Phase Runner side) with curved roads and pink trees around a “STRATUS” building.
+- Squads: 5 squads remain. Round 1 is closing, but your team is safe on the edge.
+- Team/legend info: You’re playing Loba (her heirloom fan is out in several shots). Teammate “ShadyDrexXD” is alive ahead of you; “DeDynamo” has been eliminated and needs a banner recovery.
+- Loadout: R-301 (1x Classic optic, 18-round base mag) + Sentinel as secondary. Blue evo shield (Level 2), with “Next Lvl: 324 EVO” showing for upgrades.
+
+What happens, step by step
+1) Post-fight recovery and scouting
+- The kill feed shows a few eliminations attributed to your name earlier, suggesting a prior fight has just wrapped.
+- You hold high ground and scan the road below where your teammate died. Their purple death box and banner timer are visible (around 55s remaining).
+
+2) Banner recovery
+- You drop to the road, reach the purple box, and recover DeDynamo’s banner (Banner Recovery +75 appears). You don’t linger to loot; the focus is on the respawn.
+
+3) Route to respawn beacon
+- A respawn beacon ~150m away gets marked, and you begin rotating west along the outer wall of the circular STRATUS building, keeping cover and stowing your gun for speed (switching to melee/Heirloom).
+
+4) Legend upgrade prompt
+- You’ve earned enough EVO to choose a Legend Upgrade (Season 20+ system). The two upgrade options pop up (Level 2 choice). You hover the options and select one (the UI shows two choices; exact pick isn’t 100% clear from the frames, but you do make a selection).
+
+5) Resupply and EVO economy
+- A blue beam appears and a supply drop lands nearby—this looks like a Lifeline Care Package (blue column, three-compartment pod). Your squad uses it for extra gear/attachments.
+- Shortly after, a small red Evo Harvester unit erupts from the ground in a dust cloud next to the building. This fits with you farming more EVO points toward the next upgrade threshold.
+
+6) Mobility setup toward the beacon
+- Your forward teammate sets up repositioning: a Pathfinder zipline is fired up the hill, giving your duo a fast, safe route that keeps you out of exposed lanes while you head toward the respawn.
+- You hold near cover on the building edge while the zipline finishes, then prepare to take it and continue toward the beacon.
+
+7) Team objective status
+- The HUD reminds you to “Respawn Teammates at Beacons.” The beacon distance ticks down (from ~156m to ~128m as you progress).
+- No additional enemies are engaged in these frames—you’re prioritizing recovery, upgrades, and safe rotation rather than taking fights.
+
+Key takeaways
+- You clutch the banner recovery with time to spare and immediately shift into a safe rotate for the respawn.
+- Smart use of systems: you trigger/collect EVO (Harvester), take a Legend Upgrade, and benefit from a care package to stabilize before the respawn.
+- Good team coordination: your teammate moves ahead to scout and provides mobility with a zipline, keeping the path to the beacon quick and low-risk.
+- Combat: No shots fired in this segment; all action is recovery, resupply, upgrading, and repositioning after an earlier fight where you picked up kills.
+
+Suggestions for the next moments
+- Use Loba’s Black Market once you respawn your teammate so they can re-kit quickly from nearby death boxes/care package loot without overexposing.
+- Take the zipline, respawn in cover, and be ready for third parties—5 squads left means rotations will be tight.
+- With an R-301 + Sentinel, hold medium/long angles while your teammate loots. If you hit another EVO threshold, grab your next Legend Upgrade ASAP.

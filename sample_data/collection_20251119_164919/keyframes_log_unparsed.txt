@@ -1,0 +1,68 @@
+Video: sample_data\collection_20251119_164919\gameplay_recording.mp4
+Log: sample_data\collection_20251119_164919\log_test.txt
+Number of Frames: 17
+Model: gpt-5
+
+
+============================================================
+TOKEN USAGE STATISTICS:
+============================================================
+Prompt tokens: 1,334
+Completion tokens: 5,173
+Total tokens: 6,507
+
+============================================================
+
+GAME EVENTS DATA:
+============================================================
+{"me":{"inUse":"{\"inUse\":\"mp_weapon_agnostic_karambit_primary\"}"}}
+
+============================================================
+
+GAMEPLAY SUMMARY:
+============================================================
+Here’s a frame-by-frame style breakdown of what the clip shows and how it matches the game data:
+
+1) Key actions and events
+- Positioning and assessment: The clip opens with you posted on high ground overlooking a road and buildings. Round 1 is closing, and there are only 5 squads left, so it’s a low-team-count early ring.
+- Banner recovery objective: A teammate’s death box is marked on the road below with a “RECOVER ~56s” timer. You prioritize getting to it.
+- Movement to the box: You drop/slide down the road with melee out, then briefly pull out your primary weapon while approaching the site.
+- Successful banner pickup: You reach the purple death box and recover “DeVayamos’s Banner,” earning “BANNER RECOVERY +75.”
+- Planning a respawn: After recovery, the HUD reminder “Respawn Teammates at Beacons” appears, and a respawn beacon is marked roughly 150 m away. You start rotating back toward that direction as the clip ends.
+- No direct combat: There are no shots taken or visible damage taken in this sequence. You’re moving with purpose, scanning, and securing the banner without engaging.
+
+2) Correlating visuals with the provided game data
+- Weapon in use (API): The API reports inUse: mp_weapon_agnostic_karambit_primary. On-screen, you’re repeatedly holding a karambit/knife in hand between actions. That matches the API exactly—your current equipped item during much of this segment is your melee/Heirloom.
+- Actual loadout seen:
+  - Primary: R-301 Carbine (visible with 18 rounds in the magazine—base mag, no extended).
+  - Secondary: Sentinel (name clearly shown in the weapon HUD).
+- Game phase and state:
+  - Round 1 is closing (timer ~8:27 remaining in the closure window).
+  - Only 5 squads left, which is unusually few for Round 1—implies a fast-paced early game with many teams eliminated.
+  - Season 20+ systems are active: the center-top “PRESS 2 TO UPGRADE” prompt indicates you’ve earned a Legend Upgrade choice and haven’t selected it yet. Bottom-left also shows EVO progress readouts like “NEXT LVL … EVO.”
+- Team status:
+  - One teammate (ShadowLü) is alive.
+  - One teammate (DeVayamos) is eliminated; their banner is recovered in this sequence.
+  - Your own legend upgrade level indicator shows you’re not maxed; your teammate ShadowLü appears to be at upgrade level 4.
+
+3) Important moments: combat, looting, movement, team interactions
+- Movement: Controlled drop/slide from high ground to the roadway to reach the box quickly; you keep melee out much of the time for better FOV and nimbleness.
+- Looting: Minimal—this is a banner-only grab. You do not rummage through the box; you immediately take the banner and prepare to rotate.
+- Team interactions:
+  - You respond to the “RECOVER” ping and complete it.
+  - After recovery, the team objective shifts to a respawn; the HUD reminder appears and a beacon 120–150 m away is marked.
+- Combat: None. There are some visual streaks/lines in one frame, but there’s no exchange of fire or hits on you. Kill feed activity is mostly other squads (including ring downs), not your team.
+
+4) Sequence of events and outcome
+- Start: On a rooftop/ledge above a road with Round 1 closing, 5 squads left, upgrade available. Melee (karambit) in hand, matching API.
+- Rotate: You move downhill toward the marked death box. You briefly pull out the R-301 to check the surroundings, then stow back to melee while moving.
+- Banner secured: You reach the purple box on the road and recover DeVayamos’s banner (+75).
+- Next objective: The HUD prompts to respawn at beacons; a beacon ~150 m is marked. You start moving toward that route.
+- Outcome of the clip: Successful banner recovery; no engagements; preparing to respawn the teammate. The respawn itself does not occur before the end of the shown frames.
+
+Notable context and implications
+- With 5 squads left in Round 1, playing for tempo is smart—recovering and respawning quickly could re-establish a full trio for midgame.
+- You have a flexible loadout for mixed ranges (R-301 + Sentinel). If you respawn your teammate, you’ll likely need to escort them to safe loot, so holding the upgrade selection until you’re in cover could be deliberate.
+- The “Press 2 to Upgrade” prompt suggests you can improve your kit/abilities immediately; choosing the right upgrade after the respawn (or while rotating) could be pivotal.
+
+In short: This sequence is a clean, no-risk banner recovery with melee out to move quickly, a quick confirm of surroundings with the R-301, and a transition toward a nearby respawn beacon—fully consistent with the API showing the karambit in use.

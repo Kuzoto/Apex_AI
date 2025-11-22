@@ -1,0 +1,51 @@
+Log File: sample_data\collection_20251119_165030\log_test.txt
+Frames Folder: sample_data\collection_20251119_165030\frames
+Number of Frames: 9
+Log Size: 1550 characters
+Model: gpt-5
+
+
+============================================================
+TOKEN USAGE STATISTICS:
+============================================================
+Prompt tokens: 1,194
+Completion tokens: 4,061
+Total tokens: 5,255
+
+============================================================
+
+Here’s a clear, chronological recap of the endgame sequence, combining the event log with what’s visible in the screenshots:
+
+Match context
+- Squads remaining: 2 (final fight).
+- Your squad: all three teammates alive (ShadyDreaXD, MAX LEVEL/you, and ce0skey).
+- Kills/assists (you): 4 kills, 0 assists (as shown in the match tab).
+- Mode/UI: You earned a free upgrade during the fight (press Z prompt visible), and one inventory stack updated to 44 units (exact item type not identified in the log).
+
+Key sequence of events
+1) Knock and finisher on StatisticSharpshooter
+- You fought an enemy named StatisticSharpshooter, landing multiple hits:
+  - 13 damage to armor.
+  - 13 damage to flesh (no armor).
+  - Two headshot pellet hits for 16 damage each (no armor).
+- This engagement culminated in a knock, and you performed a Finisher on StatisticSharpshooter (FINISHER +100 banner visible). The death box prompt appears right after, confirming the elimination.
+- Your kill count reached 4.
+
+2) Continued pressure on the last squad
+- Immediately after the finisher, you kept pushing the remaining enemy(ies).
+- Weapon in hand: EVA-8 (9 in mag, 62 reserve shown).
+- You landed several close-to-mid range shots:
+  - Close-range shots for 52 and 65 (shotgun body hits).
+  - Follow-up ADS shots at a bit more distance for 32 and 48.
+- Teammates remained up and nearby, helping to apply pressure.
+
+Damage progression
+- Your personal damage increased steadily during this sequence:
+  - 831 → 844 → 857 → 870 → 896 → 912 → 957 (net +126 during this endgame exchange).
+- The match tab damage value climbed in step with this (899 → 912 → 964 → 1025).
+- Logged hits specifically to StatisticSharpshooter account for at least 58 of that (13 armor + 13 flesh + 16 + 16), with the remaining increase coming from the additional shotgun hits shown in the screenshots.
+
+End state at the last screenshot
+- Two squads still left (yours vs. the last team).
+- Your squad remains fully alive.
+- You’ve just connected more damage (up to 48 on the last visible target) and are poised to continue the push as the ring timer ticks down. The match has not concluded yet in the provided images/logs.

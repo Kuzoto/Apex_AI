@@ -1,0 +1,70 @@
+Video: sample_data\collection_20251119_165009\gameplay_recording.mp4
+Log: sample_data\collection_20251119_165009\log_test.txt
+Number of Frames: 8
+Model: gpt-5
+
+
+============================================================
+TOKEN USAGE STATISTICS:
+============================================================
+Prompt tokens: 820
+Completion tokens: 5,416
+Total tokens: 6,236
+
+============================================================
+
+GAME EVENTS DATA:
+============================================================
+{"match_info":{"teammate_1":"{\"name\":\"DevDynamo\",\"state\":\"alive\"}"}}
+{"me":{"inventory_1":"{\"name\":\"unknown_170\",\"amount\":\"23\"}"}}
+{"events":[{"name":"damage","data":"{\r\n  \"targetName\": \"CoefficientConqueror\",\r\n  \"damageAmount\": \"20.000000\",\r\n  \"armor\": \"false\",\r\n  \"headshot\": \"false\"\r\n}"}]}
+{"match_info":{"tabs":"{\"kills\":3,\"assists\":0,\"teams\":2,\"players\":null,\"damage\":696,\"cash\":null}"}}
+
+============================================================
+
+GAMEPLAY SUMMARY:
+============================================================
+Here’s what the video frames show and how they line up with the provided game data.
+
+1) Key actions/events shown in the video
+- Endgame context: You’re in the final fight (2 squads left). The environment and UI elements indicate Olympus.
+- Weapon and legend: You’re playing Valkyrie and using a Sentinel sniper rifle (prompt shows “E to charge” for the Sentinel).
+- Opening posture: You’re holding a tight angle from behind cover near a yellow silo/pipe assembly, ADS with the Sentinel. The HUD shows a reload prompt at times, suggesting the mag is empty or nearly empty.
+- Big damage swing: You land a 70-damage body shot that cracks an enemy Seer’s shields (“Enemy shield broken – Seer” appears).
+- Return fire and low shields: You immediately take return fire and your own shields get broken. The “Your shields are low” tip pops up.
+- Heal decision/cancel: You start a Phoenix Kit (red progress animation visible), then cancel it to re-peek as pressure continues.
+- Continued pressure: You try to re-engage with the Sentinel while the enemy is on flesh, but the “Reload” prompt appears, delaying a follow-up shot.
+- Team positioning: Teammate ShadyCloud74 pushes up the left side of the yellow silo to take space; DevDynamo remains alive and positioned elsewhere providing presence.
+
+2) Correlating visuals with the game data
+- Teams remaining: The HUD’s “2 squads left” matches the API tabs field showing teams: 2.
+- Player performance: Tabs show kills: 3, damage: 696. Visually, you crack an enemy Seer for 70 with the Sentinel in this sequence, consistent with ongoing late-game damage accumulation around that 696 mark.
+- Damage event: The API logs a 20 flesh hit to “CoefficientConqueror” (armor: false, headshot: false). In the frames, we specifically see a 70 shield-break on a Seer and subsequent flesh pressure. That 20 flesh event likely occurred in this same endgame exchange (not explicitly visible in these stills) as you took follow-up shots/trades after breaking armor.
+- Teammates: The API lists DevDynamo as alive, which matches the HUD (both teammates are up; ShadyCloud74 is visibly pushing).
+- Inventory alignment: API shows an item “unknown_170” with amount 23. On-screen, your Sentinel shows 51 sniper ammo in reserve; “unknown_170” is consistent with an ammo-type count. You also visibly have and initiate a Phoenix Kit (consumables present).
+- Weapon state: The UI repeatedly prompts “Reload,” consistent with the Sentinel’s limited mag and your timing around peeks. The “E to charge” prompt indicates the Sentinel isn’t charged for boosted shots.
+
+3) Important moments (combat, looting, movement, team interactions)
+- Combat:
+  - Sentinel 70 body shot that breaks a Seer’s shields (key momentum shift).
+  - You get cracked in return; immediate risk management follows.
+- Healing:
+  - Start a Phoenix Kit to reset both health and shields, then cancel to avoid getting caught mid-heal as the enemy threatens your angle.
+- Movement/positioning:
+  - Tight shoulder peeks from hard cover along the yellow rail/silo to minimize exposure.
+  - Teammate ShadyCloud74 advances to apply pressure from a new angle; you maintain anchor/cover fire.
+- Team dynamics:
+  - Clear role split: you anchor with long-range pressure while a teammate pushes to capitalize on the armor crack. DevDynamo remains alive, ready to contribute from another angle.
+
+4) Sequence of events and overall outcome
+- Sequence:
+  1) Hold angle with Sentinel, low on/empty mag (reload prompt appears).
+  2) Peek and land a 70-damage body shot, cracking a Seer’s shields.
+  3) Take return fire; your shields break.
+  4) Begin Phoenix Kit to fully reset; cancel mid-use due to enemy pressure.
+  5) Re-peek for follow-up on a now-flesh enemy; the Sentinel needs a reload, slowing the finish.
+  6) ShadyCloud74 pushes the left side to pressure/collapse on the cracked target; DevDynamo stays up.
+- Outcome:
+  - The final result of the fight isn’t shown in these frames. No confirmed knock/finish is visible here, but your team has the initiative (broken enemy armor, numbers advantage intact) heading into the closing moments of the last-squad engagement.
+
+In short: This is a final-circle skirmish on Olympus where you, as Valkyrie with an uncharged Sentinel, crack a Seer with a 70 body shot, get cracked in return, briefly commit to a Phoenix then cancel to keep pressure, while a teammate pushes off your damage. The API data aligns with two squads left, your current stat line (3 kills, 696 damage), an earlier/adjacent 20 flesh hit on a different enemy, and your team’s alive status heading into the decisive exchange.

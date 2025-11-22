@@ -1,0 +1,60 @@
+Video: sample_data\collection_20251119_165040\gameplay_recording.mp4
+Log: None
+Number of Frames: 153
+Model: gpt-5
+
+
+============================================================
+TOKEN USAGE STATISTICS:
+============================================================
+Prompt tokens: 10,755
+Completion tokens: 4,235
+Total tokens: 14,990
+
+============================================================
+
+GAMEPLAY SUMMARY:
+============================================================
+Here’s a clear, play-by-play of what’s happening across the frames, plus the key context and details I can read from the HUD.
+
+Context
+- Mode/state: Battle Royale with only 2 squads left (your team vs. the last team). Round 2 is underway.
+- Map/POI: An Olympus-style area (sleek buildings, pink blossom trees, elevated walkways).
+- Combat environment: You’re fighting inside a Seer Exhibit (the orange lattice dome that reveals movement). There’s also an Arc Star detonation in the sequence that blinds and slows you briefly.
+- Your loadout across the sequence: R-301 (low light ammo), Sentinel (you charge it), then Bocek Bow.
+- Team: Your two teammates are nearby and active in the fight, one positioned to your right holding cover.
+
+Timeline and key events
+1) Close-quarters scramble
+- An enemy Bloodhound rushes you at point-blank while you’re mid-weapon swap/handling (Sentinel in hand initially).
+- The Seer ult is up, so everyone inside is being tracked.
+- An Arc Star goes off very close to you (white-out flash and stun), and you take chip damage. You’re already in a low-health state (cracked red vignette).
+
+2) Immediate counter with the R-301
+- You swap to the R-301 (18 rounds in mag, light ammo “LOW AMMO” warning appears later).
+- The Bloodhound tries to disengage left, but you land controlled shots and finish the last sliver of their health.
+- You inflict 162 total in the exchange and knock them.
+
+3) Thirst to secure the KP and deny the res
+- The Bloodhound crawls; you immediately thirst them with more R-301 shots (you can see 26/39/65/78/107 damage ticks as you finish them off).
+- The feed shows the elimination of “Statisticssharpshooter,” confirming they’re out. “Eliminated …” indicator stays on-screen while you reload and reposition.
+
+4) Stabilize and reposition
+- You’re still low health with red crack effects onscreen, so you back off the edge to safer high ground and reload.
+- You check the lower lane (forklift and crates area) for additional enemies.
+- You charge the Sentinel (E to Charge appears; you perform the two-cell charge animation).
+
+5) Set up for the next peek
+- Low light ammo on the R-301 prompts a swap to your long-range options:
+  - You shoulder the Sentinel to cover long lanes.
+  - Then switch to the Bocek Bow and draw/hold an angle near the blue pipe cover, anticipating a wide peek from the remaining enemy(ies).
+- Teammate to your right holds another angle. You maintain overwatch on the lane with the box and “KEEP CLEAR” marking, ready for the final fight.
+
+Other relevant details
+- The Seer Exhibit dome affects the entire opening skirmish, so movement is being tracked; you choose not to smoke, phase, or disengage—opting to hold your ground and win the 1v1 instead.
+- The Arc Star detonation does not lead to a push wipe; you recover composure quickly and punish the retreating Bloodhound.
+- Ammo pressure is real: the R-301 is low on light ammo, so your late-fight weapon choices (Sentinel charge, then Bocek) are good resource management while you wait for an opening or a loot opportunity.
+- Team presence: One teammate is very close (right side behind orange cover) and appears to secure another down/finish in the feed while you secure yours, suggesting your squad is winning trades across the map edge.
+
+Summary in one line
+You win a tight, last-squads, CQB duel inside a Seer ult—eat an Arc Star, swap to R-301 to knock and thirst a Bloodhound, then reload, charge the Sentinel, and transition to the Bocek to hold angles and set up for the remaining enemy in the final fight.

@@ -1,0 +1,50 @@
+Log File: sample_data\collection_20251119_164949\log_test.txt
+Frames Folder: sample_data\collection_20251119_164949\frames
+Number of Frames: 3
+Log Size: 156 characters
+Model: gpt-5
+
+
+============================================================
+TOKEN USAGE STATISTICS:
+============================================================
+Prompt tokens: 332
+Completion tokens: 4,010
+Total tokens: 4,342
+
+============================================================
+
+Here’s a concise, event-by-event recap of the match based on the log and the screenshots.
+
+Overall stats
+- Final tally (from log): 3 kills, 0 assists, 626 damage
+- Squads remaining: dropped to the final 2
+- Weapons used: Sentinel sniper (actively in use late), plus an R-301 Carbine
+- Location focus: Gravity Engine (Olympus)
+- Team: full 3-stack visible and up in all shown moments
+
+Sequence of events
+1) Mid-game setup (Round 2, 3 squads left)
+   - Your squad is rotating around Gravity Engine, using cover on the edge of a building/rock outcrop.
+   - A teammate pings a mobile respawn beacon (indicating loot awareness/utility planning).
+   - You have the R-301 out while moving and holding angles. Three squads remain at this point.
+
+2) Taking high ground and spotting the next fight (Round 2, ring closing soon)
+   - You move onto the Gravity Engine upper platform/catwalks overlooking the choke.
+   - An enemy is pinged at roughly 68 meters.
+   - You swap to the Sentinel and prep to take long-range shots (Deadeye’s Tempo charge prompt visible), setting up for a ranged engagement.
+
+3) Engagement and eliminations
+   - From the high ground, you begin the fight with the Sentinel and mix in the R-301 for follow-up/closer-range pressure.
+   - Across these engagements you secure 3 confirmed kills and 0 assists, totaling 626 damage. With 0 assists, your eliminations appear to come from your own knocks converting into kills.
+   - Your EVO tracker indicates you’re working toward the next armor tier during this stretch (progress visible in the HUD).
+
+4) Final circle setup (2 squads left)
+   - The lobby drops from 3 to 2 squads while you’re still at Gravity Engine during Round 2’s close.
+   - An enemy is pinged again at about 50 meters as you line up with the Sentinel for the final showdown.
+   - Your team remains a full trio at this point; no downs are shown in the captured moments.
+
+What this indicates
+- You carried the mid-to-late transition with impactful picks: three kills for 626 damage suggests clean, high-value engagements (finishing your own knocks).
+- Smart positioning: high ground at Gravity Engine, good sightlines with the Sentinel, and readiness to swap to the R-301 when pushing/holding closer angles.
+- Strong endgame setup: reaching the final two squads with your entire team alive as Round 2 is closing, poised to take the last fight.

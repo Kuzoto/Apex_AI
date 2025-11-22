@@ -1,0 +1,85 @@
+Video: sample_data\collection_20251119_164929\gameplay_recording.mp4
+Log: sample_data\collection_20251119_164929\log_test.txt
+Number of Frames: 4
+Model: gpt-5
+
+
+============================================================
+TOKEN USAGE STATISTICS:
+============================================================
+Prompt tokens: 911
+Completion tokens: 5,252
+Total tokens: 6,163
+
+============================================================
+
+GAME EVENTS DATA:
+============================================================
+{"me":{"inUse":"{\"inUse\":\"Sentinel\"}"}}
+{"match_info":{"tabs":"{\"kills\":2,\"assists\":0,\"teams\":4,\"players\":null,\"damage\":476,\"cash\":null}"}}
+{"me":{"inUse":"{\"inUse\":\"R-99\"}"}}
+{"me":{"totalDamageDealt":"515"}}
+{"me":{"totalDamageDealt":"528"}}
+{"me":{"totalDamageDealt":"541"}}
+{"me":{"totalDamageDealt":"554"}}
+{"events":[{"name":"damage","data":"{\r\n  \"targetName\": \"SequenceSlayer\",\r\n  \"damageAmount\": \"13.000000\",\r\n  \"armor\": \"false\",\r\n  \"headshot\": \"false\"\r\n}"}]}
+{"events":[{"name":"damage","data":"{\r\n  \"targetName\": \"SequenceSlayer\",\r\n  \"damageAmount\": \"13.000000\",\r\n  \"armor\": \"false\",\r\n  \"headshot\": \"false\"\r\n}"}]}
+{"me":{"totalDamageDealt":"593"}}
+{"match_info":{"tabs":"{\"kills\":2,\"assists\":0,\"teams\":4,\"players\":null,\"damage\":567,\"cash\":null}"}}
+{"events":[{"name":"damage","data":"{\r\n  \"targetName\": \"SequenceSlayer\",\r\n  \"damageAmount\": \"13.000000\",\r\n  \"armor\": \"false\",\r\n  \"headshot\": \"false\"\r\n}"}]}
+{"me":{"totalDamageDealt":"619"}}
+{"me":{"totalDamageDealt":"632"}}
+{"events":[{"name":"damage","data":"{\r\n  \"targetName\": \"SequenceSlayer\",\r\n  \"damageAmount\": \"10.000000\",\r\n  \"armor\": \"false\",\r\n  \"headshot\": \"false\"\r\n}"}]}
+{"me":{"totalDamageDealt":"655"}}
+{"match_info":{"tabs":"{\"kills\":3,\"assists\":0,\"teams\":3,\"players\":null,\"damage\":626,\"cash\":null}"}}
+{"me":{"inventory_4":"{\"name\":\"unknown_166\",\"amount\":\"64\"}"}}
+{"me":{"inventory_10":"{}"}}
+{"me":{"inUse":"{\"inUse\":\"Health/Shield\"}"}}
+
+============================================================
+
+GAMEPLAY SUMMARY:
+============================================================
+Here’s what the footage and the captured game data together show.
+
+1) What happens in the video frames
+- Position and context: You’re on Olympus (pink cherry trees visible), holding an angle down a Pathfinder zipline lane from cover beside a structure/rock face. Round 1 is closing, and only 4 squads remain.
+- Weapon in hand: Sentinel. The HUD shows “Hold T to Charge,” meaning you could amp the next shot with a shield cell. Your stowed secondary is an R-99 with an 18‑round mag (base magazine).
+- Squad state: Both teammates are dead; you’re carrying their banners. The center/right HUD shows “Respawn Teammates at Beacons,” and a teammate/you have pinged a respawn beacon ahead (green beacon icon visible at distance).
+- Under fire: While ADSing down the zipline corridor, you take return fire (screen flash/red vignette, third frame), forcing you to break aim and work the action on the Sentinel (reload/cycle shown in the fourth frame). You’re holding position and trying to keep the lane contested while also looking for a safe window to rotate toward a beacon.
+
+2) Correlation with the game data
+- Weapons used:
+  - Visuals: Sentinel is used throughout these frames; the HUD shows the stowed R-99 with 18 in the mag.
+  - Data stream: After these frames, the API shows you swapped to the R‑99 (“inUse”: “R-99”) and then later to “Health/Shield.”
+- Damage and kills progression:
+  - Match tab initially: 2 kills, 476 damage, 4 squads left.
+  - Total damage ticks in the feed: 515 → 528 → 541 → 554 → 593 → 619 → 632 → 655.
+  - Event log: Multiple flesh hits on “SequenceSlayer” for 13, 13, 13, and 10 (armor: false, headshot: false), which fits a close‑range SMG cleanup after the Sentinel peek didn’t finish them.
+  - Match tab updates later to 3 kills, 626 damage, squads drop from 4 to 3 — consistent with you securing a down/finish and/or contributing to a squad being eliminated.
+- Game phase:
+  - The overlay says “Round 1 – Closing,” which matches the early ring, but the lobby is already very thinned out (4→3 squads).
+- Inventory:
+  - Inventory_4: “unknown_166” amount 64 — likely a stack of Light Rounds (fits the R‑99).
+  - Inventory_10: empty ({}).
+  - After the skirmish, “inUse: Health/Shield” indicates you started healing/shielding (also consistent with having just taken damage in the frames and with Sentinel’s “charge” mechanic consuming shield cells if you chose to use it).
+
+3) Key moments (combat, looting, movement, team interactions)
+- Combat:
+  - Long‑range lane hold with the Sentinel while watching a zipline approach.
+  - You take significant return fire mid‑peek (visible damage), disengage the scope, and cycle/reload the Sentinel.
+  - Shortly afterward (beyond the pictured frames), you swap to the R‑99 and land several body shots on an unshielded enemy (SequenceSlayer), indicated by the repeated 13/10 flesh hit events.
+- Movement:
+  - You’re controlling a zipline corridor rather than hard‑pushing — likely because you’re solo with banners and need a safe route.
+- Team interactions:
+  - Both teammates are eliminated; the UI prompt “Respawn Teammates at Beacons” is active.
+  - A respawn beacon is pinged ahead (green marker). The plan appears to be: hold off pressure, win the immediate fight, heal, then look to rotate for a respawn.
+- Looting:
+  - No looting is shown in these frames. The focus is on holding the angle and surviving the return fire.
+
+4) Sequence of events and outcome
+- You start by anchoring a sightline with the Sentinel while solo with both banners, 4 squads left.
+- You get tagged while scoped and break LOS, cycling the Sentinel.
+- Shortly after, you transition to the R‑99 and finish a close‑range engagement, landing multiple flesh hits on SequenceSlayer. Your damage climbs from the 500s into the mid‑600s.
+- Your kill count increases from 2 to 3, and the squads drop from 4 to 3, suggesting you secured or contributed to an elimination.
+- You then begin healing/shielding (per “inUse: Health/Shield”). The footage stops before we see whether you reach the respawn beacon, but your immediate outcome is positive: you win the skirmish, stabilize, and set up for a potential respawn attempt with three squads remaining.

@@ -1,0 +1,44 @@
+Log File: sample_data\collection_20251119_165050\log_test.txt
+Frames Folder: sample_data\collection_20251119_165050\frames
+Number of Frames: 20
+Log Size: 1771 characters
+Model: gpt-5
+
+
+============================================================
+TOKEN USAGE STATISTICS:
+============================================================
+Prompt tokens: 2,062
+Completion tokens: 3,846
+Total tokens: 5,908
+
+============================================================
+
+Here’s a clear, chronological recap of the final fight and match wrap-up based on the logs and screenshots:
+
+- Situation before the final fight
+  - Only 2 squads were left as Ring 2 was closing.
+  - Your whole team of three was alive (all three banners are up in the HUD).
+  - You had a Sentinel and an R-99; your ultimate was available (cooldown 0).
+
+- Opening tags and early damage
+  - You swapped from Sentinel to the R-99 to engage.
+  - You started landing light R-99 hits on an enemy named CosecantCommando (the enemy legend is Fuse, per the killfeed HUD text).
+  - Damage events recorded: 2, 13, 13, 10, 13 (R-99 bullet increments), moving your running total damage from 1090 → 1103 → 1116.
+  - The match tab briefly updated to 5 kills, 0 assists, 1191 damage with 2 squads remaining.
+
+- The decisive spray
+  - You continued to beam the Fuse with the R-99 from cover near the blue container as the ring closed.
+  - Screenshots show cumulative damage numbers stacking rapidly: 13 → 65 → 78 → 101 → 114 → 153.
+  - You cracked Fuse’s shields (Shield Broken – Fuse appears) and kept firing through “LOW AMMO,” emptying the mag as the total landed damage in that sequence reached 153.
+
+- Finishing blow and final stats
+  - Those last R-99 bullets downed and eliminated the final enemy (Fuse), immediately triggering the “YOU ARE THE CHAMPION” banner.
+  - Your personal damage counter advanced through 1168 → 1204 → 1217 → 1230 during this endgame sequence; the match summary finalized at 6 kills, 0 assists, 1276 damage.
+  - Victory was recorded (victory: true, teams dropped from 2 to 1).
+  - After the win, your ultimate showed a small cooldown value (5), indicating it was ticking post-fight.
+
+Key takeaways
+- You closed out the match by swapping to the R-99 and securing the final kill on a Fuse with a sustained spray during Ring 2 closing.
+- Team status remained strong (no downs shown) going into and during the last engagement.
+- Final line: 6 kills, 0 assists, 1276 damage, Champion.

@@ -1,0 +1,64 @@
+Video: sample_data\collection_20251119_165020\gameplay_recording.mp4
+Log: sample_data\collection_20251119_165020\log_test.txt
+Number of Frames: 3
+Model: gpt-5
+
+
+============================================================
+TOKEN USAGE STATISTICS:
+============================================================
+Prompt tokens: 558
+Completion tokens: 5,016
+Total tokens: 5,574
+
+============================================================
+
+GAME EVENTS DATA:
+============================================================
+{"events":[{"name":"damage","data":"{\r\n  \"targetName\": \"CoefficientConqueror\",\r\n  \"damageAmount\": \"70.000000\",\r\n  \"armor\": \"false\",\r\n  \"headshot\": \"false\"\r\n}"}]}
+{"match_info":{"tabs":"{\"kills\":3,\"assists\":0,\"teams\":2,\"players\":null,\"damage\":766,\"cash\":null}"}}
+{"me":{"inUse":"{\"inUse\":\"R-99\"}"}}
+{"events":[{"name":"damage","data":"{\r\n  \"targetName\": \"CoefficientConqueror\",\r\n  \"damageAmount\": \"13.000000\",\r\n  \"armor\": \"false\",\r\n  \"headshot\": \"false\"\r\n}"}]}
+{"match_info":{"tabs":"{\"kills\":3,\"assists\":0,\"teams\":2,\"players\":null,\"damage\":776,\"cash\":null}"}}
+{"me":{"inventory_4":"{\"name\":\"unknown_166\",\"amount\":\"62\"}"}}
+
+============================================================
+
+GAMEPLAY SUMMARY:
+============================================================
+Here’s what the following frames show and how they line up with the captured game data.
+
+1) What happens in the video
+- Opening shot: You peek a rooftop/upper platform and land a clean body shot with a scoped Sentinel on an enemy Seer (target name “CoefficientConqueror”). The hit registers 70 red (flesh) damage. A Seer scan ring is visible, and your “shields low” tip pops up, indicating your shields are broken.
+- Follow‑up and knock: You apply a small follow‑up tag (13 flesh damage) to the same target, which is enough to down them (DBNO). Immediately after, you close distance on the knock.
+- Finisher: You get the “F for FINISHER” prompt on the downed Seer and start the finisher animation. The screen whiteout in the third frame is the finisher transition.
+
+2) Correlation with the game data
+- Damage events: The API logs two damage events on “CoefficientConqueror”: 70 (flesh) and 13 (flesh). That matches the first frame’s 70 body shot and the quick follow‑up to secure the knock.
+- Weapons:
+  - Active weapon on screen is the Sentinel (HUD shows “SENTINEL”). The scoped view and single big damage number (70) fit a Sentinel body shot on flesh.
+  - Your secondary is an R‑99 (small weapon icon with 18 in mag), matching the earlier “inUse: R-99” snapshot from the API—likely from moments before swapping to the Sentinel.
+- Inventory/ammo: The HUD shows 6/62 on the Sentinel. The API shows inventory_4: unknown_166 amount 62, which aligns with having 62 sniper ammo in reserve.
+- Match state:
+  - “2 squads left” in the HUD matches the API’s teams: 2, so you’re in the final fight.
+  - Kills: 3, Assists: 0; Damage: 776. The API’s damage tab moves to 776 after the second event. The exact +10 vs. the 70+13 events is a common timing/desync quirk between per-hit logs and the periodic “tabs” stat refresh, but the end state (776 total) matches the HUD.
+  - Your shields are broken (on-screen tip), which explains choosing to execute a finisher—finishers restore shields in current seasons.
+
+3) Key moments
+- Combat: 
+  - Sentinel opening shot for 70 flesh on a Seer.
+  - Immediate follow‑up hit for 13 to secure the knock.
+- Decision making:
+  - You start a finisher while shields are cracked to replenish shields mid‑fight—high risk/high reward in a 2‑squad endgame.
+- Team interactions:
+  - A teammate is visible nearby and not thirsted or downed, suggesting you have cover/support while you execute the finisher.
+- Positional context:
+  - You’re fighting on a raised platform near large yellow cylindrical structures and pink-leaf trees (an Olympus POI), controlling height in the final engagement.
+
+4) Sequence and outcome
+- Sequence:
+  1) Swap to Sentinel and land a 70 body shot on “CoefficientConqueror” (flesh).
+  2) Tag for 13 more damage to finish the down.
+  3) Close in and trigger a finisher on the downed opponent to restore shields.
+- Outcome:
+  - You secure a knock on the last remaining squad and begin a finisher to recharge shields. The clip ends during the finisher; the final match result isn’t shown, but you’ve gained a significant advantage (one enemy down, shield restore incoming) in a 2‑squad endgame.

@@ -1,0 +1,91 @@
+Video: sample_data\collection_20251119_165050\gameplay_recording.mp4
+Log: sample_data\collection_20251119_165050\log_test.txt
+Number of Frames: 13
+Model: gpt-5
+
+
+============================================================
+TOKEN USAGE STATISTICS:
+============================================================
+Prompt tokens: 1,620
+Completion tokens: 4,615
+Total tokens: 6,235
+
+============================================================
+
+GAME EVENTS DATA:
+============================================================
+{"me":{"ultimate_cooldown":"{\"ultimate_cooldown\":\"0\"}"}}
+{"me":{"inUse":"{\"inUse\":\"Sentinel\"}"}}
+{"me":{"inUse":"{\"inUse\":\"R-99\"}"}}
+{"me":{"totalDamageDealt":"1090"}}
+{"me":{"totalDamageDealt":"1103"}}
+{"me":{"totalDamageDealt":"1116"}}
+{"events":[{"name":"damage","data":"{\r\n  \"targetName\": \"CosecantCommando\",\r\n  \"damageAmount\": \"2.000000\",\r\n  \"armor\": \"false\",\r\n  \"headshot\": \"false\"\r\n}"}]}
+{"events":[{"name":"damage","data":"{\r\n  \"targetName\": \"CosecantCommando\",\r\n  \"damageAmount\": \"13.000000\",\r\n  \"armor\": \"false\",\r\n  \"headshot\": \"false\"\r\n}"}]}
+{"match_info":{"tabs":"{\"kills\":5,\"assists\":0,\"teams\":2,\"players\":null,\"damage\":1191,\"cash\":null}"}}
+{"events":[{"name":"damage","data":"{\r\n  \"targetName\": \"CosecantCommando\",\r\n  \"damageAmount\": \"13.000000\",\r\n  \"armor\": \"false\",\r\n  \"headshot\": \"false\"\r\n}"}]}
+{"me":{"totalDamageDealt":"1168"}}
+{"events":[{"name":"damage","data":"{\r\n  \"targetName\": \"CosecantCommando\",\r\n  \"damageAmount\": \"10.000000\",\r\n  \"armor\": \"false\",\r\n  \"headshot\": \"false\"\r\n}"}]}
+{"events":[{"name":"damage","data":"{\r\n  \"targetName\": \"CosecantCommando\",\r\n  \"damageAmount\": \"13.000000\",\r\n  \"armor\": \"false\",\r\n  \"headshot\": \"false\"\r\n}"}]}
+{"me":{"totalDamageDealt":"1204"}}
+{"me":{"totalDamageDealt":"1217"}}
+{"me":{"totalDamageDealt":"1230"}}
+{"match_info":{"tabs":"{\"kills\":6,\"assists\":0,\"teams\":2,\"players\":null,\"damage\":1276,\"cash\":null}"}}
+{"match_info":{"victory":"true"}}
+{"match_info":{"tabs":"{\"kills\":6,\"assists\":0,\"teams\":1,\"players\":null,\"damage\":1276,\"cash\":null}"}}
+{"me":{"inventory_9":"{}"}}
+{"me":{"ultimate_cooldown":"{\"ultimate_cooldown\":\"5\"}"}}
+
+============================================================
+
+GAMEPLAY SUMMARY:
+============================================================
+Here’s a detailed breakdown of what happens in the closing moments of the match, tying the on-screen action to the telemetry you provided.
+
+1) Key actions and events in the video
+- Endgame setup (2 squads left): The squad is in Olympus-style industrial terrain (cherry blossoms visible), taking cover around a blue cargo bin and the adjacent platform/walkway. You initially hold a long‑angle with the Sentinel, then prepare to push.
+- Weapon swap for the close: You switch from the Sentinel to the R‑99 as you move up to the right‑side cover, clearly anticipating a close‑quarters finish. The HUD flashes “LOW AMMO” on the R‑99 (18 in mag, 17 reserve).
+- Team pressure and pings: A teammate pings the final enemy’s position up on/near the structure (visible marker on the walkway). A blue circular field/zone (a defensive/utility ability) is active nearby as your team holds ground and edges forward.
+- Last damage and cleanup: You chip the final opponent with multiple small flesh hits (no armor) using the R‑99. The kill feed shows your teammate “cookies” eliminating an enemy (“StatisticalSharpshooter”), and moments later the round ends in your squad’s favor.
+- Ring timing: “RING CLOSING” appears as the final exchanges resolve—your team wins as the zone closes.
+- Win screen: “YOU ARE THE CHAMPION” banner fills the screen. A system message “LOOT BINS AND ARSENALS RESET” displays afterward (post-match/system messaging).
+
+2) Correlation with the game data
+- Weapons used:
+  - Telemetry confirms inUse: Sentinel, then inUse: R‑99, matching the footage (you’re aiming the Sentinel first, then swap to the R‑99 for the push).
+- Damage events:
+  - The damage logs show small, non-armor hits on “CosecantCommando”: 2, 13, 13, 10, 13 (all armor: false, headshot: false). These are consistent with close‑range SMG body shots as you finish the last fight.
+  - Total damage increments track this sequence: your totalDamageDealt climbs through 1090 → 1103 → 1116 → 1168 → 1204 → 1217 → 1230, then the match tab updates to 1276 by the end, reflecting the full final skirmish damage.
+- Match progression:
+  - tabs moves from kills: 5 to kills: 6 near the end, aligning with the final engagement and the last enemy going down.
+  - teams drops from 2 to 1 with victory: true—this aligns with the Champion banner.
+- Inventory:
+  - inventory_9: {} indicates an empty slot (likely a consumable/grenade slot empty), which fits the late‑game resource strain; the HUD also shows “LOW AMMO” on the R‑99 (18/17).
+- Ultimate:
+  - ultimate_cooldown is 0 during the endgame (available), then reads 5 right after victory—likely a post‑match state change captured by the API rather than in-combat usage (no clear ultimate use is visible on-screen).
+
+3) Important moments identified
+- Combat:
+  - Final close‑range engagement handled with the R‑99, delivering a string of flesh hits to finish out the last opponent.
+  - Teammate contribution is visible in the kill feed (cookies secures a pick right before the win).
+- Movement and positioning:
+  - You transition from a long‑range hold (Sentinel) to aggressive cover play at the blue bin and the wall, setting up a safe angle for the R‑99.
+- Utility/abilities:
+  - A blue circular field is active near your push route—likely a defensive/utility zone aiding your team’s hold as the ring closes.
+- Resource management:
+  - Low light ammo on the R‑99 forces a measured, controlled finish (you don’t dump the mag; you take brief peeks and chip shots).
+- Team interactions:
+  - Active pings mark the last enemy’s position.
+  - Teammates maintain crossfire/pressure, evidenced by the kill feed and their positions up by the structure.
+
+4) Sequence of events and outcome
+- With 2 squads left in Round 2, you hold a sightline with the Sentinel, then rotate to close cover.
+- You swap to the R‑99 for the impending close‑range fight, despite low ammo.
+- Teammate “cookies” secures a crucial elimination (seen in the kill feed), reducing the last squad’s numbers.
+- You land a series of R‑99 flesh hits on “CosecantCommando” (2, 13, 13, 10, 13) as the ring begins to close.
+- Your total damage climbs to 1276, kills tick up from 5 to 6, and the last squad is wiped.
+- The game ends with “YOU ARE THE CHAMPION.”
+- Final telemetry summary: victory: true; tabs: kills 6, assists 0, damage 1276, teams 1. Ultimate transitions to a small cooldown value post‑match; one inventory slot shows empty, consistent with a tight endgame.
+
+Overall: You and your squad play the final ring patiently, switch roles from long‑range to CQC at the right moment, manage low ammo carefully, and, with a timely teammate pick plus your own finishing shots, close out the win cleanly.

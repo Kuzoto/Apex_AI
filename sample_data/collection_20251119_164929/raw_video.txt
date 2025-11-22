@@ -1,0 +1,51 @@
+Video: sample_data\collection_20251119_164929\gameplay_recording.mp4
+Log: None
+Number of Frames: 159
+Model: gpt-5
+
+
+============================================================
+TOKEN USAGE STATISTICS:
+============================================================
+Prompt tokens: 11,175
+Completion tokens: 3,759
+Total tokens: 14,934
+
+============================================================
+
+GAMEPLAY SUMMARY:
+============================================================
+Here’s a concise, play-by-play of the sequence shown in the frames:
+
+Setting and status
+- Map context looks like Olympus. Round 1 is closing (timer drops from ~9:17 to ~8:29 across the sequence).
+- Squads remaining hover around 4–5.
+- Your squad is full (all three alive). You’re on Blue (Level 2) Evo with 324 damage needed to level up.
+- A Pathfinder zipline is strung across the lane in front of you.
+
+Pre-fight positioning and prep
+- You hold a mid-range angle with a Sentinel and start the “Charge” animation (spending a Shield Cell to energize it for bonus damage).
+- While charging, you take incoming fire (red vignette, shield damage). You tuck into cover near a pillar and complete the Sentinel charge.
+
+Weapon swap and engagement
+- Spotting an enemy peeking from a small boulder at bearing ~205°, you switch off the Sentinel to your SMG (looks like the CAR SMG with a 1x HCOG “Classic”).
+- You ADS and commit to the duel, tracking the target’s head-glitch on the rock.
+
+Damage and knock
+- You beam the opponent, stacking hits rapidly (damage ticks climb 13 → 26 → 39 → 65 → 78 → 91 → 117 → 130 → 140 → 153).
+- “Enemy Shield Broken” pops; you finish the flesh damage and secure the knock: “KNOCKED DOWN SEQUENCESSLAYER +150 (153 DAMAGE INFLICTED).”
+
+Fight outcome
+- Immediately after the knock, “SQUAD WIPE +100” appears — your knock eliminates the last member of that enemy team.
+- You receive the banner: “YOU ARE THE NEW KILL LEADER,” showing Kills: 3.
+
+Post-fight recovery
+- Still low on shields, you rotate to a cargo crate for cover and start healing with Shield Cells.
+- Teammates remain up and nearby; a Respawn Beacon is ~125m away if needed for later.
+- The ring continues closing; the kill feed shows other squads exchanging knocks elsewhere.
+
+Key takeaways
+- You smartly abandoned the sniper plan under pressure, finished the Sentinel charge from cover, then swapped to SMG for the close/mid-range duel.
+- Clean tracking and pressure from a safe head-glitch-breaking angle yielded a fast shield break and knock.
+- That knock concluded the fight (full squad wipe) and elevated you to Kill Leader with three kills.
+- You immediately transitioned to resource management (shielding) and maintained cover, preserving advantage as Round 1 continued to close.

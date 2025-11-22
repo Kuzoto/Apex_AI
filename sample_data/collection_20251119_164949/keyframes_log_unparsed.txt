@@ -1,0 +1,95 @@
+Video: sample_data\collection_20251119_164949\gameplay_recording.mp4
+Log: sample_data\collection_20251119_164949\log_test.txt
+Number of Frames: 19
+Model: gpt-5
+
+
+============================================================
+TOKEN USAGE STATISTICS:
+============================================================
+Prompt tokens: 1,500
+Completion tokens: 5,703
+Total tokens: 7,203
+
+============================================================
+
+GAME EVENTS DATA:
+============================================================
+{"me":{"inUse":"{\"inUse\":\"Sentinel\"}"}}
+{"match_info":{"tabs":"{\"kills\":3,\"assists\":0,\"teams\":2,\"players\":null,\"damage\":626,\"cash\":null}"}}
+
+============================================================
+
+GAMEPLAY SUMMARY:
+============================================================
+Here’s a detailed, frame-by-frame synthesis of what’s happening in the clip and how it lines up with the provided API data.
+
+High-level overview
+- Location: Olympus, Gravity Engine POI.
+- Legend: You’re playing Octane (stim icon visible).
+- Armor: Blue Evo (Level 2), “NEXT LVL: 32 EVO” shows you’re 32 damage from purple.
+- Squad: Full trio at the time of these frames; a teammate pings a Mobile Respawn Beacon, suggesting a recent or potential respawn.
+- Ring state: Starts during Round 1 closing, then most of the action happens as Round 2 is closing (~55 seconds on the timer).
+- Loadout across the sequence:
+  - Long-range: Sentinel (with Deadeye’s Tempo prompt) for scouting/pokes.
+  - Mid-range: Bocek Compound Bow (28 arrows, also using Deadeye’s Tempo).
+  - Close-range: SMG with 1x Digital Threat (likely R-99 or C.A.R.) with 18 in mag, 64 reserve.
+
+Key actions and events (chronological)
+1) Early positioning (Frames 1, 12–20)
+- You’re posted on the outskirts near the Gravity Engine structure, using cover by the corner building and catwalks. The HUD shows 5 squads left at first, and “Round 1 – closing.”
+- You ready an SMG for near‑to‑mid engagements, then briefly switch between angles, lining up a route to push in on the left-side railings and boxes.
+
+2) Long-range scouting with Sentinel (Frames 2–4)
+- As Round 2 is closing (timer ~0:55), you ADS with a long-range scope on the Sentinel, ranging targets at ~90m inside the building. You briefly de-scope and reload/ready the rifle (ammo appears to be partially spent).
+- The Deadeye’s Tempo/charge prompt appears on screen, indicating the Sentinel’s charge mechanic is available.
+
+3) Mid-range pressure with the Bocek Bow (Frames 5–9)
+- You swap from the Sentinel to a Bocek (28 arrows), repeatedly drawing on targets at 71–66 meters. The Deadeye’s Tempo prompt persists, now relevant to the Bocek’s fire rhythm.
+- You strafe and micro-adjust angles while holding draw, looking to capitalize on mid-range poke damage.
+- This phase signals a shift in intent: after scouting with the Sentinel, you commit to consistent ranged chip with the Bocek.
+
+4) Enemy defensive cooldown and close-range prep (Frames 10–11)
+- A Gibraltar Dome Shield goes down near the enemy’s position (blue bubble), which blocks your lines of sight and likely covers their heal/res.
+- You swap to your close-range SMG with a 1x Digital Threat (18 in mag, 64 reserve), signaling a push is coming once they’re stuck behind the dome or once it expires.
+- Around here, the feed/hud shows the lobby thinning fast. In one frame, the top-right indicator shows a drop to 2 squads left (matching the API data’s teams: 2).
+
+5) Push/rotation to better angles (Frames 12–20)
+- You move from the exterior corner onto the catwalk/rail path, using boxes and railing head-glitches for cover while keeping the SMG out for a close-range fight.
+- You consistently peek toward the central Gravity Engine platform and the front of the building, setting up a collapse once the dome and distance advantages fade.
+- The ring state shows Round 2 closing/countdown continuing; by the final frame the ring timer is refreshed at 0:59 for Round 2 (indicating a transition in ring state or a snapshot just after a close).
+
+Correlating with the API data
+- me.inUse: “Sentinel”
+  - Matches the mid-clip usage where you ADS and scout/poke with a long-range optic. You then transition to the Bocek and finally to an SMG as you close distance.
+- match_info.tabs: kills 3, assists 0, damage 626, teams 2
+  - The frames themselves don’t show the kill count pop-ups, but you are clearly in late game: the HUD shows 5 squads at first and then drops rapidly, with an explicit “2 squads left” during the Bocek/SMG phase (consistent with “teams: 2”).
+  - 626 damage and 3 kills indicate you were impactful—likely landing solid poke with the Sentinel/Bocek and cleaning up at closer ranges. The Blue Evo needing only 32 damage to level up to purple fits with sustained mid-range pokes that stacked damage.
+
+Important moments identified
+- Combat:
+  - Long-range Sentinel scouting and potential tags at ~90m.
+  - Sustained Bocek pressure at 66–71m, leveraging Deadeye’s Tempo for faster follow-up shots.
+  - Enemy Gibraltar Dome appears—clear sign of defensive reset/heal or cover to disengage.
+  - Weapon swap to SMG with Digi-Threat—preparing to capitalize at close range and to track enemies through smoke/cover if needed.
+- Movement:
+  - Careful lane control from the outer corner to the catwalk/rail, taking high-ground angles and hard cover near the boxes.
+  - Intentional angle shifts to maintain LOS while the enemy dome is active.
+- Team interactions:
+  - Teammate pinged a Mobile Respawn Beacon (top-right message), suggesting awareness of respawn options—likely because a teammate was downed earlier or to ensure safety in late game.
+  - Trio remains coordinated; no explicit revives are shown in these frames, but the ping hints at contingency planning.
+- Looting:
+  - No looting is shown in these frames—focus is entirely on positioning, poking, and preparing a push.
+
+Sequence and outcome
+- Sequence: You begin with safe, long-range info gathering (Sentinel), transition into mid-range chip (Bocek), trigger/observe an enemy Gibraltar Dome, and then rotate in with an SMG and Digi-Threat to set up a close-quarters collapse.
+- Outcome visible in frames: The clip ends just as you’re moving into a strong close-range angle; the fight resolution isn’t shown.
+- Outcome per data: By the time the API snapshot was taken, you had 3 kills, 626 total damage, and your squad was in the final 2. That implies you survived subsequent engagements after these frames and reached the last matchup (top 2), with a strong individual contribution.
+
+Notable details and tells
+- Deadeye’s Tempo hop-up is in play for both the Sentinel and Bocek phases.
+- Blue Evo is nearly at purple (32 dmg to go), consistent with the 626 damage total.
+- SMG has a 1x Digital Threat—ideal for close quarters and synergizes with pushing into areas where enemies might smoke or hide behind cover.
+- The enemy’s Gibraltar Dome timing suggests they were pressured by your ranged pokes and needed to heal/reset before you pushed.
+
+In short: This clip shows a disciplined late-game push setup. You gather info and tag with the Sentinel, apply steady ranged pressure with the Bocek, force a Gibraltar Dome, and then begin a coordinated close-range collapse with an SMG and Digi-Threat. The API data confirms a strong performance (3 kills, 626 damage) and that you made it to the final 2 squads.

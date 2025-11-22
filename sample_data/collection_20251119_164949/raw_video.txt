@@ -1,0 +1,48 @@
+Video: sample_data\collection_20251119_164949\gameplay_recording.mp4
+Log: None
+Number of Frames: 176
+Model: gpt-5
+
+
+============================================================
+TOKEN USAGE STATISTICS:
+============================================================
+Prompt tokens: 12,365
+Completion tokens: 5,547
+Total tokens: 17,912
+
+============================================================
+
+GAMEPLAY SUMMARY:
+============================================================
+Here’s a concise, chronological breakdown of what the frames show from this Apex Legends sequence:
+
+Context and setup
+- Squad: Full trio alive. You’re playing Seer (heartbeat sensor visible while ADS; red diamonds appear on scans).
+- Loadout: A mid-range rifle with 18 rounds per mag (likely R-301) and a Sentinel sniper (2x-4x optic). Blue EVO armor (level 2).
+- Location: An industrial complex/courtyard with large yellow cylindrical tanks, catwalks, and crates (open lanes and plenty of cover).
+- Game state: Starts with 5 squads left during Round 1; by the end it’s down to the final 2 squads (6 players total).
+
+Early movement and positioning
+- You begin tucked behind a shipping container, peeking toward the open yard. You take light chip damage while shouldering the angle.
+- You climb onto a low wall for a better line, then inch up to a catwalk using cover (containers, crate stacks, railings).
+- You use Seer’s passive (heartbeat sensor) and then tactical to scan—enemies get marked with red diamonds at roughly 50–60 meters across the yard on the upper walkway.
+
+Mid-round control and scouting
+- You ping enemy positions multiple times (teammate pings also appear, including a mobile respawn beacon earlier).
+- You swap to the Sentinel, chamber it, and spend a Shield Cell to “charge” it (the charge animation is shown). You hold angles with the 2x-4x scope, watching long sightlines (80–120 meters) into doorways and a balcony across the complex.
+- You keep advancing methodically: wall → catwalk → around a large yellow tank, always using cover and rechecking with ADS for heartbeat pings.
+- No confirmed shots landed in the frames—this phase is about information, marks, and holding advantageous angles while the lobby thins (squads drop from 5 → 3).
+
+Endgame setup
+- You post up on a bridge/headglitch overlooking the final engagement area (enemy pings ~70–100 meters).
+- A Gibraltar Dome of Protection pops on the far side (blue bubble), signaling a defensive push/rez or a team under pressure. Shortly after, you start taking incoming fire.
+- The HUD shows 2 squads left (6 alive), indicating the final 3v3 is about to kick off. You’re still in good cover, Sentinel ready, watching the bubble and the lanes around it.
+
+Key takeaways
+- Strong, patient macro: you rotate into a powerful position, maintain cover, and let other squads fight as the count drops.
+- Information-first Seer play: frequent ADS checks for heartbeat, a well-timed tactical scan to mark enemies for the team, and steady pings to coordinate.
+- Loadout synergy: R-301 (or similar) for midrange and a charged Sentinel to punish peeks across long lanes.
+- Final moments show a Gibraltar bubble ahead and you under light fire—everything is set for the last fight, but these frames stop just before the engagement fully unfolds.
+
+No knocks/finishes are shown in these frames; the sequence captures smart positioning, scouting, and pre-fight setup leading into the final 2-squad showdown.

@@ -1,0 +1,79 @@
+Video: sample_data\collection_20251119_165030\gameplay_recording.mp4
+Log: sample_data\collection_20251119_165030\log_test.txt
+Number of Frames: 3
+Model: gpt-5
+
+
+============================================================
+TOKEN USAGE STATISTICS:
+============================================================
+Prompt tokens: 856
+Completion tokens: 5,059
+Total tokens: 5,915
+
+============================================================
+
+GAME EVENTS DATA:
+============================================================
+Total Events: 17
+
+=== PLAYER STATUS ===
+  totalDamageDealt: 831
+  totalDamageDealt: 844
+  totalDamageDealt: 857
+  totalDamageDealt: 870
+  totalDamageDealt: 896
+  totalDamageDealt: 912
+  totalDamageDealt: 957
+
+=== INVENTORY ===
+  inventory_4: unknown_166 x44
+
+=== OTHER EVENTS ===
+  {'events': [{'name': 'kill', 'data': '4'}]}
+  {'events': [{'name': 'damage', 'data': '{\r\n  "targetName": "StatisticSharpshooter",\r\n  "damageAmount": "13.000000",\r\n  "armor": "true",\r\n  "headshot": "false"\r\n}'}]}
+  {'match_info': {'tabs': '{"kills":4,"assists":0,"teams":2,"players":null,"damage":899,"cash":null}'}}
+  {'match_info': {'tabs': '{"kills":4,"assists":0,"teams":2,"players":null,"damage":912,"cash":null}'}}
+  {'events': [{'name': 'damage', 'data': '{\r\n  "targetName": "StatisticSharpshooter",\r\n  "damageAmount": "13.000000",\r\n  "armor": "false",\r\n  "headshot": "false"\r\n}'}]}
+  {'match_info': {'tabs': '{"kills":4,"assists":0,"teams":2,"players":null,"damage":964,"cash":null}'}}
+  {'events': [{'name': 'damage', 'data': '{\r\n  "targetName": "StatisticSharpshooter",\r\n  "damageAmount": "16.000000",\r\n  "armor": "false",\r\n  "headshot": "true"\r\n}'}]}
+  {'events': [{'name': 'damage', 'data': '{\r\n  "targetName": "StatisticSharpshooter",\r\n  "damageAmount": "16.000000",\r\n  "armor": "false",\r\n  "headshot": "true"\r\n}'}]}
+  {'match_info': {'tabs': '{"kills":4,"assists":0,"teams":2,"players":null,"damage":1025,"cash":null}'}}
+
+============================================================
+
+GAMEPLAY SUMMARY:
+============================================================
+Here’s what the video frames show and how they line up with the captured game data:
+
+1) What’s happening in the video
+- The clip shows an enemy legend in a purple/white suit sprinting between two large yellow cylindrical structures and turning back toward the player’s direction. This location appears to be a Phase Runner-style portal: two yellow columns with a gap you can phase through.
+- Immediately after the enemy crosses the portal threshold, the screen hard-cuts to a full white frame, consistent with the visual “white-out” you get when entering a Phase Runner teleporter (fast relocation effect).
+
+2) Correlation with the game data
+- Endgame state: The match_info tab shows teams: 2, kills: 4, damage ticking up toward 1025, which indicates you’re in the final two squads and already on 4 kills.
+- Damage events on one target: Multiple damage events are logged against “StatisticSharpshooter”:
+  - 13 to armor (armor: true)
+  - 13 to flesh (armor: false)
+  - Two headshots for 16 each (headshot: true, armor: false)
+  These add up to 58 damage on that same target and match the pattern of chipping armor, then hitting flesh, then landing headshots as they try to escape through the portal.
+- HUD totals moving with the shots: The intermediate totals (e.g., totalDamageDealt lines 831→844→857→870→896→912→957 and match_info damage 899→912→964→1025) line up with a sequence of body taps followed by higher-value headshots. The small 13-damage increments suggest a light-weapon body shot profile at mid range; the 16-damage headshot entries are consistent with a reduced headshot value (range/helmet mitigation), typical of light AR/SMG weapons in Apex.
+- Likely weapon class: The repeated 13 body damage and 16 headshots fit a light-ammo automatic (e.g., R-301 or Alternator) at medium distance. Exact weapon isn’t shown in the frames, but the numbers strongly suggest that class.
+- Inventory hint: inventory_4: unknown_166 x44 most likely represents ammo reserves (44 rounds) for the current primary (again pointing toward a light-weapon scenario), though the API label is generic.
+
+3) Key moments identified
+- Combat: You apply consistent ranged pressure as the enemy attempts to rotate. The log shows armor chip (13), immediate flesh damage (13), then two headshots (16, 16) on the same target “StatisticSharpshooter.”
+- Kill status: The event feed shows kill: 4, aligning with the match_info kills: 4 in the HUD snapshot. While the frames don’t explicitly show a down/finish, the logs confirm at least four total kills by this point.
+- Movement/reposition: The enemy uses the Phase Runner portal for a quick disengage or reposition. The final white frame indicates the teleport transition.
+- Team info: No teammate is visible in the frames; the dashboard shows teams: 2, so this is late-game pressure with only one other squad alive.
+
+4) Sequence and outcome
+- Sequence:
+  - You engage an enemy (StatisticSharpshooter), landing a series of hits: chip armor (13), follow-up flesh (13), then two headshots (16 each).
+  - Your cumulative damage ticks upward in the HUD snapshots (899 → 912 → 964 → 1025), consistent with those hits and possibly a bit more damage off-camera.
+  - The enemy tries to break line-of-sight by entering the Phase Runner portal (seen in the frames between the yellow columns).
+  - The clip ends as the screen whites out—indicating a teleport transition (either you or the camera passes through).
+- Outcome:
+  - From the frames alone, we don’t see the final elimination or match conclusion. The data confirms you’re on 4 kills with only 2 squads left and over 1,000 total damage (peaking at 1025 in the log). The last logged events suggest you successfully pressured and possibly cracked or nearly finished the fleeing enemy, then rotated/teleported to continue the fight in the final circle setup.
+
+In short: The video captures a late-game skirmish where you tag a fleeing opponent with light-weapon fire—finishing with two headshots—while they dive into a Phase Runner portal. Your stats confirm 4 kills and over 1k damage with only one other squad remaining, and the final white-out matches the portal transition as you reposition for the endgame.

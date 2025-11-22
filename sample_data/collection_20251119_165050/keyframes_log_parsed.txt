@@ -1,0 +1,89 @@
+Video: sample_data\collection_20251119_165050\gameplay_recording.mp4
+Log: sample_data\collection_20251119_165050\log_test.txt
+Number of Frames: 13
+Model: gpt-5
+
+
+============================================================
+TOKEN USAGE STATISTICS:
+============================================================
+Prompt tokens: 1,635
+Completion tokens: 4,600
+Total tokens: 6,235
+
+============================================================
+
+GAME EVENTS DATA:
+============================================================
+Total Events: 21
+
+=== PLAYER STATUS ===
+  ultimate_cooldown: {"ultimate_cooldown":"0"}
+  Using: Sentinel
+  Using: R-99
+  totalDamageDealt: 1090
+  totalDamageDealt: 1103
+  totalDamageDealt: 1116
+  totalDamageDealt: 1168
+  totalDamageDealt: 1204
+  totalDamageDealt: 1217
+  totalDamageDealt: 1230
+  ultimate_cooldown: {"ultimate_cooldown":"5"}
+
+=== INVENTORY ===
+  inventory_9: unknown x?
+
+=== OTHER EVENTS ===
+  {'events': [{'name': 'damage', 'data': '{\r\n  "targetName": "CosecantCommando",\r\n  "damageAmount": "2.000000",\r\n  "armor": "false",\r\n  "headshot": "false"\r\n}'}]}
+  {'events': [{'name': 'damage', 'data': '{\r\n  "targetName": "CosecantCommando",\r\n  "damageAmount": "13.000000",\r\n  "armor": "false",\r\n  "headshot": "false"\r\n}'}]}
+  {'match_info': {'tabs': '{"kills":5,"assists":0,"teams":2,"players":null,"damage":1191,"cash":null}'}}
+  {'events': [{'name': 'damage', 'data': '{\r\n  "targetName": "CosecantCommando",\r\n  "damageAmount": "13.000000",\r\n  "armor": "false",\r\n  "headshot": "false"\r\n}'}]}
+  {'events': [{'name': 'damage', 'data': '{\r\n  "targetName": "CosecantCommando",\r\n  "damageAmount": "10.000000",\r\n  "armor": "false",\r\n  "headshot": "false"\r\n}'}]}
+  {'events': [{'name': 'damage', 'data': '{\r\n  "targetName": "CosecantCommando",\r\n  "damageAmount": "13.000000",\r\n  "armor": "false",\r\n  "headshot": "false"\r\n}'}]}
+  {'match_info': {'tabs': '{"kills":6,"assists":0,"teams":2,"players":null,"damage":1276,"cash":null}'}}
+  {'match_info': {'victory': 'true'}}
+  {'match_info': {'tabs': '{"kills":6,"assists":0,"teams":1,"players":null,"damage":1276,"cash":null}'}}
+
+============================================================
+
+GAMEPLAY SUMMARY:
+============================================================
+Here’s what the video frames show and how they line up with the extracted match data:
+
+1) Key on-screen actions and events
+- Endgame setup (2 squads left): The POV player is on Olympus (pink cherry trees visible) around a raised industrial platform. A blue Gibraltar Dome of Protection is active to the left, indicating your team set defensive cover as you take positions near a short wall/blue crate.
+- Weapons and stance: You alternate between a Sentinel (sniper) and an R-99 (SMG). The HUD shows Sentinel equipped with 2 rounds left, then you swap to the R-99 (18 in mag, 17 reserve) while the “LOW AMMO” warning is present. You crouch and headglitch behind low cover to watch the ramp/ledge ahead.
+- Mid-fight posture: You ADS and hold angles rather than wide swinging, suggesting your team is playing the final circle patiently. The “Press Z to Upgrade” prompt is on-screen (you have an armor upgrade available from the new Evo/upgrade system) but you ignore it due to the fight.
+- Ring pressure and finish: As “RING CLOSING” appears, the final elimination happens. The kill feed shows a teammate (cokkies) securing a pick right before the match ends. Immediately, the Champion banner appears: “YOU ARE THE CHAMPION.”
+- Post-win banner: “LOOT BINS AND ARSENALS RESET” flashes alongside the Champion screen (Season 20+ systems), but this is moot since the match is over.
+
+2) Correlation with the provided data
+- Weapons used: Matches exactly—API lists “Using: Sentinel” and “Using: R-99,” and both are visible in the HUD and hands.
+- Damage ticks and target: The API shows several small damage events to “CosecantCommando” for 2, 10, and 13 (all “armor": false, “headshot": false). Those flesh-only, low-value increments are consistent with R-99 body shots at mid-range and/or damage falloff—what we’d expect while you’re taking safe peeks from cover near the end.
+- Total damage progression: Player status snapshots climb 1090 → 1103 → 1116 → 1168 → 1204 → 1217 → 1230, and match tabs later show 1191 (at 5 kills) then 1276 (at 6 kills). That trajectory matches late-fight chip damage followed by a final exchange that pushes your total to 1276 by the time victory is registered.
+- Kills and victory: Match info shows kills rising from 5 to 6 with “teams": 2 → 1 and “victory": true, aligning with the visual Champion banner and the end of the final squad.
+- Ultimate cooldown: The ultimate cooldown moves from 0 to 5 near the end, indicating your ultimate status changed just before/around the conclusion (either used or came off cooldown). No specific ultimate visuals are obvious in-frame, but the cooldown change matches a late-fight ability timing shift.
+- Inventory cues: The “LOW AMMO” alert and R-99 count (18/17) on-screen match the endgame scarcity implied by the HUD; the inventory detail in the data (“inventory_9: unknown x?”) doesn’t surface visibly, but ammo constraints clearly influenced your conservative peeking.
+
+3) Important moments (combat, looting, movement, team play)
+- Combat:
+  - You chip the last enemy squad with R-99 flesh damage (per the 10–13 damage events and the “armor: false” flags).
+  - You hold angles behind cover and don’t overcommit—likely preserving health while applying pressure.
+  - A teammate secures a key elimination (kill feed shows “cokkies” getting a kill) during ring close, immediately preceding the win.
+- Movement:
+  - Short, controlled repositioning from open ground to the low blue crate and then tight crouch-peeks on the ramp/ledge. No wide flanks; positioning stays disciplined inside/near safe zone as the ring closes.
+- Team interactions:
+  - Gibraltar Dome is up on your left, indicating coordinated defensive utility from your squad.
+  - Teammates are alive at the end (all three banners visible) and contributing—one confirms the final pick in kill feed.
+- Looting:
+  - None mid-fight; no looting animation is shown. The on-screen “Press Z to Upgrade” prompt indicates you’ve banked enough EVO/upgrade points, but you don’t pause to use it during the final engagement.
+
+4) Sequence of events and overall outcome
+- Final circle with 2 squads left on Olympus; ring is about to close.
+- You anchor with a Sentinel/R-99 loadout, settle into cover, and chip the last squad with R-99 flesh damage.
+- Teammate throws/has a Gibraltar Dome active; your team plays the space methodically.
+- The ring begins closing; a teammate (cokkies) finishes one of the remaining enemies (seen in kill feed).
+- The match immediately ends with “YOU ARE THE CHAMPION.”
+- Stats roll up to 6 kills and 1276 damage for you, and victory = true confirms the win in the API.
+
+Net: A clean, controlled endgame. You maintain cover with low ammo, contribute final chip damage, your teammate confirms a crucial elimination as the ring closes, and your squad wins the match.

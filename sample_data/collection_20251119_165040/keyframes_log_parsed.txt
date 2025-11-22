@@ -1,0 +1,92 @@
+Video: sample_data\collection_20251119_165040\gameplay_recording.mp4
+Log: sample_data\collection_20251119_165040\log_test.txt
+Number of Frames: 1
+Model: gpt-5
+
+
+============================================================
+TOKEN USAGE STATISTICS:
+============================================================
+Prompt tokens: 593
+Completion tokens: 4,834
+Total tokens: 5,427
+
+============================================================
+
+GAME EVENTS DATA:
+============================================================
+Total Events: 18
+
+=== PLAYER STATUS ===
+  totalDamageDealt: 983
+  totalDamageDealt: 996
+  totalDamageDealt: 1009
+  totalDamageDealt: 1022
+  totalDamageDealt: 1035
+  totalDamageDealt: 1048
+  totalDamageDealt: 1077
+  Using: mp_weapon_agnostic_karambit_primary
+  Using: Sentinel
+  Using: mp_weapon_charge_gauntlet
+
+=== INVENTORY ===
+  inventory_4: unknown_166 x35
+  inventory_4: unknown_166 x17
+
+=== OTHER EVENTS ===
+  {'events': [{'name': 'damage', 'data': '{\r\n  "targetName": "StatisticSharpshooter",\r\n  "damageAmount": "13.000000",\r\n  "armor": "false",\r\n  "headshot": "false"\r\n}'}]}
+  {'match_info': {'tabs': '{"kills":4,"assists":0,"teams":2,"players":null,"damage":1026,"cash":null}'}}
+  {'events': [{'name': 'knockdown', 'data': ''}]}
+  {'events': [{'name': 'damage', 'data': '{\r\n  "targetName": "StatisticSharpshooter",\r\n  "damageAmount": "13.000000",\r\n  "armor": "false",\r\n  "headshot": "false"\r\n}'}]}
+  {'match_info': {'tabs': '{"kills":4,"assists":0,"teams":2,"players":null,"damage":1117,"cash":null}'}}
+  {'match_info': {'tabs': '{"kills":5,"assists":0,"teams":2,"players":null,"damage":1126,"cash":null}'}}
+
+============================================================
+
+GAMEPLAY SUMMARY:
+============================================================
+Here’s what the video frames show and how they line up with the telemetry you provided.
+
+1) What happens in the clip (visuals)
+- Final fight context: The HUD reads “2 Squads Left,” so this is the last engagement of the match.
+- Player’s legend and push: You’re playing Octane and appear to be mid-Stim (the high-contrast/white bloom and motion streaks), sprinting into close range.
+- Weapon in hand: Sentinel is equipped during the shown moment. You’re using it essentially point-blank rather than as a long‑range sniper.
+- Target status: The enemy directly in front of you has only a sliver of red HP (no shields remaining), visibly one shot from a knock.
+- Teammate positioning: A teammate is just to the right near the cover/bins, also in the fight. They’re close enough to help secure the down.
+- Environment: Open, bright outdoor area with clean white architecture and pink blossoms—looks like Olympus (a plaza/courtyard segment).
+- Upgrade prompt: “Press to Upgrade” is on-screen, indicating you’ve earned enough EVO to bump your shield tier (Season 20+ armor rework behavior), which fits with the steady damage farming earlier.
+
+2) Correlating with the game data
+- Weapons used:
+  - Sentinel: Confirmed visually in this frame. The logs also list “Using: Sentinel,” matching the final engagement.
+  - mp_weapon_agnostic_karambit_primary: This is a melee/knife state logged earlier in the clip (likely swapping/inspecting or quick melee between shots).
+  - mp_weapon_charge_gauntlet: Briefly registered in the logs earlier; not visible in this frame. It’s a temporary/alternate melee entry that sometimes appears in telemetry and doesn’t contradict what we see here.
+- Damage and knockdown:
+  - The telemetry shows two 13 damage hits to StatisticSharpshooter marked as “armor: false, headshot: false,” which is exactly what we see: the enemy has no shields and a tiny bit of flesh HP left. Those small chips fit “cleanup” damage to finish a nearly downed opponent (source could be a bullet or tick—either way it’s flesh damage).
+  - A knockdown event occurs in the log right around these small damage instances.
+- Match progression:
+  - “2 squads left” on-screen aligns with the late-game/final ring phase.
+  - The match_info increments from kills 4/damage 1026 to kills 5/damage 1126. That indicates you secured a knock that converted to your 5th kill during or immediately after this close-range push, and your total damage climbed accordingly.
+- Inventory:
+  - The inventory shows unknown_166 x35 and later x17. While the label is unresolved in this export, the drop in count suggests you consumed or expended a stackable resource (ammo/utility/consumables) during the fight. It tracks with sustained combat, armor upgrading, and a final push.
+
+3) Key moments in the clip
+- Spot and crack: Before this frame, you’ve built EVO/damage steadily (983 → 1048 → 1077 etc.), likely poking with the Sentinel to farm shields and set up the push.
+- Close-range commit: You Stim forward and take a risky, point-blank angle with a sniper—either quick-scoping or hip-firing—while your teammate swings on the right.
+- Knockdown: The enemy in front is on flesh; a couple of small body hits (13 each in the log) finish them. The logs mark a knock right around here.
+- Conversion to kill: The match_info shows kills jump from 4 to 5, so the down shortly after becomes your kill (thirst or full elim of that player).
+- Armor progression: The “Press to Upgrade” prompt appears because your accumulated damage has filled the EVO threshold—consistent with the rising damage totals in the telemetry.
+
+4) Sequence and outcome
+- Sequence:
+  - Mid-to-late fight poke damage raises total damage above 1k and fills EVO.
+  - You Stim and push with Sentinel in hand into the final 2-squad fight.
+  - You (with a nearby teammate) isolate a low-HP opponent, land small finishing hits (two 13 damage flesh tags), and secure a knock.
+  - The knock converts to your 5th kill; total damage reaches 1126 per the logs.
+- Outcome:
+  - The provided frame still shows “2 squads left” and no Champion banner. From the telemetry we know you at least secured the knock and +1 kill during this sequence. The ultimate match result is not shown in the frame or data provided.
+
+Notes/takeaways
+- Using the Sentinel at point-blank was a bold but effective cleanup choice given the enemy’s HP.
+- The Stim push plus a teammate pinch on the right created a quick numbers advantage at the start of the final duel.
+- Your EVO upgrade prompt appearing mid-fight confirms solid pre‑push poke damage that contributed to winning this last engagement.

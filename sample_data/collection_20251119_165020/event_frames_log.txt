@@ -1,0 +1,44 @@
+Log File: sample_data\collection_20251119_165020\log_test.txt
+Frames Folder: sample_data\collection_20251119_165020\frames
+Number of Frames: 5
+Log Size: 710 characters
+Model: gpt-5
+
+
+============================================================
+TOKEN USAGE STATISTICS:
+============================================================
+Prompt tokens: 650
+Completion tokens: 4,054
+Total tokens: 4,704
+
+============================================================
+
+Here’s the sequence of events from the final fight, based on the logs and screenshots:
+
+- Context
+  - Two squads left (final fight), timer around 06:31.
+  - Your team of three is fully alive: you, ShadowChild07, and OnlyDaymen.
+  - You’re low on shields (on-screen prompt to recharge).
+
+- Opening shot
+  - Weapon: Sentinel (charged).
+  - Distance ~14 meters.
+  - You hit enemy CoefficientConqueror for 70 flesh (no armor).
+
+- Push and weapon swap
+  - You swap to the R-99 and push around the yellow silo.
+  - You tag CoefficientConqueror again for 13 flesh while closing.
+
+- Knockdown secured
+  - Continuing the R-99 spray, you down a different opponent, SteadyDado (on-screen “KNOCKED DOWN +150”).
+  - This leaves the enemy squad weakened: one player knocked, and at least one other (CoefficientConqueror) already damaged with no shields.
+
+- Stats/state during this sequence
+  - Kills stayed at 3 (you registered a knock, not a full elimination yet).
+  - Assists: 0.
+  - Match damage increased (logs show +70 then +13 to reach 776).
+  - R-99 ammo shown at 18/64 during the push; you had 62 of an additional inventory item (unknown_166) at that time.
+  - Your shields remained low; teammates were healthy and up.
+
+Summary: In the final 2-squad engagement, you opened with a close-range Sentinel body shot on CoefficientConqueror (flesh), swapped to R-99, landed more shots (including a 13 flesh hit on the same target), and then secured a knock on SteadyDado. Your team held a 3vX advantage with one enemy down and another already cracked/no shields.

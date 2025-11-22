@@ -1,0 +1,41 @@
+Log File: sample_data\collection_20251119_165040\log_test.txt
+Frames Folder: sample_data\collection_20251119_165040\frames
+Number of Frames: 11
+Log Size: 1320 characters
+Model: gpt-5
+
+
+============================================================
+TOKEN USAGE STATISTICS:
+============================================================
+Prompt tokens: 1,268
+Completion tokens: 4,923
+Total tokens: 6,191
+
+============================================================
+
+Here’s a clear timeline of the endgame skirmish, combining the logs with what’s visible in the screenshots:
+
+- Pre-fight state
+  - Round 2 (ring timer visible), your squad is full (all 3 teammates alive).
+  - Only 2 squads left (you vs. the last team).
+  - You’re at 4 kills and roughly 1026 damage (match_info tabs).
+
+- Initial engagement
+  - You push an enemy on the rooftop/catwalk.
+  - You land at least one 13-damage flesh hit on the same opponent (no armor, no headshot), per log.
+  - You continue close-range fire (seen in the screenshots), and you knock that opponent. The knock event is confirmed on-screen and by the “knockdown” log.
+
+- Follow-up and thirst
+  - After the knock, you keep shooting the downed opponent (visible sustained fire in the screenshots).
+  - Logs show additional damage ticks (your running totalDamageDealt rises in multiple small steps).
+  - You swap weapons during/after the knock (briefly showing the melee/karambit, then Sentinel). You finish off the downed opponent, securing the elimination.
+  - Your kill count increases from 4 to 5, and your match damage climbs from 1026 to 1126 (match_info tabs). The logs also record another 13-damage hit on the same target during this sequence.
+
+- Team and match status after the elim
+  - Your team remains at full strength (all 3 alive) throughout this sequence.
+  - The “2 squads left” indicator remains, so the enemy team still has at least one surviving member; the fight isn’t over yet.
+  - You have an upgrade available (“Press Z to Upgrade” on-screen), earned through damage dealt during/around this engagement.
+  - One of your inventory counters (unknown_166) drops from 35 to 17 during the fight, consistent with resource usage while securing the knock and elimination.
+
+Bottom line: In Round 2 with only two squads left, you and your full team win a close-range duel against one member of the last squad. You knock them with close-range fire, finish them shortly after (swapping to the Sentinel in the process), and your totals jump to 5 kills and ~1126 damage. The final squad still has remaining players, so the match continues after this elimination.

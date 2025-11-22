@@ -1,0 +1,62 @@
+Video: sample_data\collection_20251119_164939\gameplay_recording.mp4
+Log: None
+Number of Frames: 165
+Model: gpt-5
+
+
+============================================================
+TOKEN USAGE STATISTICS:
+============================================================
+Prompt tokens: 11,595
+Completion tokens: 4,400
+Total tokens: 15,995
+
+============================================================
+
+GAMEPLAY SUMMARY:
+============================================================
+Here’s a concise, play-by-play summary of what the frames show from this Apex Legends sequence, plus the key takeaways.
+
+What map/where
+- Map: Olympus.
+- Area: Around the Rift/Phase Runner side (cherry blossoms, swirling rift energy overhead, Hammond/Labs-style buildings and containers).
+
+Squad and status
+- Squads left: 15 throughout this sequence.
+- Round status: Round 1, already closing (timer counts down from ~8 minutes into the 3-minute range).
+- Your squad: All three players present for most of the sequence. One teammate (ShadyDroXl) repeatedly pings a mobile respawn beacon, and at one point a green “banner” marker with a 35s timer appears ahead—suggesting a teammate’s banner was at risk earlier. By the end of these frames, all three squad members are alive.
+- Kill feed: You (cookies) are announced as the new Kill Leader with 4 kills.
+
+Your legend, loadout, and resources
+- Legend: Loba (gloves, bracelet, and UI cues match).
+- Weapons:
+  - R-99 SMG (18 round mag visible; ~64 spare ammo in one sequence).
+  - Sentinel (visible as the other weapon in the HUD).
+- Armor: Blue Evo; “NEXT LVL: 52/2400” indicates you’re 52 damage from purple at the start.
+- Heals: You have (and use) multiple Shield Cells; you do not appear to use a Battery in these frames.
+
+What happens (timeline)
+- You stabilize after a prior fight: tucked behind orange “SECURITY” cargo containers, you chain several Shield Cells to rebuild from cracked/broken shields to full. This repeats multiple times across the clip as you inch between covers.
+- Kill feed activity continues during this—your name appears as Kill Leader (4 kills), and “Enemy Shield Broken – Bloodhound” appears more than once (likely from a nearby skirmish your team is watching or poking).
+- A teammate (ShadyDroXl) pings a mobile respawn beacon repeatedly. A green “35s” banner marker shows up toward a building ahead at one point, indicating a banner timer (likely a teammate’s earlier).
+- You carefully reposition:
+  - Peek from behind the orange container toward the rift and buildings.
+  - Swap to the R-99, check angles, then retreat to cover to finish healing.
+  - Rotate along the grassy slope to another container, then toward a building with a ramp and an open doorway.
+  - Continue topping off shields at each stop (lots of short, safe heals rather than a single full Battery).
+- You briefly take chip damage (red screen vignette) while healing in the open between covers but avoid committing to a gunfight.
+- You end the sequence on full shields, at cover near a building ramp/entrance, R-99 out, holding angles while your team gathers.
+
+Combat and decisions observed
+- No shots fired by you in these frames; you prioritize survivability and cover while cells tick.
+- Your team is tracking a fight nearby (kill feed shows a Bloodhound’s shield broken), but you do not push. The approach is cautious, using terrain and structures to maintain safety while healing.
+- Given you’re Kill Leader and close to purple armor, this looks like a reset after a won fight, with an eye toward either retrieving/respawning a teammate (based on the pings) or third-partying once stabilized.
+
+Key takeaways
+- Good discipline: You constantly heal to full behind cover before re-peeking and rotate cover-to-cover up the slope toward better positions.
+- Loadout fits the area: R-99 for close-quarters around the buildings; Sentinel gives you mid/long options if you get a clean angle later.
+- If available, a Battery would have sped up the reset (you used many cells). Otherwise, your “chain-cells-behind-hard-cover” approach was correct.
+- With 52 damage needed for purple at the start, a quick poke with the Sentinel from safe cover could have leveled you faster, but you wisely avoided unnecessary risk while the ring was closing.
+
+Bottom line
+This clip is a mid–Round 1 reset on Olympus near the Rift: you, as Loba and newly crowned Kill Leader (4 kills), repeatedly shield up behind containers and slopes, coordinate around a possible banner/respawn, and carefully reposition toward a building while avoiding open fights. You finish fully shielded, on cover, ready to re-engage.

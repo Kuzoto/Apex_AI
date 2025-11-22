@@ -1,0 +1,72 @@
+Video: sample_data\collection_20251119_165009\gameplay_recording.mp4
+Log: None
+Number of Frames: 181
+Model: gpt-5
+
+
+============================================================
+TOKEN USAGE STATISTICS:
+============================================================
+Prompt tokens: 12,715
+Completion tokens: 5,078
+Total tokens: 17,793
+
+============================================================
+
+GAMEPLAY SUMMARY:
+============================================================
+Here’s a clear, play-by-play of what’s happening in these Apex Legends frames.
+
+High-level context
+- Map and phase: Olympus rooftop/catwalk area with large yellow “Powerizer” tanks. Only 2 squads left (final fight).
+- Your loadout: Sentinel sniper rifle with Deadeye’s Tempo (DT Charge shown), plenty of sniper ammo. You’re playing a long-mid angle from high ground railings and tank cover.
+- Enemy identified: A Seer (the red outfit/hat silhouette is unmistakable).
+- Team state: All three of your squadmates are alive. One teammate is pushing the lower lane/catwalk ahead of you while you hold a high-ground off-angle.
+
+What happens, chronologically
+1) Opening angle (approx. 25–30 meters):  
+   - You scope in on an enemy Seer crossing an open pad near a corner by the yellow tanks.  
+   - You try to fire but the Sentinel is empty (“RELOAD” prompt). You briefly stay scoped while the enemy moves, then unscope to reload.
+
+2) Enemy ability appears near Seer:  
+   - While you’re reloading/re-shouldering your position, a tall, vertical blue energy column pops into existence right near the Seer. This is an ability being placed (it visually resembles a deploy animation such as Rampart Amped Cover starting up or a Loba/Ash placement effect).
+
+3) Reposition and reload:  
+   - You slide/strafe along the yellow railing to get a safer angle and complete your reload.  
+   - Your teammate below (on the lower lane) keeps inching up, drawing some enemy attention.
+
+4) Reacquire and set up a close snipe (15–20 meters):  
+   - You ADS again from cover and track the Seer as they hug the big yellow tank.  
+   - You hold the sight steady for several beats, waiting for a clean body shot while the Seer briefly stands exposed near the tank’s edge.
+
+5) Impact shot and shield break:  
+   - You land a clean body shot with the Sentinel for 70 damage, and the UI confirms “Enemy Shield Broken – Seer.”  
+   - Your Sentinel is now empty again (“RELOAD” prompt returns).
+
+6) Counterfire and pressure back:  
+   - Immediately after you crack Seer, they return fire from the same general angle. You take shield damage (on-screen warning suggests your shields are low and advises using a cell/battery).  
+   - You dip slightly, hugging the tank/rail cover, and hold the angle rather than instantly reloading or popping a bat.
+
+7) Standoff and tracking:  
+   - With Seer cracked and your shields low, you continue to hold the lane, tracking Seer as they re-peek around the yellow tank and pallets.  
+   - Your teammate below maintains forward pressure on the flank.  
+   - The sequence ends with you still scoped or ready to scope, watching for another punish window while the enemy hesitates around cover.
+
+Key details and takeaways
+- Final fight: With only 2 squads left, this is a pivotal engagement. You have high ground and a strong off-angle supporting a teammate push.  
+- Missed first opportunity due to empty chamber: The initial perfect sight picture on Seer is lost because the Sentinel wasn’t loaded. You fix it, but it costs time and initiative.  
+- Great punish window: You line up a calm, close-range Sentinel body shot that instantly cracks Seer’s shields—exactly the kind of mid-fight swing you want in a final skirmish.  
+- Immediate counterfire: After cracking Seer, you take return damage and don’t heal right away. With a bolt-action at close range and no round chambered, there’s a brief vulnerability window.  
+- Ability activity near Seer: A vertical blue energy column appears by the enemy—likely a deployable/ultimate being set up to stabilize or enable looting/cover. It suggests the enemy is trying to set up some utility mid-fight.
+
+Suggestions (if you want to convert that crack into a finish)
+- Pre-load and pre-charge:  
+  - Always chamber the Sentinel before peeking a final-fight angle.  
+  - Consider charging the Sentinel with a shield cell before you hold the angle; a charged body shot can instantly break stronger shields or set up an easy knock with a follow-up.
+- Heal timing:  
+  - After cracking Seer (and taking damage), duck off-angle for a quick cell/bat while your teammate maintains pressure. It keeps your snipe threat alive for the next peek.
+- Push and trade:  
+  - With Seer cracked, either cue your teammate to swing (you hold the cross) or slide in for a finishing angle after a quick reload.  
+  - Maintaining the high-ground off-angle is powerful; re-peek the same spot right after a cell to punish Seer’s next exposure.
+
+In short: You catch the final enemy Seer in the open, miss the very first chance because the Sentinel isn’t loaded, then reset, land a clutch 70-damage Sentinel body shot to crack their shields, and hold the angle while taking some counterfire. Your team has numbers and positioning; with a quick heal/reload and a coordinated swing, this likely sets up the closing knock and match win.

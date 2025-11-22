@@ -1,0 +1,38 @@
+Log File: sample_data\collection_20251119_164919\log_test.txt
+Frames Folder: sample_data\collection_20251119_164919\frames
+Number of Frames: 1
+Log Size: 71 characters
+Model: gpt-5
+
+
+============================================================
+TOKEN USAGE STATISTICS:
+============================================================
+Prompt tokens: 166
+Completion tokens: 4,554
+Total tokens: 4,720
+
+============================================================
+
+Here’s what I can confidently reconstruct from the provided data and screenshot. If you have more screenshots from earlier/later in the match, I can extend this into a full, play-by-play timeline.
+
+What the HUD shows at this moment
+- Round/teams: Round 1 is closing (timer visible), and only 5 squads remain.
+- Armor progress: You just hit an EVO milestone — the “PHASE 2 EVO UPGRADE” banner indicates your armor evolved to blue. Your HUD shows “NEXT LVL: 324 EVO,” meaning you need 324 more EVO to reach the next tier.
+- Teammate status: A teammate was fully eliminated and you recovered their banner (“Banner Recovery +75s” pop-up). The game is prompting “Respawn Teammates at Beacons,” and a respawn beacon is marked at ~156 meters.
+- Legend/loadout: Log data indicates the Wraith heirloom (karambit) is in use; on-screen you’re holding a light-ammo rifle with 18 in the mag and 181 reserve — that matches an R-301 with no extended mag (base mag size 18). Your ultimate charge is low (18%), consistent with early game.
+- Positioning/objectives: You’re on the move toward the respawn beacon while the ring is closing, suggesting you survived a nearby fight and are transitioning to a recovery play.
+
+Likely sequence of events leading to this frame
+1) Early fight(s) break out while Round 1 is still closing; the lobby thins quickly to 5 squads.
+2) Your squad takes an engagement near the area shown. One teammate gets knocked and is fully eliminated.
+3) You (or a surviving teammate) win/escape the skirmish long enough to loot and recover the fallen teammate’s banner. When you grab it, the “Banner Recovery +75s” message appears.
+4) During or just after that fight, you deal enough damage to evolve your armor to Phase 2 (blue), triggering the on-screen EVO upgrade banner. You now need 324 more EVO for the next upgrade.
+5) With the banner secured, you start rotating toward a respawn beacon ~156 meters away to bring the teammate back while Round 1 continues to close.
+
+What’s not visible (so I won’t assert specifics)
+- Exact kill/knock/assist counts and total damage dealt aren’t readable in this frame.
+- Which teammate(s) are alive vs. downed beyond the confirmed banner recovery (the prompt uses plural wording by default).
+- The exact location or which squads you fought.
+
+If you share additional screenshots (especially the kill feed, banner cards, or map/score screens before and after fights), I can stitch together a precise, event-by-event timeline with kills, knocks, damage contributions, and squad status changes.

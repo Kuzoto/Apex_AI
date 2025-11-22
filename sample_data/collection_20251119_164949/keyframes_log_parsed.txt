@@ -1,0 +1,70 @@
+Video: sample_data\collection_20251119_164949\gameplay_recording.mp4
+Log: sample_data\collection_20251119_164949\log_test.txt
+Number of Frames: 19
+Model: gpt-5
+
+
+============================================================
+TOKEN USAGE STATISTICS:
+============================================================
+Prompt tokens: 1,507
+Completion tokens: 5,651
+Total tokens: 7,158
+
+============================================================
+
+GAME EVENTS DATA:
+============================================================
+Total Events: 2
+
+=== PLAYER STATUS ===
+  Using: Sentinel
+
+=== OTHER EVENTS ===
+  {'match_info': {'tabs': '{"kills":3,"assists":0,"teams":2,"players":null,"damage":626,"cash":null}'}}
+
+============================================================
+
+GAMEPLAY SUMMARY:
+============================================================
+Here’s a detailed breakdown of what the clip shows and how it lines up with the provided game data.
+
+1) What’s happening in the video
+- Early setup and positioning (Round 1 closing): You start outside near the Gravity Engine complex, hugging cover at a corner while carrying an R-99 (18-round mag). A teammate pinged a Mobile Respawn Beacon, and your other teammate’s banner is in-hand (“DELIVER TO BEACON” shown), so your squad is effectively down to two active players.
+- Transition to ranged pressure (Round 2, ~0:55 until ring closes): You swap to a Sentinel with a long-range optic (variable zoom). You take multiple sightlines on an enemy across the way at roughly 70–80 meters (enemy tag “Ben” at 80m, then 71–77m in subsequent peeks).
+- Enemy defensive cooldown: A blue Dome Shield appears on the far side near the enemy’s position (looks like a Gibraltar bubble), suggesting they’re under pressure and either healing, rezzing, or trying to reset.
+- Late-fight state: A “2 squads left” notification pops while you’re still scoped over the catwalk/railing area, indicating you’ve made it to the final two.
+- Repositioning and chip damage: You switch back to the R-99 and work up along the outer ramps/containers into the Gravity Engine yard, taking some poke damage while peeking over cover. You climb onto a crate/ramp to improve your angle as Round 2 ticks near the minute mark.
+
+2) Correlation with the provided game data
+- Weapon usage: The data says “Using: Sentinel,” which matches the clip’s focus: you repeatedly ADS the Sentinel (with “E to charge” visible), taking angles at mid-range. Your secondary is an R-99 (18 rounds in mag, indicating no extended mag; later frames show 64 light ammo reserve).
+- Match state: The data shows teams: 2, which is echoed visually by the “2 squads left” cue during the Sentinel standoff. It also lists kills: 3 and damage: 626. On-screen during the Sentinel sequence, 626 damage is visible in the HUD panel, matching the API figure. The kills aren’t directly shown in the clip but are consistent with that damage total and the late-game state.
+- Armor/evo: Your shield indicator shows “NEXT LVL: 324 EVO,” consistent with being on Level 2 (blue) Evo and needing 324 to reach the next tier (purple) under the current Evo system.
+- Inventory cues: “E to charge” on Sentinel means you have shield cells available for a charged shot (not used in the frames shown). R-99 appears to have no mag upgrade (base 18), likely a 1x optic (from the sight housing profile), and 64 spare light rounds.
+- Team context: “DELIVER TO BEACON” on a teammate indicates their banner has been recovered. The ping for a Mobile Respawn Beacon matches the visible text callout. With 2 active players and 2 squads left, you’re entering endgame while considering a risky late respawn.
+
+3) Key moments
+- Combat:
+  - Multiple Sentinel ADS attempts on an enemy 70–80m away across the Gravity Engine yard.
+  - Enemy Gibraltar-style Dome Shield appears at distance, indicating an ongoing or imminent push/heal cycle.
+  - You take small amounts of chip damage while repositioning with the R-99.
+- Movement:
+  - Careful peeking from cover outside the building in Round 1.
+  - Push up ramps/crates to gain a better angle into the Gravity Engine yard as Round 2 ticks down.
+- Team interactions:
+  - Teammate pings a Mobile Respawn Beacon while the third’s banner is carried, highlighting a potential plan to bring them back.
+  - Despite being in top 2, the team appears to weigh respawning, though no beacon deployment is shown in the clip.
+- Resource decisions:
+  - You do not charge the Sentinel in the shown moments (conserving cells or waiting for a higher-value shot).
+  - R-99 kept for close/medium pressure, but you largely play the longer sightline with the Sentinel.
+
+4) Sequence and outcome
+- Sequence:
+  - Round 1 closing: You and one teammate navigate outside Gravity Engine with the R-99, staying behind cover; teammate pings a Mobile Respawn Beacon while the third’s banner is in-hand.
+  - Round 2 (~0:55 left): You establish mid-range overwatch with the Sentinel, tracking an enemy at ~70–80m. An enemy Dome appears as pressure mounts.
+  - “2 squads left” appears during the Sentinel standoff, confirming you’re in the final two.
+  - You then swap back to the R-99, take some poke damage, and reposition onto higher ground around containers/ramps, likely setting up for the closing fight.
+- Outcome:
+  - The clip ends before a decisive finish. Based on the API (teams: 2) and the on-screen “2 squads left,” you reached the final two with 3 kills and 626 damage, but the video does not confirm whether you secured the win.
+
+In short: You reach the final two squads while anchoring mid-range with a Sentinel at Gravity Engine, supported by an R-99 for closer engagements. You maintain pressure on a bubbled enemy, manage cover and angles, and set up for the endgame, with 3 kills and 626 damage logged by that point. The clip ends before the final outcome is shown.

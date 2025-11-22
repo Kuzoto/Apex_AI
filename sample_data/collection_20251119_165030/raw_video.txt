@@ -1,0 +1,50 @@
+Video: sample_data\collection_20251119_165030\gameplay_recording.mp4
+Log: None
+Number of Frames: 166
+Model: gpt-5
+
+
+============================================================
+TOKEN USAGE STATISTICS:
+============================================================
+Prompt tokens: 11,665
+Completion tokens: 4,434
+Total tokens: 16,099
+
+============================================================
+
+GAMEPLAY SUMMARY:
+============================================================
+Here’s a concise, play-by-play of what’s happening across the frames:
+
+Context and setting
+- Late game: The HUD shows 2 squads left, so it’s the final fight.
+- Location: An industrial POI with large yellow structures and zip-rails overhead (Broken Moon/Olympus-style visuals).
+- Squad status: Your trio is alive. A Pathfinder teammate is nearby and active throughout the sequence.
+- Ring pressure: The orange/red lattice and screen edge shimmer show you’re fighting on or near the ring edge.
+
+Key sequence 1: Finisher and power-up
+- You down an enemy (the knock itself isn’t shown) and execute a finisher. The cinematic shows Ballistic’s finisher animation (chin-stroke swagger between two big yellow machines).
+- Result: “FINISHER +100” appears; the death box spawns.
+- You immediately level up to MAX LEVEL and get the prompt to press your upgrade key (Season 20’s in-match upgrade system).
+
+Key sequence 2: Reset and re-engage
+- After the finisher, you have a short window to loot, but you stay alert because the last squad is still up.
+- Weapons: You’re running a close/mid-range primary (SMG/AR/shotgun) with a Sentinel as the other weapon (visible on the HUD).
+
+Key sequence 3: Thirst and pressure near the ring
+- You spot a downed opponent below a ledge and put a few shots into them to secure the elimination/deny the rez, all while the ring is ticking at the edge.
+
+Key sequence 4: Final enemy pushes with an ultimate
+- A remaining enemy pushes you at close range. They’re Revenant (reworked) and pop Forged Shadows (you can see the white overshield bar above them and the red shadowy aura).
+- You burn through the Forged Shadows shield and start tagging flesh/armor underneath. Damage ticks shown include multiple chunks (e.g., 23, 48, 61, 65), indicating you’re landing steady hits at close to mid distance.
+- You reload mid-fight under pressure while Revenant is right in front of you. Pathfinder is off to your right, ready to help.
+
+End state
+- The exchange ends mid-fight with Revenant still up but hurt (overshield cracked and health/armor chunked). Your squad still has numbers (3v1 or 3v2 reduced to near 3v1), ring pressure is present, and you’ve already hit MAX LEVEL from the finisher. The outcome isn’t shown, but you’ve secured the advantage: full squad, enemy ult burned, and damage dealt.
+
+Notable details
+- The finisher timing was excellent: it topped you up on points, triggered MAX LEVEL, and set you up for the final duel.
+- You denied a potential revive by thirsting the downed player.
+- Revenant’s ultimate was recognized and addressed correctly—focus fire to remove the Forged Shadows shield first, then continue applying pressure.
+- Discipline: You kept cover between the yellow structures, reloaded deliberately, and had a teammate in position during the close-range duel.

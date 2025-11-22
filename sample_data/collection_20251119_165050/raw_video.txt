@@ -1,0 +1,56 @@
+Video: sample_data\collection_20251119_165050\gameplay_recording.mp4
+Log: None
+Number of Frames: 165
+Model: gpt-5
+
+
+============================================================
+TOKEN USAGE STATISTICS:
+============================================================
+Prompt tokens: 11,595
+Completion tokens: 4,635
+Total tokens: 16,230
+
+============================================================
+
+GAMEPLAY SUMMARY:
+============================================================
+Here’s a clear play-by-play of the endgame sequence shown in the frames, with the key actions, abilities, and combat moments.
+
+Context and loadout
+- Mode and phase: Final engagement with 2 squads left as the ring is closing.
+- Map area: An Olympus industrial section with stacked crates, blue cargo containers, and yellow “Powerizer” tanks (looks like the outer decks around Hammond structures).
+- Your legend and weapons: You’re running Sentinel (sniper) and an R-301 Carbine (iron sights). You’re low on light ammo throughout the sequence.
+- Squad: Full trio alive and moving together; your teammates are close and pushing from your left/forward angles.
+
+Key events and timeline
+1) Opening sightlines and setup
+   - You start scoped with a Sentinel, watching an enemy angle near the elevated walkways and a blue cargo container.
+   - You’re low on sniper ammo and don’t take a committed shot; you swap to the R-301 to conserve/prepare for a closer fight.
+
+2) Enemy tactical lands nearby
+   - An enemy throws an ability that creates a glowing blue radius on the ground just ahead of you (Ash’s Arc Snare). You respect it and stay outside its snare radius, using the cargo container as hard cover.
+
+3) Ring pressure and reposition
+   - As “RING CLOSING” hits, you creep up the right side of the blue container and then along stacked crates, staying inside the safe zone while maintaining cover. Your squad pinches the remaining enemies from complementary angles.
+
+4) Final duel at mid-range
+   - You anchor near the crates and take a clean angle on the last enemy holding by the yellow tanks/railing.
+   - You ADS with the R-301 (iron sights) and beam consistently, despite the “LOW AMMO” warning.
+   - Hit confirmation shows sequential damage ticks; the log calls out “Enemy Shield Broken – Fuse,” identifying the target. You continue to track and land follow-up shots to finish.
+
+5) Match end
+   - The final Fuse goes down, and the “YOU ARE THE CHAMPION” banner appears.
+   - You perform a weapon inspect as the banner lingers; post-fight text briefly mentions loot/arsenal reset messaging (likely mode UI carryover).
+
+What decided the fight
+- Smart cover use: You avoided the snare radius and pie-sliced around the blue container and crates, denying easy angles.
+- Timing with the ring: You advanced as the ring closed, forcing the last opponent into a worse position.
+- Clean tracking with R-301: Despite low ammo and no optic, your mid-range beams broke shield and confirmed the final kill.
+- Team pressure: Teammates held wide/forward positions that limited the enemy’s escape options and made your angle safe to take.
+
+Notable ability interactions
+- Enemy Ash Arc Snare landed near you and was avoided; no defensive ult (like Dome) is used, and no smoke/walls are present. The finish is mainly raw gunplay and positioning.
+
+End result
+- Your team wipes the final enemy (Fuse) and secures the win. Champion screen follows immediately after the last burst from your R-301.

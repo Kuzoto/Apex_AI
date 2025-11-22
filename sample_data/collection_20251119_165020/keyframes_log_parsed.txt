@@ -1,0 +1,76 @@
+Video: sample_data\collection_20251119_165020\gameplay_recording.mp4
+Log: sample_data\collection_20251119_165020\log_test.txt
+Number of Frames: 3
+Model: gpt-5
+
+
+============================================================
+TOKEN USAGE STATISTICS:
+============================================================
+Prompt tokens: 576
+Completion tokens: 4,457
+Total tokens: 5,033
+
+============================================================
+
+GAME EVENTS DATA:
+============================================================
+Total Events: 6
+
+=== PLAYER STATUS ===
+  Using: R-99
+
+=== INVENTORY ===
+  inventory_4: unknown_166 x62
+
+=== OTHER EVENTS ===
+  {'events': [{'name': 'damage', 'data': '{\r\n  "targetName": "CoefficientConqueror",\r\n  "damageAmount": "70.000000",\r\n  "armor": "false",\r\n  "headshot": "false"\r\n}'}]}
+  {'match_info': {'tabs': '{"kills":3,"assists":0,"teams":2,"players":null,"damage":766,"cash":null}'}}
+  {'events': [{'name': 'damage', 'data': '{\r\n  "targetName": "CoefficientConqueror",\r\n  "damageAmount": "13.000000",\r\n  "armor": "false",\r\n  "headshot": "false"\r\n}'}]}
+  {'match_info': {'tabs': '{"kills":3,"assists":0,"teams":2,"players":null,"damage":776,"cash":null}'}}
+
+============================================================
+
+GAMEPLAY SUMMARY:
+============================================================
+Here’s what’s happening in the clip and how it lines up with the API data:
+
+1) What the video shows
+- Setting and phase: You’re on Olympus (pink trees, rooftop catwalks and yellow silos), and the HUD shows “2 squads left,” so this is the endgame.
+- Opening shot: You scope in with a Sentinel and land a close-range body shot on an enemy in red (target name in the data: “CoefficientConqueror”). A “70” red damage number pops up, indicating flesh damage (their shields were already broken).
+- Status/UI cues: A Lifeline tip bubble says your shields are low. Your armor evolution tracker drops (e.g., NEXT LVL value decreases after dealing damage).
+- Knockdown: Seconds later, the enemy is downed. The “Knocked Down” banner and +150 XP are visible, and the finisher prompt (“F for FINISHER”) appears. A teammate (ShadowOsXV) is right next to the downed enemy, covering.
+- Finisher start: The screen goes into a bright white flash as the finisher animation begins—likely to instantly restore your shields in the middle of this final fight.
+
+2) Correlation to the game data
+- Weapon use:
+  - The UI lists “Using: R-99,” and your ammo readout shows 18 in mag with 62 reserve—consistent with an R-99 loadout.
+  - Visually, you fire the Sentinel for the key 70-damage shot; this matches the API event: damageAmount 70.000000, armor false, headshot false. Sentinel body shots do 70, which is exactly what we see.
+  - The second recorded hit is 13 damage (also armor false, headshot false). This is a small flesh follow-up that contributes to the knock; it could be a chip shot from your secondary (R-99) or a stray hit immediately before/while the enemy is going down.
+- Damage and tabs:
+  - The API shows damage events of 70 and 13 to “CoefficientConqueror.”
+  - The match_info tabs update from 766 to 776 damage, aligning with the additional chip damage (the exact running total in the UI/API can lag or consolidate between updates).
+  - Kills stay at 3 in both tab snapshots, which fits the video: you got a knock, not a confirmed elimination yet (kills typically tick up on a full elimination).
+- Inventory:
+  - inventory_4: unknown_166 x62 lines up with your reserve ammo reading 62 for the R-99; unknown_166 is very likely Light Rounds.
+
+3) Key moments
+- Combat:
+  - Clutch close-range Sentinel body shot for 70 flesh to swing the duel in your favor.
+  - Quick follow-up damage secures the knock.
+- Team interaction:
+  - A teammate is already on top of the downed opponent, providing immediate cover while you line up a finisher.
+- Resource management:
+  - You’re low on shields (explicit tip on screen).
+  - You initiate a finisher to restore shields instantly—smart endgame play with only two squads left.
+- Positioning/movement:
+  - Fighting on rooftop platforms near yellow industrial tanks/silos, using the high ground and cover edges typical of Olympus POIs.
+
+4) Sequence of events and outcome
+- Pre-clip state: Endgame with 2 squads left; you have 3 kills and 766 total damage per the tabs at one point.
+- Event 1: You hit “CoefficientConqueror” with a Sentinel for 70 flesh (API: 70, armor false, not a headshot).
+- Event 2: A 13-damage flesh follow-up registers (API: 13, armor false), contributing to the knock.
+- Event 3: The opponent is knocked. “F to FINISHER” appears; you begin a finisher to regain shields.
+- Outcome: The clip ends as the finisher animation starts. The final fight result isn’t shown, but you’ve secured a knock and are restoring shields at the 2-squad endgame, giving your team a strong advantage to close the match.
+
+In short: You used a Sentinel to land a pivotal 70 body shot on a no-shield enemy, quickly chipped another 13 to finish the knock, and immediately started a finisher to restore shields while your teammate covered—precise, resource-savvy play in the final two-squad standoff.
