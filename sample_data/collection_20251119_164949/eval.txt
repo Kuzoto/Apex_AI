@@ -1,0 +1,296 @@
+===================================
+event_frames_log.txt
+
+Log File: sample_data\collection_20251119_164949\log_test.txt
+Frames Folder: sample_data\collection_20251119_164949\frames
+Number of Frames: 3
+Log Size: 156 characters
+Model: gpt-5
+
+
+============================================================
+TOKEN USAGE STATISTICS:
+============================================================
+Prompt tokens: 332
+Completion tokens: 4,010
+Total tokens: 4,342
+
+============================================================
+
+Here's a concise, event-by-event recap of the match based on the log and the screenshots.
+
+Overall stats
+- Final tally (from log): 3 kills, 0 assists, 626 damage *Correct*.
+- Squads remaining: dropped to the final 2 *Incorrect, video shows 3 squads left in extracted frames*.
+- Weapons used: Sentinel sniper (actively in use late), plus an R-301 Carbine *Incorrect, R-99 not R-301*.
+- Location focus: Gravity Engine (Olympus) *Correct*.
+- Team: full 3-stack visible and up in all shown moments *Incorrect, DevDynamo has "DELIVER TO BEACON" - banner only*.
+
+Sequence of events
+1) Mid-game setup (Round 2, 3 squads left)
+   - Your squad is rotating around Gravity Engine, using cover on the edge of a building/rock outcrop *Correct about location*.
+   - A teammate pings a mobile respawn beacon (indicating loot awareness/utility planning) *Correct*.
+   - You have the R-301 out while moving and holding angles *Incorrect, R-99 not R-301*. Three squads remain at this point *Correct for these frames*.
+
+2) Taking high ground and spotting the next fight (Round 2, ring closing soon)
+   - You move onto the Gravity Engine upper platform/catwalks overlooking the choke *Correct*.
+   - An enemy is pinged at roughly 68 meters *Incorrect, shows 135m in one frame*.
+   - You swap to the Sentinel and prep to take long-range shots (Deadeye's Tempo charge prompt visible), setting up for a ranged engagement *Cannot verify Deadeye's Tempo*.
+
+3) Engagement and eliminations
+   - From the high ground, you begin the fight with the Sentinel and mix in the R-301 for follow-up/closer-range pressure *Incorrect weapon name*.
+   - Across these engagements you secure 3 confirmed kills and 0 assists, totaling 626 damage. With 0 assists, your eliminations appear to come from your own knocks converting into kills *Correct stats*.
+   - Your EVO tracker indicates you're working toward the next armor tier during this stretch (progress visible in the HUD) *Correct*.
+
+4) Final circle setup (2 squads left)
+   - The lobby drops from 3 to 2 squads while you're still at Gravity Engine during Round 2's close *Cannot verify in extracted frames, shows 3 squads*.
+   - An enemy is pinged again at about 50 meters as you line up with the Sentinel for the final showdown *Cannot verify exact distance*.
+   - Your team remains a full trio at this point; no downs are shown in the captured moments *Incorrect, DevDynamo has banner only*.
+
+What this indicates
+- You carried the mid-to-late transition with impactful picks: three kills for 626 damage suggests clean, high-value engagements (finishing your own knocks) *Correct reasoning*.
+- Smart positioning: high ground at Gravity Engine, good sightlines with the Sentinel, and readiness to swap to the R-301 when pushing/holding closer angles *Incorrect weapon name*.
+- Strong endgame setup: reaching the final two squads with your entire team alive as Round 2 is closing, poised to take the last fight *Incorrect about team status and cannot verify final 2 squads in frames*.
+
+
+Statements: 19
+Incorrect Statements: 9
+Accuracy: 53%
+=====================
+raw_video.txt
+
+Video: sample_data\collection_20251119_164949\gameplay_recording.mp4
+Log: None
+Number of Frames: 176
+Model: gpt-5
+
+
+============================================================
+TOKEN USAGE STATISTICS:
+============================================================
+Prompt tokens: 12,365
+Completion tokens: 5,547
+Total tokens: 17,912
+
+============================================================
+
+GAMEPLAY SUMMARY:
+============================================================
+Here's a concise, chronological breakdown of what the frames show from this Apex Legends sequence:
+
+Context and setup
+- Squad: Full trio alive *Incorrect, DevDynamo has banner only*. You're playing Seer (heartbeat sensor visible while ADS; red diamonds appear on scans) *Incorrect, player is Sparrow; tracker notification is from enemy Bloodhound*.
+- Loadout: A mid-range rifle with 18 rounds per mag (likely R-301) *Incorrect, it's R-99* and a Sentinel sniper (2x-4x optic) *Cannot verify exact optic*. Blue EVO armor (level 2) *Correct*.
+- Location: An industrial complex/courtyard with large yellow cylindrical tanks, catwalks, and crates (open lanes and plenty of cover) *Correct*.
+- Game state: Starts with 5 squads left during Round 1; by the end it's down to the final 2 squads (6 players total) *Cannot verify 5 squads or final 2 in extracted frames, shows 3 squads*.
+
+Early movement and positioning
+- You begin tucked behind a shipping container, peeking toward the open yard. You take light chip damage while shouldering the angle *Correct about positioning*.
+- You climb onto a low wall for a better line, then inch up to a catwalk using cover (containers, crate stacks, railings) *Correct*.
+- You use Seer's passive (heartbeat sensor) and then tactical to scan—enemies get marked with red diamonds at roughly 50–60 meters across the yard on the upper walkway *Incorrect, player is not Seer; tracker notification is from enemy Bloodhound*.
+
+Mid-round control and scouting
+- You ping enemy positions multiple times (teammate pings also appear, including a mobile respawn beacon earlier) *Correct*.
+- You swap to the Sentinel, chamber it, and spend a Shield Cell to "charge" it (the charge animation is shown) *Cannot verify charging in extracted frames*. You hold angles with the 2x-4x scope, watching long sightlines (80–120 meters) into doorways and a balcony across the complex *Correct concept, shows 135m in one frame*.
+- You keep advancing methodically: wall → catwalk → around a large yellow tank, always using cover and rechecking with ADS for heartbeat pings *Incorrect about heartbeat pings*.
+- No confirmed shots landed in the frames—this phase is about information, marks, and holding advantageous angles while the lobby thins (squads drop from 5 → 3) *Cannot verify squad progression in extracted frames*.
+
+Endgame setup
+- You post up on a bridge/headglitch overlooking the final engagement area (enemy pings ~70–100 meters) *Correct about positioning*.
+- A Gibraltar Dome of Protection pops on the far side (blue bubble), signaling a defensive push/rez or a team under pressure *Cannot verify Gibraltar dome in extracted frames*. Shortly after, you start taking incoming fire *Cannot verify*.
+- The HUD shows 2 squads left (6 alive), indicating the final 3v3 is about to kick off *Cannot verify 2 squads in extracted frames, shows 3*. You're still in good cover, Sentinel ready, watching the bubble and the lanes around it *Partially correct*.
+
+Key takeaways
+- Strong, patient macro: you rotate into a powerful position, maintain cover, and let other squads fight as the count drops *Correct*.
+- Information-first Seer play: frequent ADS checks for heartbeat, a well-timed tactical scan to mark enemies for the team, and steady pings to coordinate *Incorrect, player is not Seer*.
+- Loadout synergy: R-301 (or similar) for midrange and a charged Sentinel to punish peeks across long lanes *Incorrect weapon name*.
+- Final moments show a Gibraltar bubble ahead and you under light fire—everything is set for the last fight, but these frames stop just before the engagement fully unfolds *Cannot verify Gibraltar bubble*.
+
+No knocks/finishes are shown in these frames; the sequence captures smart positioning, scouting, and pre-fight setup leading into the final 2-squad showdown *Partially correct, though cannot verify 2 squads*.
+
+
+Statements: 21
+Incorrect Statements: 11
+Accuracy: 48%
+=====================
+keyframes_log_parsed.txt
+
+Video: sample_data\collection_20251119_164949\gameplay_recording.mp4
+Log: sample_data\collection_20251119_164949\log_test.txt
+Number of Frames: 19
+Model: gpt-5
+
+
+============================================================
+TOKEN USAGE STATISTICS:
+============================================================
+Prompt tokens: 1,507
+Completion tokens: 5,651
+Total tokens: 7,158
+
+============================================================
+
+GAME EVENTS DATA:
+============================================================
+Total Events: 2
+
+=== PLAYER STATUS ===
+  Using: Sentinel
+
+=== OTHER EVENTS ===
+  {'match_info': {'tabs': '{"kills":3,"assists":0,"teams":2,"players":null,"damage":626,"cash":null}'}}
+
+============================================================
+
+GAMEPLAY SUMMARY:
+============================================================
+Here's a detailed breakdown of what the clip shows and how it lines up with the provided game data.
+
+1) What's happening in the video
+- Early setup and positioning (Round 1 closing): You start outside near the Gravity Engine complex, hugging cover at a corner while carrying an R-99 (18-round mag) *Correct*. A teammate pinged a Mobile Respawn Beacon, and your other teammate's banner is in-hand ("DELIVER TO BEACON" shown), so your squad is effectively down to two active players *Correct*.
+- Transition to ranged pressure (Round 2, ~0:55 until ring closes): You swap to a Sentinel with a long-range optic (variable zoom) *Correct*. You take multiple sightlines on an enemy across the way at roughly 70–80 meters (enemy tag "Ben" at 80m, then 71–77m in subsequent peeks) *Cannot verify these specific distances or names, shows 135m in one frame*.
+- Enemy defensive cooldown: A blue Dome Shield appears on the far side near the enemy's position (looks like a Gibraltar bubble), suggesting they're under pressure and either healing, rezzing, or trying to reset *Cannot verify Gibraltar dome in extracted frames*.
+- Late-fight state: A "2 squads left" notification pops while you're still scoped over the catwalk/railing area, indicating you've made it to the final two *Cannot verify in extracted frames, shows 3 squads*.
+- Repositioning and chip damage: You switch back to the R-99 and work up along the outer ramps/containers into the Gravity Engine yard, taking some poke damage while peeking over cover. You climb onto a crate/ramp to improve your angle as Round 2 ticks near the minute mark *Correct about repositioning*.
+
+2) Correlation with the provided game data
+- Weapon usage: The data says "Using: Sentinel," which matches the clip's focus: you repeatedly ADS the Sentinel (with "E to charge" visible), taking angles at mid-range *Correct*. Your secondary is an R-99 (18 rounds in mag, indicating no extended mag; later frames show 64 light ammo reserve) *Correct*.
+- Match state: The data shows teams: 2, which is echoed visually by the "2 squads left" cue during the Sentinel standoff *Cannot verify in extracted frames*. It also lists kills: 3 and damage: 626. On-screen during the Sentinel sequence, 626 damage is visible in the HUD panel, matching the API figure *Correct*. The kills aren't directly shown in the clip but are consistent with that damage total and the late-game state *Correct*.
+- Armor/evo: Your shield indicator shows "NEXT LVL: 324 EVO," consistent with being on Level 2 (blue) Evo and needing 324 to reach the next tier (purple) under the current Evo system *Incorrect, shows "NEXT LVL: 524 EVO"*.
+- Inventory cues: "E to charge" on Sentinel means you have shield cells available for a charged shot (not used in the frames shown) *Correct*. R-99 appears to have no mag upgrade (base 18), likely a 1x optic (from the sight housing profile), and 64 spare light rounds *Correct*.
+- Team context: "DELIVER TO BEACON" on a teammate indicates their banner has been recovered. The ping for a Mobile Respawn Beacon matches the visible text callout. With 2 active players and 2 squads left, you're entering endgame while considering a risky late respawn *Correct reasoning*.
+
+3) Key moments
+- Combat:
+  - Multiple Sentinel ADS attempts on an enemy 70–80m away across the Gravity Engine yard *Cannot verify exact distances*.
+  - Enemy Gibraltar-style Dome Shield appears at distance, indicating an ongoing or imminent push/heal cycle *Cannot verify Gibraltar dome*.
+  - You take small amounts of chip damage while repositioning with the R-99 *Cannot verify*.
+- Movement:
+  - Careful peeking from cover outside the building in Round 1 *Correct*.
+  - Push up ramps/crates to gain a better angle into the Gravity Engine yard as Round 2 ticks down *Correct*.
+- Team interactions:
+  - Teammate pings a Mobile Respawn Beacon while the third's banner is carried, highlighting a potential plan to bring them back *Correct*.
+  - Despite being in top 2, the team appears to weigh respawning, though no beacon deployment is shown in the clip *Correct reasoning*.
+- Resource decisions:
+  - You do not charge the Sentinel in the shown moments (conserving cells or waiting for a higher-value shot) *Cannot verify*.
+  - R-99 kept for close/medium pressure, but you largely play the longer sightline with the Sentinel *Correct*.
+
+4) Sequence and outcome
+- Sequence:
+  - Round 1 closing: You and one teammate navigate outside Gravity Engine with the R-99, staying behind cover; teammate pings a Mobile Respawn Beacon while the third's banner is in-hand *Correct*.
+  - Round 2 (~0:55 left): You establish mid-range overwatch with the Sentinel, tracking an enemy at ~70–80m *Correct concept*. An enemy Dome appears as pressure mounts *Cannot verify*.
+  - "2 squads left" appears during the Sentinel standoff, confirming you're in the final two *Cannot verify in extracted frames*.
+  - You then swap back to the R-99, take some poke damage, and reposition onto higher ground around containers/ramps, likely setting up for the closing fight *Correct concept*.
+- Outcome:
+  - The clip ends before a decisive finish. Based on the API (teams: 2) and the on-screen "2 squads left," you reached the final two with 3 kills and 626 damage, but the video does not confirm whether you secured the win *Correct reasoning*.
+
+In short: You reach the final two squads while anchoring mid-range with a Sentinel at Gravity Engine, supported by an R-99 for closer engagements. You maintain pressure on a bubbled enemy *Cannot verify bubble*, manage cover and angles, and set up for the endgame, with 3 kills and 626 damage logged by that point. The clip ends before the final outcome is shown *Correct summary*.
+
+
+Statements: 28
+Incorrect Statements: 7
+Accuracy: 75%
+=====================
+keyframes_log_unparsed.txt
+
+Video: sample_data\collection_20251119_164949\gameplay_recording.mp4
+Log: sample_data\collection_20251119_164949\log_test.txt
+Number of Frames: 19
+Model: gpt-5
+
+
+============================================================
+TOKEN USAGE STATISTICS:
+============================================================
+Prompt tokens: 1,500
+Completion tokens: 5,703
+Total tokens: 7,203
+
+============================================================
+
+GAME EVENTS DATA:
+============================================================
+{"me":{"inUse":"{\"inUse\":\"Sentinel\"}"}}
+{"match_info":{"tabs":"{\"kills\":3,\"assists\":0,\"teams\":2,\"players\":null,\"damage\":626,\"cash\":null}"}}
+
+============================================================
+
+GAMEPLAY SUMMARY:
+============================================================
+Here's a detailed, frame-by-frame synthesis of what's happening in the clip and how it lines up with the provided API data.
+
+High-level overview
+- Location: Olympus, Gravity Engine POI *Correct*.
+- Legend: You're playing Octane (stim icon visible) *Incorrect, player is Sparrow*.
+- Armor: Blue Evo (Level 2), "NEXT LVL: 32 EVO" shows you're 32 damage from purple *Incorrect, shows "NEXT LVL: 524 EVO"*.
+- Squad: Full trio at the time of these frames; a teammate pings a Mobile Respawn Beacon, suggesting a recent or potential respawn *Incorrect, DevDynamo has banner only*.
+- Ring state: Starts during Round 1 closing, then most of the action happens as Round 2 is closing (~55 seconds on the timer) *Correct*.
+- Loadout across the sequence:
+  - Long-range: Sentinel (with Deadeye's Tempo prompt) for scouting/pokes *Correct about Sentinel, cannot verify Deadeye's Tempo*.
+  - Mid-range: Bocek Compound Bow (28 arrows, also using Deadeye's Tempo) *Incorrect, no Bocek Bow visible*.
+  - Close-range: SMG with 1x Digital Threat (likely R-99 or C.A.R.) with 18 in mag, 64 reserve *Correct about R-99*.
+
+Key actions and events (chronological)
+1) Early positioning (Frames 1, 12–20)
+- You're posted on the outskirts near the Gravity Engine structure, using cover by the corner building and catwalks. The HUD shows 5 squads left at first, and "Round 1 – closing." *Cannot verify 5 squads in extracted frames, shows 3*.
+- You ready an SMG for near-to-mid engagements, then briefly switch between angles, lining up a route to push in on the left-side railings and boxes *Correct*.
+
+2) Long-range scouting with Sentinel (Frames 2–4)
+- As Round 2 is closing (timer ~0:55), you ADS with a long-range scope on the Sentinel, ranging targets at ~90m inside the building *Correct about Round 2, different distance visible (135m)*. You briefly de-scope and reload/ready the rifle (ammo appears to be partially spent) *Cannot verify*.
+- The Deadeye's Tempo/charge prompt appears on screen, indicating the Sentinel's charge mechanic is available *Cannot verify Deadeye's Tempo*.
+
+3) Mid-range pressure with the Bocek Bow (Frames 5–9)
+- You swap from the Sentinel to a Bocek (28 arrows), repeatedly drawing on targets at 71–66 meters. The Deadeye's Tempo prompt persists, now relevant to the Bocek's fire rhythm *Incorrect, no Bocek Bow visible in video*.
+- You strafe and micro-adjust angles while holding draw, looking to capitalize on mid-range poke damage *Incorrect*.
+- This phase signals a shift in intent: after scouting with the Sentinel, you commit to consistent ranged chip with the Bocek *Incorrect*.
+
+4) Enemy defensive cooldown and close-range prep (Frames 10–11)
+- A Gibraltar Dome Shield goes down near the enemy's position (blue bubble), which blocks your lines of sight and likely covers their heal/res *Cannot verify Gibraltar dome in extracted frames*.
+- You swap to your close-range SMG with a 1x Digital Threat (18 in mag, 64 reserve), signaling a push is coming once they're stuck behind the dome or once it expires *Partially correct, R-99 visible but cannot verify Digital Threat*.
+- Around here, the feed/hud shows the lobby thinning fast. In one frame, the top-right indicator shows a drop to 2 squads left (matching the API data's teams: 2) *Cannot verify 2 squads in extracted frames, shows 3*.
+
+5) Push/rotation to better angles (Frames 12–20)
+- You move from the exterior corner onto the catwalk/rail path, using boxes and railing head-glitches for cover while keeping the SMG out for a close-range fight *Correct*.
+- You consistently peek toward the central Gravity Engine platform and the front of the building, setting up a collapse once the dome and distance advantages fade *Correct concept*.
+- The ring state shows Round 2 closing/countdown continuing; by the final frame the ring timer is refreshed at 0:59 for Round 2 (indicating a transition in ring state or a snapshot just after a close) *Correct about Round 2*.
+
+Correlating with the API data
+- me.inUse: "Sentinel"
+  - Matches the mid-clip usage where you ADS and scout/poke with a long-range optic. You then transition to the Bocek and finally to an SMG as you close distance *Incorrect about Bocek*.
+- match_info.tabs: kills 3, assists 0, damage 626, teams 2
+  - The frames themselves don't show the kill count pop-ups, but you are clearly in late game: the HUD shows 5 squads at first and then drops rapidly, with an explicit "2 squads left" during the Bocek/SMG phase (consistent with "teams: 2") *Cannot verify squad progression or 2 squads in extracted frames*.
+  - 626 damage and 3 kills indicate you were impactful—likely landing solid poke with the Sentinel/Bocek and cleaning up at closer ranges *Incorrect about Bocek*. The Blue Evo needing only 32 damage to level up to purple fits with sustained mid-range pokes that stacked damage *Incorrect EVO number*.
+
+Important moments identified
+- Combat:
+  - Long-range Sentinel scouting and potential tags at ~90m *Different distance visible*.
+  - Sustained Bocek pressure at 66–71m, leveraging Deadeye's Tempo for faster follow-up shots *Incorrect, no Bocek*.
+  - Enemy Gibraltar Dome appears—clear sign of defensive reset/heal or cover to disengage *Cannot verify*.
+  - Weapon swap to SMG with Digi-Threat—preparing to capitalize at close range and to track enemies through smoke/cover if needed *Cannot verify Digital Threat*.
+- Movement:
+  - Careful lane control from the outer corner to the catwalk/rail, taking high-ground angles and hard cover near the boxes *Correct*.
+  - Intentional angle shifts to maintain LOS while the enemy dome is active *Cannot verify dome*.
+- Team interactions:
+  - Teammate pinged a Mobile Respawn Beacon (top-right message), suggesting awareness of respawn options—likely because a teammate was downed earlier or to ensure safety in late game *Correct*.
+  - Trio remains coordinated; no explicit revives are shown in these frames, but the ping hints at contingency planning *Incorrect, only 2 active players*.
+- Looting:
+  - No looting is shown in these frames—focus is entirely on positioning, poking, and preparing a push *Correct*.
+
+Sequence and outcome
+- Sequence: You begin with safe, long-range info gathering (Sentinel), transition into mid-range chip (Bocek) *Incorrect*, trigger/observe an enemy Gibraltar Dome *Cannot verify*, and then rotate in with an SMG and Digi-Threat to set up a close-quarters collapse *Partially correct*.
+- Outcome visible in frames: The clip ends just as you're moving into a strong close-range angle; the fight resolution isn't shown *Correct*.
+- Outcome per data: By the time the API snapshot was taken, you had 3 kills, 626 total damage, and your squad was in the final 2. That implies you survived subsequent engagements after these frames and reached the last matchup (top 2), with a strong individual contribution *Correct reasoning*.
+
+Notable details and tells
+- Deadeye's Tempo hop-up is in play for both the Sentinel and Bocek phases *Cannot verify*.
+- Blue Evo is nearly at purple (32 dmg to go), consistent with the 626 damage total *Incorrect EVO number*.
+- SMG has a 1x Digital Threat—ideal for close quarters and synergizes with pushing into areas where enemies might smoke or hide behind cover *Cannot verify Digital Threat*.
+- The enemy's Gibraltar Dome timing suggests they were pressured by your ranged pokes and needed to heal/reset before you pushed *Cannot verify dome*.
+
+In short: This clip shows a disciplined late-game push setup. You gather info and tag with the Sentinel, apply steady ranged pressure with the Bocek *Incorrect*, force a Gibraltar Dome *Cannot verify*, and then begin a coordinated close-range collapse with an SMG and Digi-Threat *Partially correct*. The API data confirms a strong performance (3 kills, 626 damage) and that you made it to the final 2 squads *Correct*.
+
+
+Statements: 39
+Incorrect Statements: 17
+Accuracy: 56%
+=====================

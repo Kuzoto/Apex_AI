@@ -1,0 +1,285 @@
+===================================
+event_frames_log.txt
+
+Log File: sample_data\collection_20251119_165009\log_test.txt
+Frames Folder: sample_data\collection_20251119_165009\frames
+Number of Frames: 2
+Log Size: 447 characters
+Model: gpt-5
+
+
+============================================================
+TOKEN USAGE STATISTICS:
+============================================================
+Prompt tokens: 352
+Completion tokens: 4,704
+Total tokens: 5,056
+
+============================================================
+
+Here's a structured recap of the match based on the log data and the two screenshots:
+
+Match state and stats
+- Late game: 2 squads left (final duel) *Correct*.
+- Your tally at this point: 3 kills, 0 assists, 696 damage *Incorrect, HUD shows 626 damage*.
+- You're running a Sentinel with Deadeye's Tempo, and the rifle is charged *Correct about Sentinel, cannot verify Deadeye's Tempo or if charged*. One round is chambered during the key shots shown *Incorrect, shows "R RELOAD" prompt*.
+- Your evo shield is purple (UI shows "NEXT LVL 388 EVO," meaning 388 damage needed to reach red) *Incorrect, shows "NEXT LVL: 399 EVO"*.
+
+Team status
+- Team frames are up; at least one teammate is confirmed alive from logs (DevDynamo) *Correct about DevDynamo*. In the screenshots, your squad UI shows all three frames present (no obvious death/respawn indicators) *Incorrect, DevDynamo shows "RESPAWNING"*.
+- You're under pressure during the fight (red vignette on the screen edges) *Cannot verify red vignette in extracted frames*.
+
+Key combat sequence (final two squads)
+1) 0:41 on the ring timer (first screenshot)
+   - You're scoped with the Sentinel, tracking a red-highlighted enemy at roughly 35 meters *Incorrect, shows 25 meters*.
+   - Positioning is around industrial cover; you're lining up a shot with the Sentinel's charge active *Cannot verify if charged*.
+
+2) 0:33 on the ring timer (second screenshot)
+   - You close the distance to very close range (around 11 meters) *Cannot verify exact distance in this frame*.
+   - You land a 70-damage body shot with the Sentinel on an enemy Seer *Correct*.
+   - The hit cracks their shield (UI: "Enemy Shield Broken — Seer"), likely creating a window to push or secure a knock *Correct*.
+
+Other logged event
+- Separate damage event recorded: 20 damage to health (no armor, no headshot) on a player named "CoefficientConqueror." This was flesh damage, suggesting a cleanup chip on a low/downswing target at some point in the match *Correct*.
+
+What this means for the match flow
+- By the time only two squads remained, you had already secured 3 kills with 696 total damage *Incorrect damage number, should be 626*.
+- In the final engagement, you used a charged Sentinel to open/continue the fight by cracking the enemy Seer's shields at close range, while your squad remained active *Correct concept, though cannot verify if Sentinel was charged*.
+- The provided data doesn't show a confirmed knock or the match outcome after the shield break, but the sequence indicates you created a strong advantage to capitalize on in the last fight *Correct*.
+
+
+Statements: 16
+Incorrect Statements: 6
+Accuracy: 62%
+=====================
+raw_video.txt
+
+Video: sample_data\collection_20251119_165009\gameplay_recording.mp4
+Log: None
+Number of Frames: 181
+Model: gpt-5
+
+
+============================================================
+TOKEN USAGE STATISTICS:
+============================================================
+Prompt tokens: 12,715
+Completion tokens: 5,078
+Total tokens: 17,793
+
+============================================================
+
+GAMEPLAY SUMMARY:
+============================================================
+Here's a clear, play-by-play of what's happening in these Apex Legends frames.
+
+High-level context
+- Map and phase: Olympus rooftop/catwalk area with large yellow "Powerizer" tanks. Only 2 squads left (final fight) *Correct*.
+- Your loadout: Sentinel sniper rifle with Deadeye's Tempo (DT Charge shown) *Cannot verify Deadeye's Tempo*, plenty of sniper ammo *Correct*. You're playing a long-mid angle from high ground railings and tank cover *Correct*.
+- Enemy identified: A Seer (the red outfit/hat silhouette is unmistakable) *Correct*.
+- Team state: All three of your squadmates are alive *Incorrect, DevDynamo is RESPAWNING*. One teammate is pushing the lower lane/catwalk ahead of you while you hold a high-ground off-angle *Correct about teammate positioning*.
+
+What happens, chronologically
+1) Opening angle (approx. 25–30 meters):  
+   - You scope in on an enemy Seer crossing an open pad near a corner by the yellow tanks *Correct*.
+   - You try to fire but the Sentinel is empty ("RELOAD" prompt). You briefly stay scoped while the enemy moves, then unscope to reload *Correct*.
+
+2) Enemy ability appears near Seer:  
+   - While you're reloading/re-shouldering your position, a tall, vertical blue energy column pops into existence right near the Seer. This is an ability being placed (it visually resembles a deploy animation such as Rampart Amped Cover starting up or a Loba/Ash placement effect) *Incorrect, no blue energy column visible in video*.
+
+3) Reposition and reload:  
+   - You slide/strafe along the yellow railing to get a safer angle and complete your reload *Correct*.
+   - Your teammate below (on the lower lane) keeps inching up, drawing some enemy attention *Correct*.
+
+4) Reacquire and set up a close snipe (15–20 meters):  
+   - You ADS again from cover and track the Seer as they hug the big yellow tank *Correct*.
+   - You hold the sight steady for several beats, waiting for a clean body shot while the Seer briefly stands exposed near the tank's edge *Correct*.
+
+5) Impact shot and shield break:  
+   - You land a clean body shot with the Sentinel for 70 damage, and the UI confirms "Enemy Shield Broken – Seer." *Correct*
+   - Your Sentinel is now empty again ("RELOAD" prompt returns) *Correct*.
+
+6) Counterfire and pressure back:  
+   - Immediately after you crack Seer, they return fire from the same general angle. You take shield damage (on-screen warning suggests your shields are low and advises using a cell/battery) *Cannot verify shields warning in extracted frames*.
+   - You dip slightly, hugging the tank/rail cover, and hold the angle rather than instantly reloading or popping a bat *Correct*.
+
+7) Standoff and tracking:  
+   - With Seer cracked and your shields low, you continue to hold the lane, tracking Seer as they re-peek around the yellow tank and pallets *Cannot fully verify*.
+   - Your teammate below maintains forward pressure on the flank *Correct*.
+   - The sequence ends with you still scoped or ready to scope, watching for another punish window while the enemy hesitates around cover *Correct*.
+
+Key details and takeaways
+- Final fight: With only 2 squads left, this is a pivotal engagement. You have high ground and a strong off-angle supporting a teammate push *Correct*.
+- Missed first opportunity due to empty chamber: The initial perfect sight picture on Seer is lost because the Sentinel wasn't loaded. You fix it, but it costs time and initiative *Correct*.
+- Great punish window: You line up a calm, close-range Sentinel body shot that instantly cracks Seer's shields—exactly the kind of mid-fight swing you want in a final skirmish *Correct*.
+- Immediate counterfire: After cracking Seer, you take return damage and don't heal right away. With a bolt-action at close range and no round chambered, there's a brief vulnerability window *Partially correct reasoning*.
+- Ability activity near Seer: A vertical blue energy column appears by the enemy—likely a deployable/ultimate being set up to stabilize or enable looting/cover. It suggests the enemy is trying to set up some utility mid-fight *Incorrect, no blue column visible*.
+
+Suggestions (if you want to convert that crack into a finish)
+- Pre-load and pre-charge *Ignored*
+- Heal timing *Ignored*
+- Push and trade *Ignored*
+
+In short: You catch the final enemy Seer in the open, miss the very first chance because the Sentinel isn't loaded, then reset, land a clutch 70-damage Sentinel body shot to crack their shields, and hold the angle while taking some counterfire. Your team has numbers and positioning; with a quick heal/reload and a coordinated swing, this likely sets up the closing knock and match win *Correct summary*.
+
+
+Statements: 26
+Incorrect Statements: 4
+Accuracy: 85%
+=====================
+keyframes_log_parsed.txt
+
+Video: sample_data\collection_20251119_165009\gameplay_recording.mp4
+Log: sample_data\collection_20251119_165009\log_test.txt
+Number of Frames: 8
+Model: gpt-5
+
+
+============================================================
+TOKEN USAGE STATISTICS:
+============================================================
+Prompt tokens: 835
+Completion tokens: 4,592
+Total tokens: 5,427
+
+============================================================
+
+GAME EVENTS DATA:
+============================================================
+Total Events: 4
+
+=== INVENTORY ===
+  inventory_1: unknown_170 x23
+
+=== OTHER EVENTS ===
+  {'match_info': {'teammate_1': '{"name":"DevDynamo","state":"alive"}'}}
+  {'events': [{'name': 'damage', 'data': '{\r\n  "targetName": "CoefficientConqueror",\r\n  "damageAmount": "20.000000",\r\n  "armor": "false",\r\n  "headshot": "false"\r\n}'}]}
+  {'match_info': {'tabs': '{"kills":3,"assists":0,"teams":2,"players":null,"damage":696,"cash":null}'}}
+
+============================================================
+
+GAMEPLAY SUMMARY:
+============================================================
+Here's what the clip shows and how it lines up with the API data:
+
+1) What happens in the video
+- Setting and context: You're on Olympus (industrial catwalks and large yellow tanks, pink trees in view) with 2 squads left *Correct*. The ring timer is ticking (~0:39) — this is the final fight setup *Correct about timer*.
+- Opening posture: You're hard-holding a head-glitch/cover behind a big red valve wheel, ADS with a Sentinel *Incorrect, no red valve wheel visible*. The weapon is empty and you start a reload while peeking the lane *Correct about reload*.
+- First key shot: You shoulder peek and land a body shot for 70 on an enemy Seer, and the HUD confirms "Enemy Shield Broken — Seer." *Correct* You take return fire — the red vignette and on-screen prompt ("Your shields are low…") indicate your shields are cracked/very low *Cannot verify in extracted frames*.
+- Pressure vs heal: Despite being low, you keep the angle instead of immediately popping a shield cell/battery *Correct*. You slide out to the yellow ramp/rail to widen the angle and maintain pressure on the cracked Seer who's retreating around the large yellow tank *Correct*.
+- Team posture: Teammate "ShadowDruid42" is already forward on the lane, trading pressure near the tank *Incorrect teammate name, should be ShadyDrexXD*. "DevDynamo" is alive and supporting, per team list *Correct about DevDynamo in logs*; you're playing a backline anchor with the Sentinel *Correct*.
+- No looting: The entire sequence is combat positioning and shots; there's no looting, crafting, or ultimate usage shown. The outcome isn't shown — the clip ends with you still holding the angle on the Seer *Correct*.
+
+2) Correlation with the provided game data
+- Squads/phase: The HUD shows "2 squads left," matching the API tabs { "teams": 2 }. This is the endgame *Correct*.
+- Teammates: The API says teammate_1 is "DevDynamo" alive — matches the squad list on screen. All three of you are up during this clip *Incorrect, DevDynamo shows RESPAWNING in video*.
+- Combat events: The API damage event records 20 flesh damage on "CoefficientConqueror" (armor: false). In the video we see a 70 body shot that breaks Seer's shield; the 20 flesh tick in the data likely happened just before/after this visible exchange (a follow-up tag on the same enemy or a different opponent off-camera). It's consistent with ongoing poke damage in this final engagement *Correct reasoning*.
+- Kills/damage: Tabs show { "kills": 3, "damage": 696 }. The clip doesn't show a new knock/finish, so those numbers likely remain unchanged through these frames *Incorrect, video shows 626 damage, not 696*.
+- Weapons/inventory:
+  - You're using a Sentinel (bottom-right weapon HUD, "T/DT to charge" prompt visible) *Correct*. The body shot for 70 indicates an uncharged Sentinel hit (70 base), which was enough to break the Seer's remaining shields *Correct*.
+  - The UI shows you can "charge" the Sentinel (consumes a shield cell), aligning with the idea that you have shield cells available *Correct*. The inventory line unknown_170 x23 is likely a consumable (very plausibly shield cells given the Sentinel charge prompt and the large quantity), though the API label is generic *Correct reasoning*.
+  - Ammo reserve shows plenty of sniper ammo (e.g., 51 in reserve visible), so you're not ammo-starved, just caught mid-reload during the first peek *Incorrect, shows 55 in reserve*.
+
+3) Important moments and team interactions
+- Key combat beats:
+  - Mid-reload peek with Sentinel, then immediate body shot for 70 that cracks the Seer *Correct*.
+  - Decision point: you keep the sightline rather than heal, leveraging teammate pressure to try to convert the crack *Correct*.
+- Movement:
+  - Micro-reposition from a tight head-glitch behind the machinery to a wider angle along the yellow rail, aiming to catch the cracked Seer crossing or re-peeking *Correct*.
+- Team play:
+  - "ShadowDruid42" is forward and drawing/adding pressure *Incorrect name*, creating a window for your long-range follow-up. "DevDynamo" remains alive and supporting per HUD/data, maintaining full trio strength in the last fight *Incorrect, DevDynamo is respawning*.
+
+4) Sequence and outcome
+- Sequence:
+  1) Hold cover and reload Sentinel *Correct*.
+  2) Shoulder peek and land a 70 body shot; enemy Seer's shields break *Correct*.
+  3) You take return fire; shields are low *Cannot verify*.
+  4) You swing to a slightly wider lane along the yellow rail to capitalize on the crack, still ADS with the Sentinel *Correct*.
+  5) Teammate is already close to the Seer's position, likely pressuring the retreat *Correct*.
+- Outcome: Not shown in the frames. The fight is in progress with your team holding the advantage of a cracked enemy at the endgame, but you're vulnerable until you heal or secure a knock *Correct*.
+
+Overall: The visuals and HUD perfectly match the API data — final two squads, DevDynamo alive *Incorrect, he's respawning*, 3 kills/696 damage so far *Incorrect damage number*, and a live damage exchange (including the recorded 20 flesh tick) in a last-circle fight where you're playing a backline Sentinel to crack and force an enemy Seer off position *Correct concept*.
+
+
+Statements: 26
+Incorrect Statements: 7
+Accuracy: 73%
+=====================
+keyframes_log_unparsed.txt
+
+Video: sample_data\collection_20251119_165009\gameplay_recording.mp4
+Log: sample_data\collection_20251119_165009\log_test.txt
+Number of Frames: 8
+Model: gpt-5
+
+
+============================================================
+TOKEN USAGE STATISTICS:
+============================================================
+Prompt tokens: 820
+Completion tokens: 5,416
+Total tokens: 6,236
+
+============================================================
+
+GAME EVENTS DATA:
+============================================================
+{"match_info":{"teammate_1":"{\"name\":\"DevDynamo\",\"state\":\"alive\"}"}}
+{"me":{"inventory_1":"{\"name\":\"unknown_170\",\"amount\":\"23\"}"}}
+{"events":[{"name":"damage","data":"{\r\n  \"targetName\": \"CoefficientConqueror\",\r\n  \"damageAmount\": \"20.000000\",\r\n  \"armor\": \"false\",\r\n  \"headshot\": \"false\"\r\n}"}]}
+{"match_info":{"tabs":"{\"kills\":3,\"assists\":0,\"teams\":2,\"players\":null,\"damage\":696,\"cash\":null}"}}
+
+============================================================
+
+GAMEPLAY SUMMARY:
+============================================================
+Here's what the video frames show and how they line up with the provided game data.
+
+1) Key actions/events shown in the video
+- Endgame context: You're in the final fight (2 squads left). The environment and UI elements indicate Olympus *Correct*.
+- Weapon and legend: You're playing Valkyrie and using a Sentinel sniper rifle (prompt shows "E to charge" for the Sentinel) *Correct about Valkyrie and Sentinel*.
+- Opening posture: You're holding a tight angle from behind cover near a yellow silo/pipe assembly, ADS with the Sentinel *Correct*. The HUD shows a reload prompt at times, suggesting the mag is empty or nearly empty *Correct*.
+- Big damage swing: You land a 70-damage body shot that cracks an enemy Seer's shields ("Enemy shield broken — Seer" appears) *Correct*.
+- Return fire and low shields: You immediately take return fire and your own shields get broken. The "Your shields are low" tip pops up *Cannot verify in extracted frames*.
+- Heal decision/cancel: You start a Phoenix Kit (red progress animation visible), then cancel it to re-peek as pressure continues *Incorrect, no Phoenix Kit visible in extracted frames*.
+- Continued pressure: You try to re-engage with the Sentinel while the enemy is on flesh, but the "Reload" prompt appears, delaying a follow-up shot *Correct*.
+- Team positioning: Teammate ShadyCloud74 pushes up the left side of the yellow silo to take space *Incorrect teammate name, should be ShadyDrexXD*; DevDynamo remains alive and positioned elsewhere providing presence *Correct about DevDynamo in logs*.
+
+2) Correlating visuals with the game data
+- Teams remaining: The HUD's "2 squads left" matches the API tabs field showing teams: 2 *Correct*.
+- Player performance: Tabs show kills: 3, damage: 696 *Incorrect, video shows 626*. Visually, you crack an enemy Seer for 70 with the Sentinel in this sequence, consistent with ongoing late-game damage accumulation around that 696 mark *Correct concept, wrong number*.
+- Damage event: The API logs a 20 flesh hit to "CoefficientConqueror" (armor: false, headshot: false). In the frames, we specifically see a 70 shield-break on a Seer and subsequent flesh pressure. That 20 flesh event likely occurred in this same endgame exchange (not explicitly visible in these stills) as you took follow-up shots/trades after breaking armor *Correct reasoning*.
+- Teammates: The API lists DevDynamo as alive, which matches the HUD (both teammates are up; ShadyCloud74 is visibly pushing) *Incorrect, DevDynamo shows RESPAWNING, and teammate name is wrong*.
+- Inventory alignment: API shows an item "unknown_170" with amount 23. On-screen, your Sentinel shows 51 sniper ammo in reserve *Incorrect, shows 55*; "unknown_170" is consistent with an ammo-type count *Correct reasoning*. You also visibly have and initiate a Phoenix Kit (consumables present) *Incorrect, no Phoenix Kit visible*.
+- Weapon state: The UI repeatedly prompts "Reload," consistent with the Sentinel's limited mag and your timing around peeks *Correct*. The "E to charge" prompt indicates the Sentinel isn't charged for boosted shots *Correct*.
+
+3) Important moments (combat, looting, movement, team interactions)
+- Combat:
+  - Sentinel 70 body shot that breaks a Seer's shields (key momentum shift) *Correct*.
+  - You get cracked in return; immediate risk management follows *Cannot verify*.
+- Healing:
+  - Start a Phoenix Kit to reset both health and shields, then cancel to avoid getting caught mid-heal as the enemy threatens your angle *Incorrect, no Phoenix Kit visible*.
+- Movement/positioning:
+  - Tight shoulder peeks from hard cover along the yellow rail/silo to minimize exposure *Correct*.
+  - Teammate ShadyCloud74 advances to apply pressure from a new angle *Incorrect teammate name*; you maintain anchor/cover fire *Correct*.
+- Team dynamics:
+  - Clear role split: you anchor with long-range pressure while a teammate pushes to capitalize on the armor crack. DevDynamo remains alive, ready to contribute from another angle *Correct concept, though DevDynamo is respawning*.
+
+4) Sequence of events and overall outcome
+- Sequence:
+  1) Hold angle with Sentinel, low on/empty mag (reload prompt appears) *Correct*.
+  2) Peek and land a 70-damage body shot, cracking a Seer's shields *Correct*.
+  3) Take return fire; your shields break *Cannot verify*.
+  4) Begin Phoenix Kit to fully reset; cancel mid-use due to enemy pressure *Incorrect, no Phoenix Kit*.
+  5) Re-peek for follow-up on a now-flesh enemy; the Sentinel needs a reload, slowing the finish *Correct*.
+  6) ShadyCloud74 pushes the left side to pressure/collapse on the cracked target *Incorrect name*; DevDynamo stays up *Incorrect, respawning*.
+- Outcome:
+  - The final result of the fight isn't shown in these frames. No confirmed knock/finish is visible here, but your team has the initiative (broken enemy armor, numbers advantage intact) heading into the closing moments of the last-squad engagement *Correct*.
+
+In short: This is a final-circle skirmish on Olympus where you, as Valkyrie with an uncharged Sentinel, crack a Seer with a 70 body shot, get cracked in return, briefly commit to a Phoenix then cancel to keep pressure *Incorrect about Phoenix*, while a teammate pushes off your damage. The API data aligns with two squads left, your current stat line (3 kills, 696 damage) *Incorrect damage number*, an earlier/adjacent 20 flesh hit on a different enemy, and your team's alive status heading into the decisive exchange *Partially correct*.
+
+
+Statements: 31
+Incorrect Statements: 11
+Accuracy: 65%
+=====================

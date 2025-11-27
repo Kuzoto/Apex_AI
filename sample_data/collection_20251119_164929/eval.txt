@@ -1,0 +1,332 @@
+===================================
+event_frames_log.txt
+
+Log File: sample_data\collection_20251119_164929\log_test.txt
+Frames Folder: sample_data\collection_20251119_164929\frames
+Number of Frames: 19
+Log Size: 1568 characters
+Model: gpt-5
+
+
+============================================================
+TOKEN USAGE STATISTICS:
+============================================================
+Prompt tokens: 1,913
+Completion tokens: 3,238
+Total tokens: 5,151
+
+============================================================
+
+Here's a concise, event-by-event summary of the fight and match progression based on the logs and screenshots:
+
+Starting state
+- Round: 1 (ring closing) *Correct*.
+- Squads left: 4 *Correct*.
+- Your stats before the fight: 2 kills, 0 assists, 476 damage (tabs) *Correct*.
+- Weapons: Previously using Sentinel, then swapped to R-99 *Correct*.
+- Team: All three teammates alive *Incorrect, DevDynamo has DELIVER TO BEACON*.
+
+Engagement vs "SequenceSlayer" (bearing ~205°)
+- You take position behind cover and open fire with the R-99 *Correct*.
+- Hit sequence shown on screen: cumulative damage rises 52 → 78 → 91 → 104 → 140 → 153 *Cannot verify exact progression, shows 153 final*.
+- "Enemy Shield Broken" appears during the spray, then you continue landing flesh damage *Correct*.
+- Logs record multiple flesh hits on SequenceSlayer (13, 13, 13, 10 — all non-armor, non-headshot) *Correct*.
+- You reload mid-fight and finish the engagement *Cannot verify reload in extracted frames*.
+
+Knock and wipe
+- You knock SequenceSlayer: on-screen text shows "KNOCKED DOWN SEQUENCESLAYER (+150)" and "153 DAMAGE INFLICTED." *Correct*.
+- Moments later, "SQUAD WIPE +100" appears — the enemy squad is eliminated *Cannot verify in extracted frames*.
+
+Post-fight status and progression
+- You become the new Kill Leader with 3 kills *Correct*.
+- Squads left drop from 4 to 3 *Correct*.
+- Damage totals update:
+  - Match tab damage: 476 → 626 (+150 this engagement) *Correct, shows 628 in one frame*.
+  - Internal totalDamageDealt: 515 → 655 (+140 recorded in those increments; consistent with the ~150 shown in the kill banner) *Correct*.
+- You switch to healing ("Health/Shield" in use) *Cannot verify in extracted frames*.
+- Team status: Your whole squad remains alive; no downs or respawns on your side *Incorrect, DevDynamo has banner*.
+- Inventory note: A pickup/update is logged (unknown_166 x64), likely ammo *Correct, shows 82 in frame*.
+
+Quick timeline (approx. ring timer 9:17 → 9:12)
+- Spot target at 205°, beam with R-99, crack shields, land flesh shots *Correct*.
+- Knock SequenceSlayer (153 damage in the fight) *Correct*.
+- Enemy squad gets wiped *Cannot verify*.
+- You take Kill Leader with 3 total kills; squads left: 3 *Correct*.
+- You begin healing to stabilize for the next rotation *Cannot verify in extracted frames*.
+
+
+Statements: 19
+Incorrect Statements: 2
+Accuracy: 89%
+=====================
+raw_video.txt
+
+Video: sample_data\collection_20251119_164929\gameplay_recording.mp4
+Log: None
+Number of Frames: 159
+Model: gpt-5
+
+
+============================================================
+TOKEN USAGE STATISTICS:
+============================================================
+Prompt tokens: 11,175
+Completion tokens: 3,759
+Total tokens: 14,934
+
+============================================================
+
+GAMEPLAY SUMMARY:
+============================================================
+Here's a concise, play-by-play of the sequence shown in the frames:
+
+Setting and status
+- Map context looks like Olympus *Correct*. Round 1 is closing (timer drops from ~9:17 to ~8:29 across the sequence) *Partially correct, shows 9:18 to 9:14 in extracted frames*.
+- Squads remaining hover around 4–5 *Correct*.
+- Your squad is full (all three alive) *Incorrect, DevDynamo has DELIVER TO BEACON*. You're on Blue (Level 2) Evo with 324 damage needed to level up *Incorrect, shows 924 EVO*.
+- A Pathfinder zipline is strung across the lane in front of you *Correct*.
+
+Pre-fight positioning and prep
+- You hold a mid-range angle with a Sentinel and start the "Charge" animation (spending a Shield Cell to energize it for bonus damage) *Cannot verify charging in extracted frames*.
+- While charging, you take incoming fire (red vignette, shield damage). You tuck into cover near a pillar and complete the Sentinel charge *Cannot verify*.
+
+Weapon swap and engagement
+- Spotting an enemy peeking from a small boulder at bearing ~205°, you switch off the Sentinel to your SMG (looks like the CAR SMG with a 1x HCOG "Classic") *Incorrect, it's R-99 not CAR*.
+- You ADS and commit to the duel, tracking the target's head-glitch on the rock *Correct*.
+
+Damage and knock
+- You beam the opponent, stacking hits rapidly (damage ticks climb 13 → 26 → 39 → 65 → 78 → 91 → 117 → 130 → 140 → 153) *Cannot verify exact progression, shows 153 final*.
+- "Enemy Shield Broken" pops; you finish the flesh damage and secure the knock: "KNOCKED DOWN SEQUENCESSLAYER +150 (153 DAMAGE INFLICTED)." *Correct, though name spelling slightly off*.
+
+Fight outcome
+- Immediately after the knock, "SQUAD WIPE +100" appears — your knock eliminates the last member of that enemy team *Cannot verify in extracted frames*.
+- You receive the banner: "YOU ARE THE NEW KILL LEADER," showing Kills: 3 *Correct*.
+
+Post-fight recovery
+- Still low on shields, you rotate to a cargo crate for cover and start healing with Shield Cells *Cannot verify in extracted frames*.
+- Teammates remain up and nearby *Incorrect, DevDynamo has banner*; a Respawn Beacon is ~125m away if needed for later *Correct about beacon prompt*.
+- The ring continues closing; the kill feed shows other squads exchanging knocks elsewhere *Correct*.
+
+Key takeaways
+- You smartly abandoned the sniper plan under pressure, finished the Sentinel charge from cover, then swapped to SMG for the close/mid-range duel *Cannot verify charging sequence*.
+- Clean tracking and pressure from a safe head-glitch-breaking angle yielded a fast shield break and knock *Correct*.
+- That knock concluded the fight (full squad wipe) and elevated you to Kill Leader with three kills *Correct about Kill Leader*.
+- You immediately transitioned to resource management (shielding) and maintained cover, preserving advantage as Round 1 continued to close *Correct concept*.
+
+
+Statements: 19
+Incorrect Statements: 4
+Accuracy: 79%
+=====================
+keyframes_log_parsed.txt
+
+Video: sample_data\collection_20251119_164929\gameplay_recording.mp4
+Log: sample_data\collection_20251119_164929\log_test.txt
+Number of Frames: 4
+Model: gpt-5
+
+
+============================================================
+TOKEN USAGE STATISTICS:
+============================================================
+Prompt tokens: 905
+Completion tokens: 5,070
+Total tokens: 5,975
+
+============================================================
+
+GAME EVENTS DATA:
+============================================================
+Total Events: 20
+
+=== PLAYER STATUS ===
+  Using: Sentinel
+  Using: R-99
+  totalDamageDealt: 515
+  totalDamageDealt: 528
+  totalDamageDealt: 541
+  totalDamageDealt: 554
+  totalDamageDealt: 593
+  totalDamageDealt: 619
+  totalDamageDealt: 632
+  totalDamageDealt: 655
+  Using: Health/Shield
+
+=== INVENTORY ===
+  inventory_4: unknown_166 x64
+  inventory_10: unknown x?
+
+=== OTHER EVENTS ===
+  {'match_info': {'tabs': '{"kills":2,"assists":0,"teams":4,"players":null,"damage":476,"cash":null}'}}
+  {'events': [{'name': 'damage', 'data': '{\r\n  "targetName": "SequenceSlayer",\r\n  "damageAmount": "13.000000",\r\n  "armor": "false",\r\n  "headshot": "false"\r\n}'}]}
+  {'events': [{'name': 'damage', 'data': '{\r\n  "targetName": "SequenceSlayer",\r\n  "amageAmount": "13.000000",\r\n  "armor": "false",\r\n  "headshot": "false"\r\n}'}]}
+  {'match_info': {'tabs': '{"kills":2,"assists":0,"teams":4,"players":null,"damage":567,"cash":null}'}}
+  {'events': [{'name': 'damage', 'data': '{\r\n  "targetName": "SequenceSlayer",\r\n  "damageAmount": "13.000000",\r\n  "armor": "false",\r\n  "headshot": "false"\r\n}'}]}
+  {'events': [{'name': 'damage', 'data': '{\r\n  "targetName": "SequenceSlayer",\r\n  "damageAmount": "10.000000",\r\n  "armor": "false",\r\n  "headshot": "false"\r\n}'}]}
+  {'match_info': {'tabs': '{"kills":3,"assists":0,"teams":3,"players":null,"damage":626,"cash":null}'}}
+
+============================================================
+
+GAMEPLAY SUMMARY:
+============================================================
+Here's what the frames show and how they line up with the telemetry you provided.
+
+1) What's happening on screen
+- Setting and phase:
+  - Map looks like Olympus (pink cherry blossoms and clean white architecture) *Correct*.
+  - Round 1 is closing (HUD shows Round 1 – Closing with ~9:18–9:16 remaining), and there are 4 squads left *Correct*. That's an early ring but a very reduced lobby, so mid/late fight pacing despite early zone *Correct reasoning*.
+
+- Positioning and environment:
+  - You're holding a lane from behind rock/cover with Wattson fences stretched across the choke in front of you. Those fences are creating denial in the approach you're watching *Incorrect, no Wattson fences visible*.
+  - Compass headings shift from ~232° to ~206° across the frames, suggesting you peek/strafe along the edge of cover *Partially correct, shows 206° visible*.
+
+- Weapons and actions:
+  - You're on Sentinel initially, aiming down a mid-range lane *Correct*. The Sentinel HUD shows "Hold T to Charge," meaning the rifle isn't currently charged; you could expend a shield cell to charge it for higher-damage shots *Cannot verify in extracted frames*.
+  - You take incoming fire while ADS with the Sentinel (third frame shows heavy red vignette and incoming-hit indicator from the front). Your shields/health get chunked *Cannot verify in extracted frames*.
+  - You quick-swap to the R-99 (last frame shows 18 in-mag, indicating no extended mag) to prepare for closer-range pressure or a fast follow-up if someone pushes your cover *Correct*.
+
+- Team status:
+  - The on-screen prompt "Respawn Teammates at Beacons" is active, which means you're holding at least one teammate's banner and can bring them back *Correct*.
+  - The green marker to the right appears to be a respawn-related icon/marker. The squad panel on the left supports that at least one teammate is out and awaiting respawn *Correct*.
+
+- Combat state:
+  - Kill feed at top-right is active (multiple bleed-outs), indicating other squads are trading while you're in this hold/peek exchange *Correct*.
+  - You're under pressure as you peek the fence lane *Incorrect about fences*. The immediate decision to swap from Sentinel to R-99 suggests you anticipate a close-range threat or want faster DPS than a bolt-action allows while getting pushed *Correct reasoning*.
+
+2) Correlation with the game data
+- Weapons:
+  - Visuals match the data entries: Using: Sentinel and Using: R-99. The Sentinel's charge prompt and the R-99's 18-round mag are clearly visible *Correct*.
+
+- Damage progression:
+  - The API shows a run of totalDamageDealt increasing (515 → 528 → 541 → 554 → 593 → 619 → 632 → 655) and match_info snapshots rising 476 → 567 → 626 *Correct*. This implies you land several smaller packets of damage and possibly a bigger hit later in the sequence *Correct*.
+  - The specific damage events show multiple "armor": false hits for 13 and 10 to SequenceSlayer. That pattern is consistent with SMG flesh damage after an armor break—very likely your R-99 connecting with body/leg shots once the target was on health. The R-99 swap seen in the frames lines up with this *Correct*.
+
+- Kills and squads:
+  - The match_info tabs move from kills: 2 to kills: 3 and teams: 4 to teams: 3 *Correct*. On screen during these frames it still shows 4 squads left, which fits the timing: these frames are right before the lobby ticks down and you secure the third kill later in the clip *Correct*.
+
+- Inventory:
+  - Inventory shows unknown_166 x64 and an unknown item in slot 10 *Correct*. The 64 stack is likely an ammo stack (the exact type is unclear from the dump), and you clearly have resources to potentially charge the Sentinel (the "Hold T to Charge" prompt appears) *Correct reasoning*. The data line Using: Health/Shield suggests you did use a heal/shield sometime in this sequence or just after taking damage, which aligns with getting tagged while peeking *Cannot verify*.
+
+3) Key moments in the clip
+- Combat:
+  - Anchor and hold: You anchor behind cover, aim with the Sentinel down a fenced lane *Incorrect about fences* to control space and threaten mid-range peeks *Correct concept*.
+  - Under fire: You take direct return fire while scoped, forcing a quick swap to your R-99 for immediate defensive DPS or to deter a push *Cannot verify in extracted frames*.
+  - Follow-up damage (from data): Subsequent hits for 13/13/13/10 flesh to SequenceSlayer point to you cleaning up a low target with the R-99 *Correct*.
+
+- Movement and positioning:
+  - Small lateral strafe/peek adjustments (232° → 206°) to search for a safe angle around the Wattson fences *Incorrect about fences* without fully exposing to the lane's return fire *Correct concept*.
+
+- Team play:
+  - You've recovered at least one banner and have the option to respawn a teammate at a beacon. The green marker indicates awareness/ping of a respawn point or teammate banner location *Correct*.
+
+- Resource/weapon management:
+  - Sentinel is uncharged during the peek; you opt not to spend a shield cell mid-fight to charge it, instead swapping to the R-99 under pressure *Cannot verify uncharged state*.
+
+4) Sequence and outcome
+- Sequence in these frames:
+  - Peek with Sentinel at mid-range → take significant damage while ADS → immediate swap to R-99 to stabilize and prepare for a close/mid engagement *Cannot fully verify damage sequence*.
+  - Maintain awareness of respawn objective with a banner in pocket *Correct*.
+
+- Outcome per data:
+  - After these frames, you continue the fight: total damage rises into the 600s, kill count moves from 2 to 3, and squads reduce from 4 to 3 *Correct*. That indicates you survive this exchange, contribute additional damage (including several flesh hits on SequenceSlayer), and secure another elimination as the lobby thins *Correct*.
+
+In short: This is a tense mid-range hold on Olympus during Round 1's close with only 4 squads left. You try to leverage the Sentinel over Wattson-fenced terrain *Incorrect about fences*, get beamed on a peek, then correctly swap to the R-99 to handle immediate pressure. Shortly after, you add meaningful damage, finish a player (your third kill), and the lobby drops to three squads while you still have the option to respawn a teammate *Correct summary*.
+
+
+Statements: 29
+Incorrect Statements: 7
+Accuracy: 76%
+=====================
+keyframes_log_unparsed.txt
+
+Video: sample_data\collection_20251119_164929\gameplay_recording.mp4
+Log: sample_data\collection_20251119_164929\log_test.txt
+Number of Frames: 4
+Model: gpt-5
+
+
+============================================================
+TOKEN USAGE STATISTICS:
+============================================================
+Prompt tokens: 911
+Completion tokens: 5,252
+Total tokens: 6,163
+
+============================================================
+
+GAME EVENTS DATA:
+============================================================
+{"me":{"inUse":"{\"inUse\":\"Sentinel\"}"}}
+{"match_info":{"tabs":"{\"kills\":2,\"assists\":0,\"teams\":4,\"players\":null,\"damage\":476,\"cash\":null}"}}
+{"me":{"inUse":"{\"inUse\":\"R-99\"}"}}
+{"me":{"totalDamageDealt":"515"}}
+{"me":{"totalDamageDealt":"528"}}
+{"me":{"totalDamageDealt":"541"}}
+{"me":{"totalDamageDealt":"554"}}
+{"events":[{"name":"damage","data":"{\r\n  \"targetName\": \"SequenceSlayer\",\r\n  \"damageAmount\": \"13.000000\",\r\n  \"armor\": \"false\",\r\n  \"headshot\": \"false\"\r\n}"}]}
+{"events":[{"name":"damage","data":"{\r\n  \"targetName\": \"SequenceSlayer\",\r\n  \"damageAmount\": \"13.000000\",\r\n  \"armor\": \"false\",\r\n  \"headshot\": \"false\"\r\n}"}]}
+{"me":{"totalDamageDealt":"593"}}
+{"match_info":{"tabs":"{\"kills\":2,\"assists\":0,\"teams\":4,\"players\":null,\"damage\":567,\"cash\":null}"}}
+{"events":[{"name":"damage","data":"{\r\n  \"targetName\": \"SequenceSlayer\",\r\n  \"damageAmount\": \"13.000000\",\r\n  \"armor\": \"false\",\r\n  \"headshot\": \"false\"\r\n}"}]}
+{"me":{"totalDamageDealt":"619"}}
+{"me":{"totalDamageDealt":"632"}}
+{"events":[{"name":"damage","data":"{\r\n  \"targetName\": \"SequenceSlayer\",\r\n  \"damageAmount\": \"10.000000\",\r\n  \"armor\": \"false\",\r\n  \"headshot\": \"false\"\r\n}"}]}
+{"me":{"totalDamageDealt":"655"}}
+{"match_info":{"tabs":"{\"kills\":3,\"assists\":0,\"teams\":3,\"players\":null,\"damage\":626,\"cash\":null}"}}
+{"me":{"inventory_4":"{\"name\":\"unknown_166\",\"amount\":\"64\"}"}}
+{"me":{"inventory_10":"{}"}}
+{"me":{"inUse":"{\"inUse\":\"Health/Shield\"}"}}
+
+============================================================
+
+GAMEPLAY SUMMARY:
+============================================================
+Here's what the footage and the captured game data together show.
+
+1) What happens in the video frames
+- Position and context: You're on Olympus (pink cherry trees visible), holding an angle down a Pathfinder zipline lane from cover beside a structure/rock face *Correct*. Round 1 is closing, and only 4 squads remain *Correct*.
+- Weapon in hand: Sentinel *Correct*. The HUD shows "Hold T to Charge," meaning you could amp the next shot with a shield cell *Cannot verify in extracted frames*. Your stowed secondary is an R-99 with an 18-round mag (base magazine) *Correct*.
+- Squad state: Both teammates are dead; you're carrying their banners *Incorrect, only DevDynamo has banner*. The center/right HUD shows "Respawn Teammates at Beacons," and a teammate/you have pinged a respawn beacon ahead (green beacon icon visible at distance) *Correct about prompt*.
+- Under fire: While ADSing down the zipline corridor, you take return fire (screen flash/red vignette, third frame), forcing you to break aim and work the action on the Sentinel (reload/cycle shown in the fourth frame) *Cannot verify in extracted frames*. You're holding position and trying to keep the lane contested while also looking for a safe window to rotate toward a beacon *Correct concept*.
+
+2) Correlation with the game data
+- Weapons used:
+  - Visuals: Sentinel is used throughout these frames; the HUD shows the stowed R-99 with 18 in the mag *Correct*.
+  - Data stream: After these frames, the API shows you swapped to the R-99 ("inUse": "R-99") and then later to "Health/Shield." *Correct*.
+- Damage and kills progression:
+  - Match tab initially: 2 kills, 476 damage, 4 squads left *Correct*.
+  - Total damage ticks in the feed: 515 → 528 → 541 → 554 → 593 → 619 → 632 → 655 *Correct*.
+  - Event log: Multiple flesh hits on "SequenceSlayer" for 13, 13, 13, and 10 (armor: false, headshot: false), which fits a close-range SMG cleanup after the Sentinel peek didn't finish them *Correct*.
+  - Match tab updates later to 3 kills, 626 damage, squads drop from 4 to 3 — consistent with you securing a down/finish and/or contributing to a squad being eliminated *Correct*.
+- Game phase:
+  - The overlay says "Round 1 — Closing," which matches the early ring, but the lobby is already very thinned out (4→3 squads) *Correct*.
+- Inventory:
+  - Inventory_4: "unknown_166" amount 64 — likely a stack of Light Rounds (fits the R-99) *Correct*.
+  - Inventory_10: empty ({}) *Correct*.
+  - After the skirmish, "inUse: Health/Shield" indicates you started healing/shielding (also consistent with having just taken damage in the frames and with Sentinel's "charge" mechanic consuming shield cells if you chose to use it) *Correct reasoning*.
+
+3) Key moments (combat, looting, movement, team interactions)
+- Combat:
+  - Long-range lane hold with the Sentinel while watching a zipline approach *Correct*.
+  - You take significant return fire mid-peek (visible damage), disengage the scope, and cycle/reload the Sentinel *Cannot verify in extracted frames*.
+  - Shortly afterward (beyond the pictured frames), you swap to the R-99 and land several body shots on an unshielded enemy (SequenceSlayer), indicated by the repeated 13/10 flesh hit events *Correct*.
+- Movement:
+  - You're controlling a zipline corridor rather than hard-pushing — likely because you're solo with banners and need a safe route *Incorrect, not solo with both banners*.
+- Team interactions:
+  - Both teammates are eliminated; the UI prompt "Respawn Teammates at Beacons" is active *Incorrect, only one teammate banner*.
+  - A respawn beacon is pinged ahead (green marker). The plan appears to be: hold off pressure, win the immediate fight, heal, then look to rotate for a respawn *Correct reasoning*.
+- Looting:
+  - No looting is shown in these frames. The focus is on holding the angle and surviving the return fire *Correct*.
+
+4) Sequence of events and outcome
+- You start by anchoring a sightline with the Sentinel while solo with both banners *Incorrect about both banners*, 4 squads left *Correct*.
+- You get tagged while scoped and break LOS, cycling the Sentinel *Cannot verify*.
+- Shortly after, you transition to the R-99 and finish a close-range engagement, landing multiple flesh hits on SequenceSlayer. Your damage climbs from the 500s into the mid-600s *Correct*.
+- Your kill count increases from 2 to 3, and the squads drop from 4 to 3, suggesting you secured or contributed to an elimination *Correct*.
+- You then begin healing/shielding (per "inUse: Health/Shield") *Correct*. The footage stops before we see whether you reach the respawn beacon, but your immediate outcome is positive: you win the skirmish, stabilize, and set up for a potential respawn attempt with three squads remaining *Correct*.
+
+
+Statements: 28
+Incorrect Statements: 5
+Accuracy: 82%
+=====================

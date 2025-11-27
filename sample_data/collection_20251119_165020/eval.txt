@@ -1,0 +1,262 @@
+===================================
+event_frames_log.txt
+
+Log File: sample_data\collection_20251119_165020\log_test.txt
+Frames Folder: sample_data\collection_20251119_165020\frames
+Number of Frames: 5
+Log Size: 710 characters
+Model: gpt-5
+
+
+============================================================
+TOKEN USAGE STATISTICS:
+============================================================
+Prompt tokens: 650
+Completion tokens: 4,054
+Total tokens: 4,704
+
+============================================================
+
+Here's the sequence of events from the final fight, based on the logs and screenshots:
+
+- Context
+  - Two squads left (final fight) *Correct*, timer around 06:31 *Correct*.
+  - Your team of three is fully alive: you, ShadowChild07, and OnlyDaymen *Incorrect teammate names: should be ShadyDrexXD, DevDynamo, cookies*.
+  - You're low on shields (on-screen prompt to recharge) *Correct*.
+
+- Opening shot
+  - Weapon: Sentinel (charged) *Correct about Sentinel, cannot verify charged*.
+  - Distance ~14 meters *Correct*.
+  - You hit enemy CoefficientConqueror for 70 flesh (no armor) *Correct*.
+
+- Push and weapon swap
+  - You swap to the R-99 and push around the yellow silo *Correct*.
+  - You tag CoefficientConqueror again for 13 flesh while closing *Correct*.
+
+- Knockdown secured
+  - Continuing the R-99 spray, you down a different opponent, SteadyDado (on-screen "KNOCKED DOWN +150") *Incorrect name visible on screen*.
+  - This leaves the enemy squad weakened: one player knocked, and at least one other (CoefficientConqueror) already damaged with no shields *Correct reasoning*.
+
+- Stats/state during this sequence
+  - Kills stayed at 3 (you registered a knock, not a full elimination yet) *Correct*.
+  - Assists: 0 *Correct*.
+  - Match damage increased (logs show +70 then +13 to reach 776) *Correct*.
+  - R-99 ammo shown at 18/64 during the push *Incorrect, shows 18/62*; you had 62 of an additional inventory item (unknown_166) at that time *Correct*.
+  - Your shields remained low; teammates were healthy and up *Correct about shields, incorrect about all teammates up - DevDynamo is RESPAWNING*.
+
+Summary: In the final 2-squad engagement, you opened with a close-range Sentinel body shot on CoefficientConqueror (flesh), swapped to R-99, landed more shots (including a 13 flesh hit on the same target), and then secured a knock on SteadyDado *Incorrect about knock target name*. Your team held a 3vX advantage with one enemy down and another already cracked/no shields *Correct about advantage*.
+
+
+Statements: 16
+Incorrect Statements: 5
+Accuracy: 69%
+=====================
+raw_video.txt
+
+Video: sample_data\collection_20251119_165020\gameplay_recording.mp4
+Log: None
+Number of Frames: 184
+Model: gpt-5
+
+
+============================================================
+TOKEN USAGE STATISTICS:
+============================================================
+Prompt tokens: 12,925
+Completion tokens: 5,044
+Total tokens: 17,969
+
+============================================================
+
+GAMEPLAY SUMMARY:
+============================================================
+Here's a concise play-by-play of what the frames show from this Apex Legends endgame sequence:
+
+Context
+- Map/position: Rooftop/gantry area on Olympus (Hammond-style yellow silos, cherry tree nearby) *Correct*.
+- Ring/state: 2 squads left, ring timer ticking down; you're in the final fight zone *Correct*.
+- Squad: Your team is full (all 3 alive) *Incorrect, DevDynamo is RESPAWNING*.
+- Loadout seen: Sentinel (sniper) + a close-range automatic (SMG/AR) *Correct, Sentinel + R-99*. Your shields are low (HUD tip appears) *Correct*.
+
+Engagement
+- You open at very close range (~9–14 m) with a scoped Sentinel shot and land 70 damage on an enemy Seer (wide-brim hat, blue outfit) *Incorrect, enemy is not Seer*.
+- You immediately disengage the scope, swap to your close-range gun, and finish the duel with a short burst. Damage readouts show 153 damage inflicted in the engagement, culminating in a "KNOCKED DOWN +150" on ShadyDre3XD *Incorrect, knock is not on ShadyDre3XD (that's a teammate), and name shown is different*.
+- A teammate chips in a bit of damage (you can see a "13" tick) and is covering the push while you secure the down *Correct about teammate presence*.
+
+Downed enemy → Finisher
+- You approach the downed Seer *Incorrect, not Seer*. The white interaction ring appears and you activate a finisher *Correct*.
+- The finisher animation is the "soccer ball juggle and kick" style, which strongly indicates you're playing Mirage (the outfit and the theatrical, ball-kick finisher match his kit) *Incorrect, player is Sparrow, and this is Sparrow's finisher*.
+- The sequence plays out fully: you juggle the red/white ball, style on the downed Seer, then rocket a kick that drops them for good *Correct about finisher animation, incorrect about Seer*.
+- Tactical payoff: Performing the finisher recharges your shields (useful here because your shields were low) *Correct*.
+
+Key takeaways and decisions
+- Clean close-quarters snipe-to-SMG swap: You quick-scoped a body shot (70) and immediately swapped to secure the knock—textbook for Sentinel in tight spaces *Correct*.
+- Finisher choice: Risky with only two squads left, but you had teammate cover and needed shields; the finisher safely topped you up before the next duel *Correct*.
+- Outcome: One enemy from the last squad is eliminated. The remaining enemies (if any) are off-screen. The ring is closing soon, so you've regained shields right before the next push/peek *Correct*.
+
+What likely happens next (recommended follow-ups)
+- Armor swap off the deathbox if it's safer/faster than batting cells *Ignored*.
+- Reload both weapons during/after the finisher's end lag *Ignored*.
+- Regroup with teammates, clear angles for the remaining opponent(s), and play cover around the yellow silos as the ring closes *Ignored*.
+
+
+Statements: 16
+Incorrect Statements: 5
+Accuracy: 69%
+=====================
+keyframes_log_parsed.txt
+
+Video: sample_data\collection_20251119_165020\gameplay_recording.mp4
+Log: sample_data\collection_20251119_165020\log_test.txt
+Number of Frames: 3
+Model: gpt-5
+
+
+============================================================
+TOKEN USAGE STATISTICS:
+============================================================
+Prompt tokens: 576
+Completion tokens: 4,457
+Total tokens: 5,033
+
+============================================================
+
+GAME EVENTS DATA:
+============================================================
+Total Events: 6
+
+=== PLAYER STATUS ===
+  Using: R-99
+
+=== INVENTORY ===
+  inventory_4: unknown_166 x62
+
+=== OTHER EVENTS ===
+  {'events': [{'name': 'damage', 'data': '{\r\n  "targetName": "CoefficientConqueror",\r\n  "damageAmount": "70.000000",\r\n  "armor": "false",\r\n  "headshot": "false"\r\n}'}]}
+  {'match_info': {'tabs': '{"kills":3,"assists":0,"teams":2,"players":null,"damage":766,"cash":null}'}}
+  {'events': [{'name': 'damage', 'data': '{\r\n  "targetName": "CoefficientConqueror",\r\n  "damageAmount": "13.000000",\r\n  "armor": "false",\r\n  "headshot": "false"\r\n}'}]}
+  {'match_info': {'tabs': '{"kills":3,"assists":0,"teams":2,"players":null,"damage":776,"cash":null}'}}
+
+============================================================
+
+GAMEPLAY SUMMARY:
+============================================================
+Here's what's happening in the clip and how it lines up with the API data:
+
+1) What the video shows
+- Setting and phase: You're on Olympus (pink trees, rooftop catwalks and yellow silos), and the HUD shows "2 squads left," so this is the endgame *Correct*.
+- Opening shot: You scope in with a Sentinel and land a close-range body shot on an enemy in red (target name in the data: "CoefficientConqueror") *Correct*. A "70" red damage number pops up, indicating flesh damage (their shields were already broken) *Correct*.
+- Status/UI cues: A Lifeline tip bubble says your shields are low *Correct*. Your armor evolution tracker drops (e.g., NEXT LVL value decreases after dealing damage) *Cannot verify*.
+- Knockdown: Seconds later, the enemy is downed. The "Knocked Down" banner and +150 XP are visible, and the finisher prompt ("F for FINISHER") appears *Correct*. A teammate (ShadowOsXV) is right next to the downed enemy, covering *Incorrect teammate name, should be ShadyDrexXD*.
+- Finisher start: The screen goes into a bright white flash as the finisher animation begins—likely to instantly restore your shields in the middle of this final fight *Correct about finisher animation starting*.
+
+2) Correlation to the game data
+- Weapon use:
+  - The UI lists "Using: R-99," and your ammo readout shows 18 in mag with 62 reserve—consistent with an R-99 loadout *Correct*.
+  - Visually, you fire the Sentinel for the key 70-damage shot; this matches the API event: damageAmount 70.000000, armor false, headshot false. Sentinel body shots do 70, which is exactly what we see *Correct*.
+  - The second recorded hit is 13 damage (also armor false, headshot false). This is a small flesh follow-up that contributes to the knock; it could be a chip shot from your secondary (R-99) or a stray hit immediately before/while the enemy is going down *Correct*.
+- Damage and tabs:
+  - The API shows damage events of 70 and 13 to "CoefficientConqueror." *Correct*
+  - The match_info tabs update from 766 to 776 damage, aligning with the additional chip damage (the exact running total in the UI/API can lag or consolidate between updates) *Correct*.
+  - Kills stay at 3 in both tab snapshots, which fits the video: you got a knock, not a confirmed elimination yet (kills typically tick up on a full elimination) *Correct*.
+- Inventory:
+  - inventory_4: unknown_166 x62 lines up with your reserve ammo reading 62 for the R-99; unknown_166 is very likely Light Rounds *Correct*.
+
+3) Key moments
+- Combat:
+  - Clutch close-range Sentinel body shot for 70 flesh to swing the duel in your favor *Correct*.
+  - Quick follow-up damage secures the knock *Correct*.
+- Team interaction:
+  - A teammate is already on top of the downed opponent, providing immediate cover while you line up a finisher *Correct*.
+- Resource management:
+  - You're low on shields (explicit tip on screen) *Correct*.
+  - You initiate a finisher to restore shields instantly—smart endgame play with only two squads left *Correct*.
+- Positioning/movement:
+  - Fighting on rooftop platforms near yellow industrial tanks/silos, using the high ground and cover edges typical of Olympus POIs *Correct*.
+
+4) Sequence of events and outcome
+- Pre-clip state: Endgame with 2 squads left; you have 3 kills and 766 total damage per the tabs at one point *Correct*.
+- Event 1: You hit "CoefficientConqueror" with a Sentinel for 70 flesh (API: 70, armor false, not a headshot) *Correct*.
+- Event 2: A 13-damage flesh follow-up registers (API: 13, armor false), contributing to the knock *Correct*.
+- Event 3: The opponent is knocked. "F to FINISHER" appears; you begin a finisher to regain shields *Correct*.
+- Outcome: The clip ends as the finisher animation starts. The final fight result isn't shown, but you've secured a knock and are restoring shields at the 2-squad endgame, giving your team a strong advantage to close the match *Correct*.
+
+In short: You used a Sentinel to land a pivotal 70 body shot on a no-shield enemy, quickly chipped another 13 to finish the knock, and immediately started a finisher to restore shields while your teammate covered—precise, resource-savvy play in the final two-squad standoff *Correct*.
+
+
+Statements: 24
+Incorrect Statements: 1
+Accuracy: 96%
+=====================
+keyframes_log_unparsed.txt
+
+Video: sample_data\collection_20251119_165020\gameplay_recording.mp4
+Log: sample_data\collection_20251119_165020\log_test.txt
+Number of Frames: 3
+Model: gpt-5
+
+
+============================================================
+TOKEN USAGE STATISTICS:
+============================================================
+Prompt tokens: 558
+Completion tokens: 5,016
+Total tokens: 5,574
+
+============================================================
+
+GAME EVENTS DATA:
+============================================================
+{"events":[{"name":"damage","data":"{\r\n  \"targetName\": \"CoefficientConqueror\",\r\n  \"damageAmount\": \"70.000000\",\r\n  \"armor\": \"false\",\r\n  \"headshot\": \"false\"\r\n}"}]}
+{"match_info":{"tabs":"{\"kills\":3,\"assists\":0,\"teams\":2,\"players\":null,\"damage\":766,\"cash\":null}"}}
+{"me":{"inUse":"{\"inUse\":\"R-99\"}"}}
+{"events":[{"name":"damage","data":"{\r\n  \"targetName\": \"CoefficientConqueror\",\r\n  \"damageAmount\": \"13.000000\",\r\n  \"armor\": \"false\",\r\n  \"headshot\": \"false\"\r\n}"}]}
+{"match_info":{"tabs":"{\"kills\":3,\"assists\":0,\"teams\":2,\"players\":null,\"damage\":776,\"cash\":null}"}}
+{"me":{"inventory_4":"{\"name\":\"unknown_166\",\"amount\":\"62\"}"}}
+
+============================================================
+
+GAMEPLAY SUMMARY:
+============================================================
+Here's what the following frames show and how they line up with the captured game data.
+
+1) What happens in the video
+- Opening shot: You peek a rooftop/upper platform and land a clean body shot with a scoped Sentinel on an enemy Seer (target name "CoefficientConqueror") *Incorrect, enemy is not Seer*. The hit registers 70 red (flesh) damage *Correct*. A Seer scan ring is visible *Incorrect, no Seer scan ring visible*, and your "shields low" tip pops up, indicating your shields are broken *Correct*.
+- Follow-up and knock: You apply a small follow-up tag (13 flesh damage) to the same target, which is enough to down them (DBNO) *Correct*. Immediately after, you close distance on the knock *Correct*.
+- Finisher: You get the "F for FINISHER" prompt on the downed Seer *Incorrect, not Seer* and start the finisher animation *Correct*. The screen whiteout in the third frame is the finisher transition *Correct*.
+
+2) Correlation with the game data
+- Damage events: The API logs two damage events on "CoefficientConqueror": 70 (flesh) and 13 (flesh). That matches the first frame's 70 body shot and the quick follow-up to secure the knock *Correct*.
+- Weapons:
+  - Active weapon on screen is the Sentinel (HUD shows "SENTINEL"). The scoped view and single big damage number (70) fit a Sentinel body shot on flesh *Correct*.
+  - Your secondary is an R-99 (small weapon icon with 18 in mag), matching the earlier "inUse: R-99" snapshot from the API—likely from moments before swapping to the Sentinel *Correct*.
+- Inventory/ammo: The HUD shows 6/62 on the Sentinel *Incorrect, shows 2 in Sentinel*. The API shows inventory_4: unknown_166 amount 62, which aligns with having 62 sniper ammo in reserve *Incorrect, 62 is light ammo for R-99, not sniper ammo*.
+- Match state:
+  - "2 squads left" in the HUD matches the API's teams: 2, so you're in the final fight *Correct*.
+  - Kills: 3, Assists: 0; Damage: 776. The API's damage tab moves to 776 after the second event *Correct*. The exact +10 vs. the 70+13 events is a common timing/desync quirk between per-hit logs and the periodic "tabs" stat refresh, but the end state (776 total) matches the HUD *Correct*.
+  - Your shields are broken (on-screen tip), which explains choosing to execute a finisher—finishers restore shields in current seasons *Correct*.
+
+3) Key moments
+- Combat: 
+  - Sentinel opening shot for 70 flesh on a Seer *Incorrect, not Seer*.
+  - Immediate follow-up hit for 13 to secure the knock *Correct*.
+- Decision making:
+  - You start a finisher while shields are cracked to replenish shields mid-fight—high risk/high reward in a 2-squad endgame *Correct*.
+- Team interactions:
+  - A teammate is visible nearby and not thirsted or downed, suggesting you have cover/support while you execute the finisher *Correct*.
+- Positional context:
+  - You're fighting on a raised platform near large yellow cylindrical structures and pink-leaf trees (an Olympus POI), controlling height in the final engagement *Correct*.
+
+4) Sequence and outcome
+- Sequence:
+  1) Swap to Sentinel and land a 70 body shot on "CoefficientConqueror" (flesh) *Correct*.
+  2) Tag for 13 more damage to finish the down *Correct*.
+  3) Close in and trigger a finisher on the downed opponent to restore shields *Correct*.
+- Outcome:
+  - You secure a knock on the last remaining squad and begin a finisher to recharge shields. The clip ends during the finisher; the final match result isn't shown, but you've gained a significant advantage (one enemy down, shield restore incoming) in a 2-squad endgame *Correct*.
+
+
+Statements: 26
+Incorrect Statements: 6
+Accuracy: 77%
+=====================

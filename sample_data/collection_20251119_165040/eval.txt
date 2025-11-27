@@ -1,0 +1,302 @@
+===================================
+event_frames_log.txt
+
+Log File: sample_data\collection_20251119_165040\log_test.txt
+Frames Folder: sample_data\collection_20251119_165040\frames
+Number of Frames: 11
+Log Size: 1320 characters
+Model: gpt-5
+
+
+============================================================
+TOKEN USAGE STATISTICS:
+============================================================
+Prompt tokens: 1,268
+Completion tokens: 4,923
+Total tokens: 6,191
+
+============================================================
+
+Here's a clear timeline of the endgame skirmish, combining the logs with what's visible in the screenshots:
+
+- Pre-fight state
+  - Round 2 (ring timer visible) *Correct*, your squad is full (all 3 teammates alive) *Correct*.
+  - Only 2 squads left (you vs. the last team) *Correct*.
+  - You're at 4 kills and roughly 1026 damage (match_info tabs) *Correct*.
+
+- Initial engagement
+  - You push an enemy on the rooftop/catwalk *Correct*.
+  - You land at least one 13-damage flesh hit on the same opponent (no armor, no headshot), per log *Correct*.
+  - You continue close-range fire (seen in the screenshots), and you knock that opponent. The knock event is confirmed on-screen and by the "knockdown" log *Correct*.
+
+- Follow-up and thirst
+  - After the knock, you keep shooting the downed opponent (visible sustained fire in the screenshots) *Correct*.
+  - Logs show additional damage ticks (your running totalDamageDealt rises in multiple small steps) *Correct*.
+  - You swap weapons during/after the knock (briefly showing the melee/karambit, then Sentinel) *Correct*. You finish off the downed opponent, securing the elimination *Correct*.
+  - Your kill count increases from 4 to 5, and your match damage climbs from 1026 to 1126 (match_info tabs) *Correct, though final damage shown is 1128*. The logs also record another 13-damage hit on the same target during this sequence *Correct*.
+
+- Team and match status after the elim
+  - Your team remains at full strength (all 3 alive) throughout this sequence *Correct*.
+  - The "2 squads left" indicator remains, so the enemy team still has at least one surviving member; the fight isn't over yet *Correct*.
+  - You have an upgrade available ("Press Z to Upgrade" on-screen) *Incorrect, it's "Press 2 to Upgrade"*, earned through damage dealt during/around this engagement *Correct*.
+  - One of your inventory counters (unknown_166) drops from 35 to 17 during the fight, consistent with resource usage while securing the knock and elimination *Correct*.
+
+Bottom line: In Round 2 with only two squads left, you and your full team win a close-range duel against one member of the last squad. You knock them with close-range fire, finish them shortly after (swapping to the Sentinel in the process), and your totals jump to 5 kills and ~1126 damage *Correct, though video shows 1128*. The final squad still has remaining players, so the match continues after this elimination *Correct*.
+
+
+Statements: 19
+Incorrect Statements: 1
+Accuracy: 95%
+=====================
+raw_video.txt
+
+Video: sample_data\collection_20251119_165040\gameplay_recording.mp4
+Log: None
+Number of Frames: 153
+Model: gpt-5
+
+
+============================================================
+TOKEN USAGE STATISTICS:
+============================================================
+Prompt tokens: 10,755
+Completion tokens: 4,235
+Total tokens: 14,990
+
+============================================================
+
+GAMEPLAY SUMMARY:
+============================================================
+Here's a clear, play-by-play of what's happening across the frames, plus the key context and details I can read from the HUD.
+
+Context
+- Mode/state: Battle Royale with only 2 squads left (your team vs. the last team). Round 2 is underway *Correct*.
+- Map/POI: An Olympus-style area (sleek buildings, pink blossom trees, elevated walkways) *Correct*.
+- Combat environment: You're fighting inside a Seer Exhibit (the orange lattice dome that reveals movement) *Correct*. There's also an Arc Star detonation in the sequence that blinds and slows you briefly *Incorrect, no Arc Star visible in video*.
+- Your loadout across the sequence: R-301 (low light ammo) *Incorrect, it's R-99*, Sentinel (you charge it) *Correct*, then Bocek Bow *Incorrect, no Bocek Bow visible*.
+- Team: Your two teammates are nearby and active in the fight, one positioned to your right holding cover *Correct*.
+
+Timeline and key events
+1) Close-quarters scramble
+- An enemy Bloodhound rushes you at point-blank while you're mid-weapon swap/handling (Sentinel in hand initially) *Incorrect, enemy is not Bloodhound and player starts with melee/fists*.
+- The Seer ult is up, so everyone inside is being tracked *Correct*.
+- An Arc Star goes off very close to you (white-out flash and stun), and you take chip damage. You're already in a low-health state (cracked red vignette) *Incorrect, no Arc Star visible*.
+
+2) Immediate counter with the R-301
+- You swap to the R-301 (18 rounds in mag, light ammo "LOW AMMO" warning appears later) *Incorrect, it's R-99 with different mag size*.
+- The Bloodhound tries to disengage left, but you land controlled shots and finish the last sliver of their health *Incorrect, enemy is not Bloodhound*.
+- You inflict 162 total in the exchange and knock them *Correct*.
+
+3) Thirst to secure the KP and deny the res
+- The Bloodhound crawls; you immediately thirst them with more R-301 shots (you can see 26/39/65/78/107 damage ticks as you finish them off) *Incorrect weapon, but correct concept*.
+- The feed shows the elimination of "Statisticssharpshooter," confirming they're out *Correct*. "Eliminated …" indicator stays on-screen while you reload and reposition *Correct*.
+
+4) Stabilize and reposition
+- You're still low health with red crack effects onscreen, so you back off the edge to safer high ground and reload *Incorrect, player does not appear to be low health*.
+- You check the lower lane (forklift and crates area) for additional enemies *Correct*.
+- You charge the Sentinel (E to Charge appears; you perform the two-cell charge animation) *Correct*.
+
+5) Set up for the next peek
+- Low light ammo on the R-301 prompts a swap to your long-range options *Ignored*:
+  - You shoulder the Sentinel to cover long lanes *Correct*.
+  - Then switch to the Bocek Bow and draw/hold an angle near the blue pipe cover, anticipating a wide peek from the remaining enemy(ies) *Incorrect, no Bocek Bow*.
+- Teammate to your right holds another angle. You maintain overwatch on the lane with the box and "KEEP CLEAR" marking, ready for the final fight *Correct*.
+
+Other relevant details
+- The Seer Exhibit dome affects the entire opening skirmish, so movement is being tracked; you choose not to smoke, phase, or disengage—opting to hold your ground and win the 1v1 instead *Correct*.
+- The Arc Star detonation does not lead to a push wipe; you recover composure quickly and punish the retreating Bloodhound *Incorrect, no Arc Star*.
+- Ammo pressure is real: the R-301 is low on light ammo, so your late-fight weapon choices (Sentinel charge, then Bocek) are good resource management while you wait for an opening or a loot opportunity *Incorrect weapons*.
+- Team presence: One teammate is very close (right side behind orange cover) and appears to secure another down/finish in the feed while you secure yours, suggesting your squad is winning trades across the map edge *Correct*.
+
+Summary in one line
+You win a tight, last-squads, CQB duel inside a Seer ult—eat an Arc Star *Incorrect*, swap to R-301 *Incorrect, R-99* to knock and thirst a Bloodhound *Incorrect enemy*, then reload, charge the Sentinel *Correct*, and transition to the Bocek *Incorrect* to hold angles and set up for the remaining enemy in the final fight *Correct concept*.
+
+
+Statements: 28
+Incorrect Statements: 11
+Accuracy: 61%
+=====================
+keyframes_log_parsed.txt
+
+Video: sample_data\collection_20251119_165040\gameplay_recording.mp4
+Log: sample_data\collection_20251119_165040\log_test.txt
+Number of Frames: 1
+Model: gpt-5
+
+
+============================================================
+TOKEN USAGE STATISTICS:
+============================================================
+Prompt tokens: 593
+Completion tokens: 4,834
+Total tokens: 5,427
+
+============================================================
+
+GAME EVENTS DATA:
+============================================================
+Total Events: 18
+
+=== PLAYER STATUS ===
+  totalDamageDealt: 983
+  totalDamageDealt: 996
+  totalDamageDealt: 1009
+  totalDamageDealt: 1022
+  totalDamageDealt: 1035
+  totalDamageDealt: 1048
+  totalDamageDealt: 1077
+  Using: mp_weapon_agnostic_karambit_primary
+  Using: Sentinel
+  Using: mp_weapon_charge_gauntlet
+
+=== INVENTORY ===
+  inventory_4: unknown_166 x35
+  inventory_4: unknown_166 x17
+
+=== OTHER EVENTS ===
+  {'events': [{'name': 'damage', 'data': '{\r\n  "targetName": "StatisticSharpshooter",\r\n  "damageAmount": "13.000000",\r\n  "armor": "false",\r\n  "headshot": "false"\r\n}'}]}
+  {'match_info': {'tabs': '{"kills":4,"assists":0,"teams":2,"players":null,"damage":1026,"cash":null}'}}
+  {'events': [{'name': 'knockdown', 'data': ''}]}
+  {'events': [{'name': 'damage', 'data': '{\r\n  "targetName": "StatisticSharpshooter",\r\n  "damageAmount": "13.000000",\r\n  "armor": "false",\r\n  "headshot": "false"\r\n}'}]}
+  {'match_info': {'tabs': '{"kills":4,"assists":0,"teams":2,"players":null,"damage":1117,"cash":null}'}}
+  {'match_info': {'tabs': '{"kills":5,"assists":0,"teams":2,"players":null,"damage":1126,"cash":null}'}}
+
+============================================================
+
+GAMEPLAY SUMMARY:
+============================================================
+Here's what the video frames show and how they line up with the telemetry you provided.
+
+1) What happens in the clip (visuals)
+- Final fight context: The HUD reads "2 Squads Left," so this is the last engagement of the match *Correct*.
+- Player's legend and push: You're playing Octane and appear to be mid-Stim (the high-contrast/white bloom and motion streaks), sprinting into close range *Incorrect, player is Loba, not Octane, and no Stim effects visible*.
+- Weapon in hand: Sentinel is equipped during the shown moment. You're using it essentially point-blank rather than as a long-range sniper *Incorrect, player starts with melee/fists, not Sentinel*.
+- Target status: The enemy directly in front of you has only a sliver of red HP (no shields remaining), visibly one shot from a knock *Correct*.
+- Teammate positioning: A teammate is just to the right near the cover/bins, also in the fight. They're close enough to help secure the down *Correct*.
+- Environment: Open, bright outdoor area with clean white architecture and pink blossoms—looks like Olympus (a plaza/courtyard segment) *Correct*.
+- Upgrade prompt: "Press to Upgrade" is on-screen, indicating you've earned enough EVO to bump your shield tier (Season 20+ armor rework behavior) *Incorrect, it's a Legend Upgrade system, not EVO shield upgrade*, which fits with the steady damage farming earlier *Ignored*.
+
+2) Correlating with the game data
+- Weapons used:
+  - Sentinel: Confirmed visually in this frame *Correct for later frames*. The logs also list "Using: Sentinel," matching the final engagement *Correct*.
+  - mp_weapon_agnostic_karambit_primary: This is a melee/knife state logged earlier in the clip (likely swapping/inspecting or quick melee between shots) *Correct*.
+  - mp_weapon_charge_gauntlet: Briefly registered in the logs earlier; not visible in this frame. It's a temporary/alternate melee entry that sometimes appears in telemetry and doesn't contradict what we see here *Correct*.
+- Damage and knockdown:
+  - The telemetry shows two 13 damage hits to StatisticSharpshooter marked as "armor: false, headshot: false," which is exactly what we see: the enemy has no shields and a tiny bit of flesh HP left. Those small chips fit "cleanup" damage to finish a nearly downed opponent (source could be a bullet or tick—either way it's flesh damage) *Correct*.
+  - A knockdown event occurs in the log right around these small damage instances *Correct*.
+- Match progression:
+  - "2 squads left" on-screen aligns with the late-game/final ring phase *Correct*.
+  - The match_info increments from kills 4/damage 1026 to kills 5/damage 1126. That indicates you secured a knock that converted to your 5th kill during or immediately after this close-range push, and your total damage climbed accordingly *Correct*.
+- Inventory:
+  - The inventory shows unknown_166 x35 and later x17. While the label is unresolved in this export, the drop in count suggests you consumed or expended a stackable resource (ammo/utility/consumables) during the fight. It tracks with sustained combat, armor upgrading, and a final push *Correct*.
+
+3) Key moments in the clip
+- Spot and crack: Before this frame, you've built EVO/damage steadily (983 → 1048 → 1077 etc.), likely poking with the Sentinel to farm shields and set up the push *Ignored*.
+- Close-range commit: You Stim forward and take a risky, point-blank angle with a sniper—either quick-scoping or hip-firing—while your teammate swings on the right *Incorrect, no Stim, player is not Octane*.
+- Knockdown: The enemy in front is on flesh; a couple of small body hits (13 each in the log) finish them. The logs mark a knock right around here *Correct*.
+- Conversion to kill: The match_info shows kills jump from 4 to 5, so the down shortly after becomes your kill (thirst or full elim of that player) *Correct*.
+- Armor progression: The "Press to Upgrade" prompt appears because your accumulated damage has filled the EVO threshold—consistent with the rising damage totals in the telemetry *Incorrect, it's Legend Upgrade, not EVO shield*.
+
+4) Sequence and outcome
+- Sequence:
+  - Mid-to-late fight poke damage raises total damage above 1k and fills EVO *Incorrect reasoning, Legend Upgrade not EVO*.
+  - You Stim and push with Sentinel in hand into the final 2-squad fight *Incorrect, no Stim*.
+  - You (with a nearby teammate) isolate a low-HP opponent, land small finishing hits (two 13 damage flesh tags), and secure a knock *Correct*.
+  - The knock converts to your 5th kill; total damage reaches 1126 per the logs *Correct*.
+- Outcome:
+  - The provided frame still shows "2 squads left" and no Champion banner. From the telemetry we know you at least secured the knock and +1 kill during this sequence. The ultimate match result is not shown in the frame or data provided *Correct*.
+
+Notes/takeaways
+- Using the Sentinel at point-blank was a bold but effective cleanup choice given the enemy's HP *Incorrect, player uses R-99 primarily*.
+- The Stim push plus a teammate pinch on the right created a quick numbers advantage at the start of the final duel *Incorrect, no Stim*.
+- Your EVO upgrade prompt appearing mid-fight confirms solid pre-push poke damage that contributed to winning this last engagement *Incorrect, Legend Upgrade not EVO*.
+
+
+Statements: 25
+Incorrect Statements: 9
+Accuracy: 64%
+=====================
+keyframes_log_unparsed.txt
+
+Video: sample_data\collection_20251119_165040\gameplay_recording.mp4
+Log: sample_data\collection_20251119_165040\log_test.txt
+Number of Frames: 1
+Model: gpt-5
+
+
+============================================================
+TOKEN USAGE STATISTICS:
+============================================================
+Prompt tokens: 616
+Completion tokens: 4,585
+Total tokens: 5,201
+
+============================================================
+
+GAME EVENTS DATA:
+============================================================
+{"me":{"inventory_4":"{\"name\":\"unknown_166\",\"amount\":\"35\"}"}}
+{"events":[{"name":"damage","data":"{\r\n  \"targetName\": \"StatisticSharpshooter\",\r\n  \"damageAmount\": \"13.000000\",\r\n  \"armor\": \"false\",\r\n  \"headshot\": \"false\"\r\n}"}]}
+{"match_info":{"tabs":"{\"kills\":4,\"assists\":0,\"teams\":2,\"players\":null,\"damage\":1026,\"cash\":null}"}}
+{"events":[{"name":"knockdown","data":""}]}
+{"me":{"totalDamageDealt":"983"}}
+{"me":{"totalDamageDealt":"996"}}
+{"me":{"totalDamageDealt":"1009"}}
+{"me":{"totalDamageDealt":"1022"}}
+{"me":{"totalDamageDealt":"1035"}}
+{"me":{"totalDamageDealt":"1048"}}
+{"events":[{"name":"damage","data":"{\r\n  \"targetName\": \"StatisticSharpshooter\",\r\n  \"damageAmount\": \"13.000000\",\r\n  \"armor\": \"false\",\r\n  \"headshot\": \"false\"\r\n}"}]}
+{"match_info":{"tabs":"{\"kills\":4,\"assists\":0,\"teams\":2,\"players\":null,\"damage\":1117,\"cash\":null}"}}
+{"me":{"totalDamageDealt":"1077"}}
+{"match_info":{"tabs":"{\"kills\":5,\"assists\":0,\"teams\":2,\"players\":null,\"damage\":1126,\"cash\":null}"}}
+{"me":{"inventory_4":"{\"name\":\"unknown_166\",\"amount\":\"17\"}"}}
+{"me":{"inUse":"{\"inUse\":\"mp_weapon_agnostic_karambit_primary\"}"}}
+{"me":{"inUse":"{\"inUse\":\"Sentinel\"}"}}
+{"me":{"inUse":"{\"inUse\":\"mp_weapon_charge_gauntlet\"}"}}
+
+============================================================
+
+GAMEPLAY SUMMARY:
+============================================================
+Here's what the next moments in the clip show and how they line up with the telemetry you provided:
+
+1) What's happening on-screen
+- You (Wraith, with heirloom ownership indicated by the karambit entry) are in a close-range brawl *Incorrect, player is Loba, not Wraith*. Your hands are up with a glowing punch animation, indicating you're using a special melee/charge gauntlet state rather than firing a gun *Correct for opening frames*.
+- The enemy in front of you is already on flesh (no shields); their health bar is low and you're closing in to finish with a melee hit *Correct*.
+- A teammate is visible to the right providing presence/pressure while you move in. You're fighting in an open plaza area with hard cover crates just ahead *Correct*.
+- HUD shows 2 squads left, so this is the endgame *Correct*.
+
+2) Correlating with the game data
+- Weapons/items in use:
+  - The feed shows you briefly had the Wraith karambit out (mp_weapon_agnostic_karambit_primary) *Incorrect legend, but correct about karambit*, then swapped to Sentinel, and finally to a charge-style gauntlet (mp_weapon_charge_gauntlet). That matches the visual: you're not aiming a gun here—you're going for a charged punch finish *Correct for opening*.
+  - Bottom-right HUD shows Sentinel and 8 rounds available *Incorrect, shows R-99 not "8 rounds"*, aligning with the "inUse: Sentinel" moment right before you switched to melee to secure the close-range finish *Correct timing*.
+- Damage and targets:
+  - Two separate damage events of 13 to "StatisticSharpshooter" with armor=false and headshot=false appear in the log. That's consistent with small body-hit ticks on an already unshielded opponent during a hectic close-range cleanup *Correct*.
+  - A "knockdown" event fired shortly after the initial damage tick, and your totalDamageDealt increments steadily (983 → 1048, then up through 1077) *Correct*.
+  - Match tabs progress from kills=4, damage=1026 to kills=5, damage=1126. The scene you're seeing is the tail end of that sequence: you close distance and finish, which aligns with the kill count bump to 5 *Correct*.
+- Inventory changes:
+  - inventory_4 unknown_166 drops from 35 to 17 by the end of the sequence. While the specific item ID isn't labeled, the decrease fits with resources being spent in the skirmish (ammo/consumables or a special event item) as you swap and push for the finish *Correct*.
+
+3) Key moments in this segment
+- Combat:
+  - You tag "StatisticSharpshooter" for small body damage (two 13-tick hits on flesh) *Correct*.
+  - A knockdown occurs in this exchange (event logged) *Correct*.
+  - You swap off the Sentinel and commit to a melee/charge gauntlet finisher at point-blank range, which appears to secure the elimination *Incorrect sequence, player uses R-99 to knock, then finishes with various weapons*.
+- Team play:
+  - A teammate is visible nearby, helping contain angles while you push. The quick finish suggests coordinated pressure to prevent the downed opponent from escaping or getting support *Correct*.
+- Movement/positioning:
+  - You close through open space toward cover, choosing melee to end the fight quickly without re-aiming the sniper at close range *Incorrect, uses R-99 primarily*.
+
+4) Sequence and outcome
+- You enter this endgame skirmish with 2 squads left and 4 kills *Correct*.
+- You land light body damage on an already unshielded enemy (StatisticSharpshooter) *Correct*.
+- A knockdown happens; you continue building damage (telemetry increments from 983 up through 1077+) *Correct*.
+- You switch from Sentinel to a charge gauntlet and finish the low-HP enemy in close quarters *Incorrect weapon sequence*.
+- Your scoreboard updates to 5 kills and 1126 damage *Correct*.
+- At the conclusion of this clip, there are still 2 squads left, so the match isn't finished yet—but you win the immediate duel and set up for the final fight with momentum and an extra kill secured *Correct*.
+
+
+Statements: 23
+Incorrect Statements: 6
+Accuracy: 74%
+=====================

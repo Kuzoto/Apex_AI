@@ -1,0 +1,268 @@
+===================================
+event_frames_log.txt
+
+Log File: sample_data\collection_20251119_164919\log_test.txt
+Frames Folder: sample_data\collection_20251119_164919\frames
+Number of Frames: 1
+Log Size: 71 characters
+Model: gpt-5
+
+
+============================================================
+TOKEN USAGE STATISTICS:
+============================================================
+Prompt tokens: 166
+Completion tokens: 4,554
+Total tokens: 4,720
+
+============================================================
+
+Here’s what I can confidently reconstruct from the provided data and screenshot. If you have more screenshots from earlier/later in the match, I can extend this into a full, play-by-play timeline.
+
+What the HUD shows at this moment
+- Round/teams: Round 1 is closing (timer visible) *Correct*, and only 5 squads remain *Correct*.
+- Armor progress: You just hit an EVO milestone — the “PHASE 2 EVO UPGRADE” banner indicates your armor evolved to blue *Correct*. Your HUD shows “NEXT LVL: 324 EVO,” meaning you need 324 more EVO to reach the next tier *Correct, wrong number but could be due to quality*.
+- Teammate status: A teammate was fully eliminated and you recovered their banner (“Banner Recovery +75s” pop-up) *Correct*. The game is prompting “Respawn Teammates at Beacons,” and a respawn beacon is marked at ~156 meters *Correct*.
+- Legend/loadout: Log data indicates the Wraith heirloom (karambit) is in use *Correct, karambit is in use*; on-screen you’re holding a light-ammo rifle with 18 in the mag and 181 reserve — that matches an R-301 with no extended mag (base mag size 18) *Incorrect, wrong gun*. Your ultimate charge is low (18%), consistent with early game *Incorrect, wrong ult charge*.
+- Positioning/objectives: You’re on the move toward the respawn beacon while the ring is closing, suggesting you survived a nearby fight and are transitioning to a recovery play *Correct*.
+
+Likely sequence of events leading to this frame
+1) Early fight(s) break out while Round 1 is still closing; the lobby thins quickly to 5 squads *Correct*.
+2) Your squad takes an engagement near the area shown. One teammate gets knocked and is fully eliminated *Correct*.
+3) You (or a surviving teammate) win/escape the skirmish long enough to loot and recover the fallen teammate’s banner. When you grab it, the “Banner Recovery +75s” message appears *Correct*.
+4) During or just after that fight, you deal enough damage to evolve your armor to Phase 2 (blue), triggering the on-screen EVO upgrade banner. You now need 324 more EVO for the next upgrade *Correct*.
+5) With the banner secured, you start rotating toward a respawn beacon ~156 meters away to bring the teammate back while Round 1 continues to close *Correct*.
+
+What’s not visible (so I won’t assert specifics)
+- Exact kill/knock/assist counts and total damage dealt aren’t readable in this frame *Ignored*.
+- Which teammate(s) are alive vs. downed beyond the confirmed banner recovery (the prompt uses plural wording by default) *Ignored*.
+- The exact location or which squads you fought *Ignored*.
+
+If you share additional screenshots (especially the kill feed, banner cards, or map/score screens before and after fights), I can stitch together a precise, event-by-event timeline with kills, knocks, damage contributions, and squad status changes *Ignored*.
+
+
+Statements: 14
+Incorrect Statements: 2
+Accuracy: 86%
+=====================
+raw_video.txt
+
+Video: sample_data\collection_20251119_164919\gameplay_recording.mp4
+Log: None
+Number of Frames: 183
+Model: gpt-5
+
+
+============================================================
+TOKEN USAGE STATISTICS:
+============================================================
+Prompt tokens: 12,855
+Completion tokens: 6,506
+Total tokens: 19,361
+
+============================================================
+
+GAMEPLAY SUMMARY:
+============================================================
+Here’s a clear, event-by-event rundown of what happens across these frames of Apex Legends gameplay:
+
+Context and setup
+- Map/area: Looks like Olympus (the Rift/Phase Runner side) with curved roads and pink trees around a “STRATUS” building *Correct*.
+- Squads: 5 squads remain. Round 1 is closing, but your team is safe on the edge *Correct*.
+- Team/legend info: You’re playing Loba (her heirloom fan is out in several shots) *Incorrect*. Teammate “ShadyDrexXD” is alive ahead of you; “DeDynamo” has been eliminated and needs a banner recovery *Correct*.
+- Loadout: R-301 (1x Classic optic, 18-round base mag) + Sentinel as secondary *Incorrect, R-301 is wrong*. Blue evo shield (Level 2), with “Next Lvl: 324 EVO” showing for upgrades *Correct, wrong progress*.
+
+What happens, step by step
+1) Post-fight recovery and scouting
+- The kill feed shows a few eliminations attributed to your name earlier, suggesting a prior fight has just wrapped *Incorrect*.
+- You hold high ground and scan the road below where your teammate died. Their purple death box and banner timer are visible (around 55s remaining) *Correct*.
+
+2) Banner recovery
+- You drop to the road, reach the purple box, and recover DeDynamo’s banner (Banner Recovery +75 appears). You don’t linger to loot; the focus is on the respawn *Correct*.
+
+3) Route to respawn beacon
+- A respawn beacon ~150m away gets marked, and you begin rotating west along the outer wall of the circular STRATUS building, keeping cover and stowing your gun for speed (switching to melee/Heirloom) *Correct*.
+
+4) Legend upgrade prompt
+- You’ve earned enough EVO to choose a Legend Upgrade (Season 20+ system). The two upgrade options pop up (Level 2 choice). You hover the options and select one (the UI shows two choices; exact pick isn’t 100% clear from the frames, but you do make a selection) *Correct*.
+
+5) Resupply and EVO economy
+- A blue beam appears and a supply drop lands nearby—this looks like a Lifeline Care Package (blue column, three-compartment pod). Your squad uses it for extra gear/attachments *Incorrect, we called in a mobile respawn beacon*.
+- Shortly after, a small red Evo Harvester unit erupts from the ground in a dust cloud next to the building. This fits with you farming more EVO points toward the next upgrade threshold *Incorrect, I interacted with the respawn beacon*.
+
+6) Mobility setup toward the beacon
+- Your forward teammate sets up repositioning: a Pathfinder zipline is fired up the hill, giving your duo a fast, safe route that keeps you out of exposed lanes while you head toward the respawn *Incorrect*.
+- You hold near cover on the building edge while the zipline finishes, then prepare to take it and continue toward the beacon *Incorrect*.
+
+7) Team objective status
+- The HUD reminds you to “Respawn Teammates at Beacons.” The beacon distance ticks down (from ~156m to ~128m as you progress) *Correct*.
+- No additional enemies are engaged in these frames—you’re prioritizing recovery, upgrades, and safe rotation rather than taking fights *Correct*.
+
+Key takeaways
+- You clutch the banner recovery with time to spare and immediately shift into a safe rotate for the respawn *Correct*.
+- Smart use of systems: you trigger/collect EVO (Harvester) *Incorrect*, take a Legend Upgrade *Correct*, and benefit from a care package to stabilize before the respawn *Incorrect*.
+- Good team coordination: your teammate moves ahead to scout and provides mobility with a zipline, keeping the path to the beacon quick and low-risk *Incorrect*.
+- Combat: No shots fired in this segment; all action is recovery, resupply, upgrading, and repositioning after an earlier fight where you picked up kills *Correct*.
+
+Suggestions for the next moments
+- Use Loba’s Black Market once you respawn your teammate so they can re-kit quickly from nearby death boxes/care package loot without overexposing *Ignored*.
+- Take the zipline, respawn in cover, and be ready for third parties—5 squads left means rotations will be tight *Ignored*.
+- With an R-301 + Sentinel, hold medium/long angles while your teammate loots. If you hit another EVO threshold, grab your next Legend Upgrade ASAP *Ignored*.
+
+Statements: 24
+Incorrect Statements: 10
+Accuracy: 58%
+=====================
+keyframes_log_parsed.txt
+
+Video: sample_data\collection_20251119_164919\gameplay_recording.mp4
+Log: sample_data\collection_20251119_164919\log_test.txt
+Number of Frames: 17
+Model: gpt-5
+
+
+============================================================
+TOKEN USAGE STATISTICS:
+============================================================
+Prompt tokens: 1,335
+Completion tokens: 5,157
+Total tokens: 6,492
+
+============================================================
+
+GAME EVENTS DATA:
+============================================================
+Total Events: 1
+
+=== PLAYER STATUS ===
+  Using: mp_weapon_agnostic_karambit_primary
+
+============================================================
+
+GAMEPLAY SUMMARY:
+============================================================
+Here’s what the clip shows and how it lines up with the game data:
+
+1) Key actions and events on screen
+- Initial state and context
+  - Round: Round 1 is closing (timer ~8:28 to ~8:24 remaining) *Correct*.
+  - Teams: Only 5 squads left already *Correct*.
+  - HUD constantly shows “Press Z to Upgrade,” indicating Season 20 armor upgrade system is active. Your shield bar reads “NEXT LVL ~324 EVO” at one point (blue evo needing 324 to purple) *Correct, wrong progress*.
+  - Kill feed shows multiple players dying to the Ring during this sequence *Correct*.
+
+- Movement and objective
+  - You spend much of the clip with your melee/knife out, sprinting and sliding between cover and down a road toward a teammate’s death location (purple death box on the road with “RECOVER 55s” above it) *Correct*.
+  - A Mobile Respawn Beacon is visible and appears freshly deployed (dust cloud around it). You check it briefly, then continue down to secure the banner *Correct*.
+
+- Banner recovery
+  - You switch to your firearm as you approach the purple death box, then interact to pick up your teammate’s banner (“BANNER RECOVERY +75” appears on screen), which also grants +75 EVO toward armor progression *Correct*.
+  - After grabbing the banner, you turn back uphill toward the beacon to begin the respawn *Correct*.
+
+- No combat
+  - No shots fired and no enemy contact in the shown frames *Correct*.
+  - No looting beyond grabbing the banner *Correct*.
+
+2) Correlation with the provided game data
+- Data event: “Using: mp_weapon_agnostic_karambit_primary”
+  - This matches what’s shown: you frequently have a karambit-style knife out, consistent with moving between objectives while your weapon is holstered *Correct*.
+- Weapons visible in HUD and hands
+  - Primary/secondary: Sentinel (sniper) in one slot and a light-weapon AR in the other (showing 18 rounds in magazine, consistent with a base R-301) *Incorrect, R-99 is the other weapon*.
+  - You mostly traverse with the knife out; you briefly pull out the AR around the death box, then holster again *Correct, wrong gun*.
+- Game phase and systems
+  - Round 1 closing, 5 squads left aligns with the on-screen UI *Correct*.
+  - Season 20 armor upgrade prompt (“Press Z to Upgrade”) and the EVO progress readout (“NEXT LVL … EVO”) are repeatedly visible *Correct*.
+  - Banner recovery grants EVO (+75), matching the on-screen notification *Correct*.
+
+3) Important moments
+- Movement: Rapid repositioning from high ground to the roadway, sliding and sprinting with melee equipped *Correct*.
+- Team interaction: Clear objective to recover a teammate’s banner (“DevyDemon”); teammate “ShadowLuka” is alive and nearby. A respawn beacon is pinged (~130–150m) and a Mobile Respawn Beacon is already deployed near your path (you inspect it before grabbing the banner) *Correct*.
+- Objective success: Banner successfully retrieved before the timer expires, setting up a respawn *Correct*.
+- No combat/looting: No engagements or inventory looting besides the banner pickup; attention is on recovery and repositioning *Correct*.
+
+4) Sequence and outcome
+- Start: On elevated ground overlooking an urban area; Round 1 closing; 5 squads left; armor upgrade prompt active *Correct*.
+- Mid: Head toward the purple death box with “RECOVER 55s.” You pass a freshly deployed Mobile Respawn Beacon (dust still visible), then continue to the box *Incorrect, correct events in wrong order*.
+- Action: Recover your teammate’s banner; gain +75 EVO *Correct*.
+- End: Turn back uphill toward the beacon to respawn your teammate. No shots fired, no damage taken, no enemies spotted. The squad ends the clip with two alive plus one banner, preparing to respawn during late Round 1 *Correct*.
+
+Overall: This is a clean banner recovery and regroup play. The single logged event (using the karambit/knife) matches the visual emphasis on holstering for traversal, while your actual loadout (Sentinel + likely R-301) is visible but not used in combat in this segment. Outcome: banner secured; team poised to respawn with the ring still closing and a very small lobby remaining *Ignored*.
+
+Statements: 24
+Incorrect Statements: 2
+Accuracy: 92%
+=====================
+keyframes_log_unparsed.txt
+
+Video: sample_data\collection_20251119_164919\gameplay_recording.mp4
+Log: sample_data\collection_20251119_164919\log_test.txt
+Number of Frames: 17
+Model: gpt-5
+
+
+============================================================
+TOKEN USAGE STATISTICS:
+============================================================
+Prompt tokens: 1,334
+Completion tokens: 5,173
+Total tokens: 6,507
+
+============================================================
+
+GAME EVENTS DATA:
+============================================================
+{"me":{"inUse":"{\"inUse\":\"mp_weapon_agnostic_karambit_primary\"}"}}
+
+============================================================
+
+GAMEPLAY SUMMARY:
+============================================================
+Here’s a frame-by-frame style breakdown of what the clip shows and how it matches the game data:
+
+1) Key actions and events
+- Positioning and assessment: The clip opens with you posted on high ground overlooking a road and buildings. Round 1 is closing, and there are only 5 squads left, so it’s a low-team-count early ring *Correct*.
+- Banner recovery objective: A teammate’s death box is marked on the road below with a “RECOVER ~56s” timer. You prioritize getting to it *Correct*.
+- Movement to the box: You drop/slide down the road with melee out, then briefly pull out your primary weapon while approaching the site *Correct*.
+- Successful banner pickup: You reach the purple death box and recover “DeVayamos’s Banner,” earning “BANNER RECOVERY +75.” *Correct*
+- Planning a respawn: After recovery, the HUD reminder “Respawn Teammates at Beacons” appears, and a respawn beacon is marked roughly 150 m away. You start rotating back toward that direction as the clip ends *Correct*.
+- No direct combat: There are no shots taken or visible damage taken in this sequence. You’re moving with purpose, scanning, and securing the banner without engaging *Correct*.
+
+2) Correlating visuals with the provided game data
+- Weapon in use (API): The API reports inUse: mp_weapon_agnostic_karambit_primary. On-screen, you’re repeatedly holding a karambit/knife in hand between actions. That matches the API exactly—your current equipped item during much of this segment is your melee/Heirloom. *Correct*
+- Actual loadout seen:
+  - Primary: R-301 Carbine (visible with 18 rounds in the magazine—base mag, no extended). *Incorrect*
+  - Secondary: Sentinel (name clearly shown in the weapon HUD). *Correct*
+- Game phase and state:
+  - Round 1 is closing (timer ~8:27 remaining in the closure window). *Correct*
+  - Only 5 squads left, which is unusually few for Round 1—implies a fast-paced early game with many teams eliminated. *Correct*
+  - Season 20+ systems are active: the center-top “PRESS 2 TO UPGRADE” prompt indicates you’ve earned a Legend Upgrade choice and haven’t selected it yet. Bottom-left also shows EVO progress readouts like “NEXT LVL … EVO.” *Correct*
+- Team status:
+  - One teammate (ShadowLü) is alive. *Correct*
+  - One teammate (DeVayamos) is eliminated; their banner is recovered in this sequence. *Correct*
+  - Your own legend upgrade level indicator shows you’re not maxed *Correct*; your teammate ShadowLü appears to be at upgrade level 4. *Incorrect*
+
+3) Important moments: combat, looting, movement, team interactions
+- Movement: Controlled drop/slide from high ground to the roadway to reach the box quickly; you keep melee out much of the time for better FOV and nimbleness. *Correct*
+- Looting: Minimal—this is a banner-only grab. You do not rummage through the box; you immediately take the banner and prepare to rotate. *Correct*
+- Team interactions:
+  - You respond to the “RECOVER” ping and complete it. *Correct*
+  - After recovery, the team objective shifts to a respawn; the HUD reminder appears and a beacon 120–150 m away is marked. *Correct*
+- Combat: None. There are some visual streaks/lines in one frame, but there’s no exchange of fire or hits on you. Kill feed activity is mostly other squads (including ring downs), not your team. *Correct*
+
+4) Sequence of events and outcome
+- Start: On a rooftop/ledge above a road with Round 1 closing, 5 squads left, upgrade available. Melee (karambit) in hand, matching API. *Correct*
+- Rotate: You move downhill toward the marked death box. You briefly pull out the R-301 to check the surroundings, then stow back to melee while moving. *Correct, wrong gun*
+- Banner secured: You reach the purple box on the road and recover DeVayamos’s banner (+75). *Correct*
+- Next objective: The HUD prompts to respawn at beacons; a beacon ~150 m is marked. You start moving toward that route. *Correct*
+- Outcome of the clip: Successful banner recovery; no engagements; preparing to respawn the teammate. The respawn itself does not occur before the end of the shown frames. *Correct*
+
+Notable context and implications
+- With 5 squads left in Round 1, playing for tempo is smart—recovering and respawning quickly could re-establish a full trio for midgame. *Ignored*
+- You have a flexible loadout for mixed ranges (R-301 + Sentinel). If you respawn your teammate, you’ll likely need to escort them to safe loot, so holding the upgrade selection until you’re in cover could be deliberate. *Ignored*
+- The “Press 2 to Upgrade” prompt suggests you can improve your kit/abilities immediately; choosing the right upgrade after the respawn (or while rotating) could be pivotal. *Ignored*
+
+In short: This sequence is a clean, no-risk banner recovery with melee out to move quickly, a quick confirm of surroundings with the R-301, and a transition toward a nearby respawn beacon—fully consistent with the API showing the karambit in use. *Ignored*
+
+Statements: 26
+Incorrect Statements: 2
+Accuracy: 92%
+=====================

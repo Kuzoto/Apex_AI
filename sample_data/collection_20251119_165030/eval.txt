@@ -1,0 +1,303 @@
+===================================
+event_frames_log.txt
+
+Log File: sample_data\collection_20251119_165030\log_test.txt
+Frames Folder: sample_data\collection_20251119_165030\frames
+Number of Frames: 9
+Log Size: 1550 characters
+Model: gpt-5
+
+
+============================================================
+TOKEN USAGE STATISTICS:
+============================================================
+Prompt tokens: 1,194
+Completion tokens: 4,061
+Total tokens: 5,255
+
+============================================================
+
+Here's a clear, chronological recap of the endgame sequence, combining the event log with what's visible in the screenshots:
+
+Match context
+- Squads remaining: 2 (final fight) *Correct*.
+- Your squad: all three teammates alive (ShadyDreaXD, MAX LEVEL/you, and ce0skey) *Correct about alive, incorrect spellings: should be ShadyDrexXD and cookies*.
+- Kills/assists (you): 4 kills, 0 assists (as shown in the match tab) *Correct*.
+- Mode/UI: You earned a free upgrade during the fight (press Z prompt visible) *Incorrect, it's "Press 2 to Upgrade"*, and one inventory stack updated to 44 units (exact item type not identified in the log) *Correct*.
+
+Key sequence of events
+1) Knock and finisher on StatisticSharpshooter
+- You fought an enemy named StatisticSharpshooter, landing multiple hits:
+  - 13 damage to armor *Correct*.
+  - 13 damage to flesh (no armor) *Correct*.
+  - Two headshot pellet hits for 16 damage each (no armor) *Correct*.
+- This engagement culminated in a knock, and you performed a Finisher on StatisticSharpshooter (FINISHER +100 banner visible) *Correct*. The death box prompt appears right after, confirming the elimination *Correct*.
+- Your kill count reached 4 *Correct*.
+
+2) Continued pressure on the last squad
+- Immediately after the finisher, you kept pushing the remaining enemy(ies) *Correct*.
+- Weapon in hand: EVA-8 (9 in mag, 62 reserve shown) *Incorrect, it's R-99, not EVA-8*.
+- You landed several close-to-mid range shots:
+  - Close-range shots for 52 and 65 (shotgun body hits) *Incorrect weapon, but damage visible*.
+  - Follow-up ADS shots at a bit more distance for 32 and 48 *Correct about 48 visible*.
+- Teammates remained up and nearby, helping to apply pressure *Correct*.
+
+Damage progression
+- Your personal damage increased steadily during this sequence:
+  - 831 → 844 → 857 → 870 → 896 → 912 → 957 (net +126 during this endgame exchange) *Correct*.
+- The match tab damage value climbed in step with this (899 → 912 → 964 → 1025) *Correct*.
+- Logged hits specifically to StatisticSharpshooter account for at least 58 of that (13 armor + 13 flesh + 16 + 16), with the remaining increase coming from the additional shotgun hits shown in the screenshots *Correct about logged hits, incorrect about shotgun*.
+
+End state at the last screenshot
+- Two squads still left (yours vs. the last team) *Correct*.
+- Your squad remains fully alive *Correct*.
+- You've just connected more damage (up to 48 on the last visible target) and are poised to continue the push as the ring timer ticks down *Correct*. The match has not concluded yet in the provided images/logs *Correct*.
+
+
+Statements: 21
+Incorrect Statements: 4
+Accuracy: 81%
+=====================
+raw_video.txt
+
+Video: sample_data\collection_20251119_165030\gameplay_recording.mp4
+Log: None
+Number of Frames: 166
+Model: gpt-5
+
+
+============================================================
+TOKEN USAGE STATISTICS:
+============================================================
+Prompt tokens: 11,665
+Completion tokens: 4,434
+Total tokens: 16,099
+
+============================================================
+
+GAMEPLAY SUMMARY:
+============================================================
+Here's a concise, play-by-play of what's happening across the frames:
+
+Context and setting
+- Late game: The HUD shows 2 squads left, so it's the final fight *Correct*.
+- Location: An industrial POI with large yellow structures and zip-rails overhead (Broken Moon/Olympus-style visuals) *Correct*.
+- Squad status: Your trio is alive. A Pathfinder teammate is nearby and active throughout the sequence *Correct*.
+- Ring pressure: The orange/red lattice and screen edge shimmer show you're fighting on or near the ring edge *Correct*.
+
+Key sequence 1: Finisher and power-up
+- You down an enemy (the knock itself isn't shown) and execute a finisher. The cinematic shows Ballistic's finisher animation (chin-stroke swagger between two big yellow machines) *Incorrect, player is Sparrow, not Ballistic; cannot verify exact finisher animation*.
+- Result: "FINISHER +100" appears; the death box spawns *Correct*.
+- You immediately level up to MAX LEVEL and get the prompt to press your upgrade key (Season 20's in-match upgrade system) *Correct*.
+
+Key sequence 2: Reset and re-engage
+- After the finisher, you have a short window to loot, but you stay alert because the last squad is still up *Correct*.
+- Weapons: You're running a close/mid-range primary (SMG/AR/shotgun) with a Sentinel as the other weapon (visible on the HUD) *Correct about Sentinel, primary is R-99*.
+
+Key sequence 3: Thirst and pressure near the ring
+- You spot a downed opponent below a ledge and put a few shots into them to secure the elimination/deny the rez, all while the ring is ticking at the edge *Cannot verify downed opponent from video frames*.
+
+Key sequence 4: Final enemy pushes with an ultimate
+- A remaining enemy pushes you at close range. They're Revenant (reworked) and pop Forged Shadows (you can see the white overshield bar above them and the red shadowy aura) *Incorrect, enemy does not appear to be Revenant with Forged Shadows*.
+- You burn through the Forged Shadows shield and start tagging flesh/armor underneath. Damage ticks shown include multiple chunks (e.g., 23, 48, 61, 65), indicating you're landing steady hits at close to mid distance *Correct about damage ticks 48 and 65 visible*.
+- You reload mid-fight under pressure while Revenant is right in front of you. Pathfinder is off to your right, ready to help *Correct about Pathfinder teammate*.
+
+End state
+- The exchange ends mid-fight with Revenant still up but hurt (overshield cracked and health/armor chunked) *Incorrect about Revenant*. Your squad still has numbers (3v1 or 3v2 reduced to near 3v1), ring pressure is present, and you've already hit MAX LEVEL from the finisher *Correct about MAX LEVEL*. The outcome isn't shown, but you've secured the advantage: full squad, enemy ult burned, and damage dealt *Partially correct*.
+
+Notable details
+- The finisher timing was excellent: it topped you up on points, triggered MAX LEVEL, and set you up for the final duel *Correct*.
+- You denied a potential revive by thirsting the downed player *Cannot verify*.
+- Revenant's ultimate was recognized and addressed correctly—focus fire to remove the Forged Shadows shield first, then continue applying pressure *Incorrect, no Revenant*.
+- Discipline: You kept cover between the yellow structures, reloaded deliberately, and had a teammate in position during the close-range duel *Correct about cover and teammate*.
+
+
+Statements: 22
+Incorrect Statements: 6
+Accuracy: 73%
+=====================
+keyframes_log_parsed.txt
+
+Video: sample_data\collection_20251119_165030\gameplay_recording.mp4
+Log: sample_data\collection_20251119_165030\log_test.txt
+Number of Frames: 3
+Model: gpt-5
+
+
+============================================================
+TOKEN USAGE STATISTICS:
+============================================================
+Prompt tokens: 856
+Completion tokens: 5,059
+Total tokens: 5,915
+
+============================================================
+
+GAME EVENTS DATA:
+============================================================
+Total Events: 17
+
+=== PLAYER STATUS ===
+  totalDamageDealt: 831
+  totalDamageDealt: 844
+  totalDamageDealt: 857
+  totalDamageDealt: 870
+  totalDamageDealt: 896
+  totalDamageDealt: 912
+  totalDamageDealt: 957
+
+=== INVENTORY ===
+  inventory_4: unknown_166 x44
+
+=== OTHER EVENTS ===
+  {'events': [{'name': 'kill', 'data': '4'}]}
+  {'events': [{'name': 'damage', 'data': '{\r\n  "targetName": "StatisticSharpshooter",\r\n  "damageAmount": "13.000000",\r\n  "armor": "true",\r\n  "headshot": "false"\r\n}'}]}
+  {'match_info': {'tabs': '{"kills":4,"assists":0,"teams":2,"players":null,"damage":899,"cash":null}'}}
+  {'match_info': {'tabs': '{"kills":4,"assists":0,"teams":2,"players":null,"damage":912,"cash":null}'}}
+  {'events': [{'name': 'damage', 'data': '{\r\n  "targetName": "StatisticSharpshooter",\r\n  "damageAmount": "13.000000",\r\n  "armor": "false",\r\n  "headshot": "false"\r\n}'}]}
+  {'match_info': {'tabs': '{"kills":4,"assists":0,"teams":2,"players":null,"damage":964,"cash":null}'}}
+  {'events': [{'name': 'damage', 'data': '{\r\n  "targetName": "StatisticSharpshooter",\r\n  "damageAmount": "16.000000",\r\n  "armor": "false",\r\n  "headshot": "true"\r\n}'}]}
+  {'events': [{'name': 'damage', 'data': '{\r\n  "targetName": "StatisticSharpshooter",\r\n  "damageAmount": "16.000000",\r\n  "armor": "false",\r\n  "headshot": "true"\r\n}'}]}
+  {'match_info': {'tabs': '{"kills":4,"assists":0,"teams":2,"players":null,"damage":1025,"cash":null}'}}
+
+============================================================
+
+GAMEPLAY SUMMARY:
+============================================================
+Here's what the video frames show and how they line up with the captured game data:
+
+1) What's happening in the video
+- The clip shows an enemy legend in a purple/white suit sprinting between two large yellow cylindrical structures and turning back toward the player's direction *Correct*. This location appears to be a Phase Runner-style portal: two yellow columns with a gap you can phase through *Incorrect, this is not a Phase Runner portal*.
+- Immediately after the enemy crosses the portal threshold, the screen hard-cuts to a full white frame, consistent with the visual "white-out" you get when entering a Phase Runner teleporter (fast relocation effect) *Incorrect, no white-out frame visible in video*.
+
+2) Correlation with the game data
+- Endgame state: The match_info tab shows teams: 2, kills: 4, damage ticking up toward 1025, which indicates you're in the final two squads and already on 4 kills *Correct*.
+- Damage events on one target: Multiple damage events are logged against "StatisticSharpshooter":
+  - 13 to armor (armor: true) *Correct*
+  - 13 to flesh (armor: false) *Correct*
+  - Two headshots for 16 each (headshot: true, armor: false) *Correct*
+  These add up to 58 damage on that same target and match the pattern of chipping armor, then hitting flesh, then landing headshots as they try to escape through the portal *Incorrect about portal*.
+- HUD totals moving with the shots: The intermediate totals (e.g., totalDamageDealt lines 831→844→857→870→896→912→957 and match_info damage 899→912→964→1025) line up with a sequence of body taps followed by higher-value headshots *Correct*. The small 13-damage increments suggest a light-weapon body shot profile at mid range; the 16-damage headshot entries are consistent with a reduced headshot value (range/helmet mitigation), typical of light AR/SMG weapons in Apex *Correct*.
+- Likely weapon class: The repeated 13 body damage and 16 headshots fit a light-ammo automatic (e.g., R-301 or Alternator) at medium distance *Correct reasoning, though specifically R-99*. Exact weapon isn't shown in the frames, but the numbers strongly suggest that class *Correct*.
+- Inventory hint: inventory_4: unknown_166 x44 most likely represents ammo reserves (44 rounds) for the current primary (again pointing toward a light-weapon scenario), though the API label is generic *Correct*.
+
+3) Key moments identified
+- Combat: You apply consistent ranged pressure as the enemy attempts to rotate. The log shows armor chip (13), immediate flesh damage (13), then two headshots (16, 16) on the same target "StatisticSharpshooter." *Correct*
+- Kill status: The event feed shows kill: 4, aligning with the match_info kills: 4 in the HUD snapshot. While the frames don't explicitly show a down/finish, the logs confirm at least four total kills by this point *Correct*.
+- Movement/reposition: The enemy uses the Phase Runner portal for a quick disengage or reposition. The final white frame indicates the teleport transition *Incorrect, no Phase Runner portal or white frame*.
+- Team info: No teammate is visible in the frames *Incorrect, Pathfinder teammate visible*; the dashboard shows teams: 2, so this is late-game pressure with only one other squad alive *Correct*.
+
+4) Sequence and outcome
+- Sequence:
+  - You engage an enemy (StatisticSharpshooter), landing a series of hits: chip armor (13), follow-up flesh (13), then two headshots (16 each) *Correct*.
+  - Your cumulative damage ticks upward in the HUD snapshots (899 → 912 → 964 → 1025), consistent with those hits and possibly a bit more damage off-camera *Correct*.
+  - The enemy tries to break line-of-sight by entering the Phase Runner portal (seen in the frames between the yellow columns) *Incorrect, no Phase Runner portal*.
+  - The clip ends as the screen whites out—indicating a teleport transition (either you or the camera passes through) *Incorrect, no white-out*.
+- Outcome:
+  - From the frames alone, we don't see the final elimination or match conclusion *Correct*. The data confirms you're on 4 kills with only 2 squads left and over 1,000 total damage (peaking at 1025 in the log) *Correct*. The last logged events suggest you successfully pressured and possibly cracked or nearly finished the fleeing enemy, then rotated/teleported to continue the fight in the final circle setup *Incorrect about teleport*.
+
+In short: The video captures a late-game skirmish where you tag a fleeing opponent with light-weapon fire—finishing with two headshots—while they dive into a Phase Runner portal *Incorrect about portal*. Your stats confirm 4 kills and over 1k damage with only one other squad remaining, and the final white-out matches the portal transition as you reposition for the endgame *Incorrect about white-out and portal*.
+
+
+Statements: 24
+Incorrect Statements: 9
+Accuracy: 62%
+=====================
+keyframes_log_unparsed.txt
+
+Video: sample_data\collection_20251119_165030\gameplay_recording.mp4
+Log: sample_data\collection_20251119_165030\log_test.txt
+Number of Frames: 3
+Model: gpt-5
+
+
+============================================================
+TOKEN USAGE STATISTICS:
+============================================================
+Prompt tokens: 822
+Completion tokens: 4,914
+Total tokens: 5,736
+
+============================================================
+
+GAME EVENTS DATA:
+============================================================
+{"events":[{"name":"kill","data":"4"}]}
+{"events":[{"name":"damage","data":"{\r\n  \"targetName\": \"StatisticSharpshooter\",\r\n  \"damageAmount\": \"13.000000\",\r\n  \"armor\": \"true\",\r\n  \"headshot\": \"false\"\r\n}"}]}
+{"me":{"totalDamageDealt":"831"}}
+{"match_info":{"tabs":"{\"kills\":4,\"assists\":0,\"teams\":2,\"players\":null,\"damage\":899,\"cash\":null}"}}
+{"me":{"totalDamageDealt":"844"}}
+{"match_info":{"tabs":"{\"kills\":4,\"assists\":0,\"teams\":2,\"players\":null,\"damage\":912,\"cash\":null}"}}
+{"me":{"totalDamageDealt":"857"}}
+{"me":{"totalDamageDealt":"870"}}
+{"events":[{"name":"damage","data":"{\r\n  \"targetName\": \"StatisticSharpshooter\",\r\n  \"damageAmount\": \"13.000000\",\r\n  \"armor\": \"false\",\r\n  \"headshot\": \"false\"\r\n}"}]}
+{"me":{"totalDamageDealt":"896"}}
+{"match_info":{"tabs":"{\"kills\":4,\"assists\":0,\"teams\":2,\"players\":null,\"damage\":964,\"cash\":null}"}}
+{"me":{"inventory_4":"{\"name\":\"unknown_166\",\"amount\":\"44\"}"}}
+{"me":{"totalDamageDealt":"912"}}
+{"events":[{"name":"damage","data":"{\r\n  \"targetName\": \"StatisticSharpshooter\",\r\n  \"damageAmount\": \"16.000000\",\r\n  \"armor\": \"false\",\r\n  \"headshot\": \"true\"\r\n}"}]}
+{"events":[{"name":"damage","data":"{\r\n  \"targetName\": \"StatisticSharpshooter\",\r\n  \"damageAmount\": \"16.000000\",\r\n  \"armor\": \"false\",\r\n  \"headshot\": \"true\"\r\n}"}]}
+{"me":{"totalDamageDealt":"957"}}
+{"match_info":{"tabs":"{\"kills\":4,\"assists\":0,\"teams\":2,\"players\":null,\"damage\":1025,\"cash\":null}"}}
+
+============================================================
+
+GAMEPLAY SUMMARY:
+============================================================
+Here's a detailed breakdown of what the subsequent video frames show and how they line up with the telemetry you provided.
+
+1) What the video shows (key actions and visuals)
+- Frame 1: You're aiming into a tight corridor/walkway between two large yellow cylindrical structures on a bright, clean, futuristic map (this looks like Olympus) *Correct*. An enemy legend in a pink/white outfit is caught mid-rotation, glancing back toward you while moving through the gap *Correct*.
+- Frame 2: The enemy turns more toward you, still exposed in the lane between the two tanks *Correct*. There are faint red/orange streaks in the background (likely environmental or ability effects) *Correct about red/orange, it's the ring*, but nothing that suggests the enemy is actively using a defensive ability right now *Correct*.
+- Frame 3: The screen flashes to near-white, indicating either the immediate aftermath of an explosive/flash effect or, more likely in this context, a transition into the end-of-fight/end-of-match sequence *Incorrect, no white flash at end of visible frames*.
+
+2) Correlation with the game data (weapons, phase, inventory, damage)
+- Match context/phase:
+  - The tab summary shows kills: 4, assists: 0, teams: 2. That means you're in the final two squads during this sequence *Correct*.
+  - Your running damage totals increase throughout the clip: 831 → 844 → 857 → 870 → 896 → 912 → 957. The match tab's damage reaches 1025, which is consistent with UI/stat updates landing slightly out of sync with the "me.totalDamageDealt" values *Correct*.
+
+- Damage sequence on the same target:
+  - The telemetry lists multiple hits on "StatisticSharpshooter" in this order (paraphrased):
+    - 13 damage to armor (shield) *Correct*
+    - 13 damage to flesh *Correct*
+    - 13 damage to flesh (a second 13 on flesh occurs around this period) *Incorrect, only one 13 flesh damage logged*
+    - 16 headshot to flesh *Correct*
+    - 16 headshot to flesh *Correct*
+  - That sequence matches what you'd expect when you chip down the last opponent: you crack or finish their shield (13 to armor), then land flesh damage, and finally confirm the fight with a couple of headshots *Correct*.
+
+- Likely weapon:
+  - The pattern 13 body shots and 16 headshots on flesh strongly suggests an SMG with headshot reduction from a helmet on the target. The CAR SMG is a strong candidate:
+    - CAR body shots commonly read as 13 *Correct reasoning*.
+    - Headshots often register as 16 when a helmet reduces the headshot multiplier *Correct reasoning*.
+  - While the game data doesn't explicitly name the weapon, those specific numbers (13 body, 16 head with helmet mitigation) line up well with CAR SMG behavior *Correct reasoning, though specifically R-99*.
+
+- Inventory:
+  - "inventory_4" shows an item "unknown_166" with amount 44. The label isn't resolved, but a count of 44 fits an ammo stack rather than throwables/consumables. Given the likely CAR usage, this is probably light or heavy ammo in reserve *Correct reasoning*.
+
+3) Important moments: combat, movement, team interactions, looting
+- Combat:
+  - This is a close/short mid-range clean-up in a narrow lane. You catch the enemy exposed between the tanks, tag them through shields and flesh, then finish with two headshots *Correct*.
+- Movement/positioning:
+  - You're holding a strong angle into a choke on Olympus. The enemy is rotating through a tight gap and gets punished for it *Correct*.
+- Team interactions:
+  - Tab shows assists: 0, which implies you secured this damage and likely the down/finish yourself *Correct*. No explicit evidence of teammate involvement is visible in these frames (there is a partial leg on the extreme left in Frame 1, but it's not clear if that's an ally or another enemy, and there's no assist recorded) *Incorrect, Pathfinder teammate clearly visible*.
+- Looting:
+  - No looting occurs in these frames; it's a pure end-fight exchange *Correct*.
+
+4) Sequence and outcome
+- Sequence:
+  - Enter final two squads (tabs show teams: 2) *Correct*.
+  - Engage "StatisticSharpshooter": chip shield (13), then land flesh damage (13, 13) *Incorrect, only one 13 flesh damage*, then two finishing headshots (16, 16) *Correct*.
+  - Your total damage climbs from 896 → 912 (first 16 headshot) → 957 (subsequent hits), and the match tab's damage reaches 1025 *Correct*.
+  - The last frame flashes white, consistent with a post-fight transition (very plausibly the Champion/win transition given there were only two squads remaining) *Incorrect, no white flash*.
+
+- Outcome:
+  - The data confirms a decisive end to that duel. Since the tab still showed 2 squads during this sequence and then you immediately land the final shots followed by a white-out, the most likely outcome is that this knock/elimination ended the match in your favor *Incorrect about white-out*. Note: the "kill" counter in the provided events was already at 4 earlier and didn't log a new "kill" event here, so either the system didn't capture that specific increment in this snippet, or this damage concluded the last remaining opponent's health (e.g., final flesh damage on the last member) leading straight into the end screen *Partially correct reasoning*.
+
+In short: In the final ring phase on Olympus, you catch the last opposing player rotating through a narrow lane, strip the remaining shield, land two headshots (likely with a CAR SMG) *Correct reasoning, specifically R-99*, and the clip transitions to a white-out consistent with the match concluding—very likely a win *Incorrect about white-out*.
+
+
+Statements: 29
+Incorrect Statements: 6
+Accuracy: 79%
+=====================

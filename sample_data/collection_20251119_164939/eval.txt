@@ -1,0 +1,291 @@
+===================================
+event_frames_log.txt
+
+Log File: sample_data\collection_20251119_164939\log_test.txt
+Frames Folder: sample_data\collection_20251119_164939\frames
+Number of Frames: 4
+Log Size: 385 characters
+Model: gpt-5
+
+
+============================================================
+TOKEN USAGE STATISTICS:
+============================================================
+Prompt tokens: 483
+Completion tokens: 3,742
+Total tokens: 4,225
+
+============================================================
+
+Here's a concise, event-by-event reconstruction from the logs and screenshots:
+
+- Setting and match state
+  - Map: Olympus *Correct*.
+  - Round: 1 (Ring is closing) *Correct*.
+  - Squads remaining: 15 throughout these shots *Incorrect, video shows 3 squads left*.
+
+- Team status
+  - One teammate was fully eliminated; their banner was on the ground with ~65 seconds remaining to recover *Cannot verify exact timing*.
+  - Another teammate pinged a Mobile Respawn Beacon, indicating intent to respawn the fallen teammate once the banner is retrieved *Correct*.
+  - Two squad members (including you) are alive and maneuvering near the banner/beacon while the ring is closing *Correct that 2 are active*.
+
+- Your loadout and actions
+  - Primary weapon in use: R-99 (18 rounds in mag visible) *Correct*.
+  - Secondary weapon: Sentinel (visible in HUD as the other gun) *Correct*.
+  - Combat behavior from logs shows you alternating between fighting and topping up:
+    - You fired/used the R-99, then used a healing/shield item, then repeated this cycle *Correct about healing cycle*.
+    - An inventory item in slot 8 (unknown_221) decreased from 3 → 2 → 1 while "Health/Shield" was in use, indicating you consumed two consumables (likely shield/health items) during/after the engagement *Correct, Shield Cells*.
+
+- Combat outcomes and damage
+  - "Enemy Shield Broken — Bloodhound" appears, meaning you/your team cracked a Bloodhound's shields during this sequence *Correct*.
+  - No explicit knockdown or elimination message for that Bloodhound is shown in these shots (only the shield break is confirmed) *Correct*.
+
+- Kills and kill leader status
+  - You became the Kill Leader with 5 kills, as indicated by the on-screen announcement *Incorrect, shows 3 kills not 5*. This confirms you had at least 5 eliminations by this point in Round 1 *Incorrect number*.
+  - No additional confirmed kills are shown in the feed during these specific screenshots beyond the kill leader update *Correct*.
+
+- Additional feed context
+  - A player elsewhere died to the Ring (seen in the kill feed) *Cannot verify*.
+  - No team wipes or your squad's downs are displayed during these screenshots beyond the already-eliminated teammate whose banner remained *Correct*.
+
+Overall sequence
+- During Round 1's close, your squad got into/just finished a skirmish near the downed teammate's banner *Correct*.
+- You traded shots with the R-99, cracked a Bloodhound's shields, and paused twice to heal/restore shields *Correct about healing and shield break*.
+- You secured/held Kill Leader status with 5 kills *Incorrect, 3 kills*.
+- With 15 squads still up and the Ring closing, your team prepared to recover the banner and use a Mobile Respawn Beacon to bring the eliminated teammate back *Incorrect squad count, 3 squads not 15*.
+
+
+Statements: 17
+Incorrect Statements: 4
+Accuracy: 76%
+=====================
+raw_video.txt
+
+Video: sample_data\collection_20251119_164939\gameplay_recording.mp4
+Log: None
+Number of Frames: 165
+Model: gpt-5
+
+
+============================================================
+TOKEN USAGE STATISTICS:
+============================================================
+Prompt tokens: 11,595
+Completion tokens: 4,400
+Total tokens: 15,995
+
+============================================================
+
+GAMEPLAY SUMMARY:
+============================================================
+Here's a concise, play-by-play summary of what the frames show from this Apex Legends sequence, plus the key takeaways.
+
+What map/where
+- Map: Olympus *Correct*.
+- Area: Around the Rift/Phase Runner side (cherry blossoms, swirling rift energy overhead, Hammond/Labs-style buildings and containers) *Correct*.
+
+Squad and status
+- Squads left: 15 throughout this sequence *Incorrect, video shows 3 squads left*.
+- Round status: Round 1, already closing (timer counts down from ~8 minutes into the 3-minute range) *Correct about Round 1 closing*.
+- Your squad: All three players present for most of the sequence *Incorrect, DevDynamo has DELIVER TO BEACON*. One teammate (ShadyDroXl) repeatedly pings a mobile respawn beacon *Incorrect spelling, ShadyDrexXD*, and at one point a green "banner" marker with a 35s timer appears ahead—suggesting a teammate's banner was at risk earlier. By the end of these frames, all three squad members are alive *Incorrect, only 2 active*.
+- Kill feed: You (cookies) are announced as the new Kill Leader with 4 kills *Incorrect, shows 3 kills*.
+
+Your legend, loadout, and resources
+- Legend: Loba (gloves, bracelet, and UI cues match) *Incorrect, player is Sparrow*.
+- Weapons:
+  - R-99 SMG (18 round mag visible; ~64 spare ammo in one sequence) *Correct*.
+  - Sentinel (visible as the other weapon in the HUD) *Correct*.
+- Armor: Blue Evo; "NEXT LVL: 52/2400" indicates you're 52 damage from purple at the start *Incorrect, shows "NEXT LVL: 524 EVO"*.
+- Heals: You have (and use) multiple Shield Cells; you do not appear to use a Battery in these frames *Correct*.
+
+What happens (timeline)
+- You stabilize after a prior fight: tucked behind orange "SECURITY" cargo containers, you chain several Shield Cells to rebuild from cracked/broken shields to full *Correct*. This repeats multiple times across the clip as you inch between covers *Correct*.
+- Kill feed activity continues during this—your name appears as Kill Leader (4 kills) *Incorrect, 3 kills*, and "Enemy Shield Broken — Bloodhound" appears more than once (likely from a nearby skirmish your team is watching or poking) *Correct about Bloodhound shield break*.
+- A teammate (ShadyDroXl) pings a mobile respawn beacon repeatedly *Incorrect spelling*. A green "35s" banner marker shows up toward a building ahead at one point, indicating a banner timer (likely a teammate's earlier) *Cannot verify exact timing*.
+- You carefully reposition:
+  - Peek from behind the orange container toward the rift and buildings *Correct*.
+  - Swap to the R-99, check angles, then retreat to cover to finish healing *Correct*.
+  - Rotate along the grassy slope to another container, then toward a building with a ramp and an open doorway *Correct*.
+  - Continue topping off shields at each stop (lots of short, safe heals rather than a single full Battery) *Correct*.
+- You briefly take chip damage (red screen vignette) while healing in the open between covers but avoid committing to a gunfight *Cannot verify chip damage*.
+- You end the sequence on full shields, at cover near a building ramp/entrance, R-99 out, holding angles while your team gathers *Correct concept*.
+
+Combat and decisions observed
+- No shots fired by you in these frames; you prioritize survivability and cover while cells tick *Correct*.
+- Your team is tracking a fight nearby (kill feed shows a Bloodhound's shield broken), but you do not push. The approach is cautious, using terrain and structures to maintain safety while healing *Correct*.
+- Given you're Kill Leader and close to purple armor, this looks like a reset after a won fight, with an eye toward either retrieving/respawning a teammate (based on the pings) or third-partying once stabilized *Correct reasoning*.
+
+Key takeaways
+- Good discipline: You constantly heal to full behind cover before re-peeking and rotate cover-to-cover up the slope toward better positions *Correct*.
+- Loadout fits the area: R-99 for close-quarters around the buildings; Sentinel gives you mid/long options if you get a clean angle later *Correct*.
+- If available, a Battery would have sped up the reset (you used many cells). Otherwise, your "chain-cells-behind-hard-cover" approach was correct *Ignored*.
+- With 52 damage needed for purple at the start, a quick poke with the Sentinel from safe cover could have leveled you faster, but you wisely avoided unnecessary risk while the ring was closing *Incorrect EVO number*.
+
+Bottom line
+This clip is a mid—Round 1 reset on Olympus near the Rift: you, as Loba *Incorrect legend* and newly crowned Kill Leader (4 kills) *Incorrect kill count*, repeatedly shield up behind containers and slopes, coordinate around a possible banner/respawn, and carefully reposition toward a building while avoiding open fights. You finish fully shielded, on cover, ready to re-engage *Correct summary concept*.
+
+
+Statements: 28
+Incorrect Statements: 9
+Accuracy: 68%
+=====================
+keyframes_log_parsed.txt
+
+Video: sample_data\collection_20251119_164939\gameplay_recording.mp4
+Log: sample_data\collection_20251119_164939\log_test.txt
+Number of Frames: 23
+Model: gpt-5
+
+
+============================================================
+TOKEN USAGE STATISTICS:
+============================================================
+Prompt tokens: 1,807
+Completion tokens: 4,265
+Total tokens: 6,072
+
+============================================================
+
+GAME EVENTS DATA:
+============================================================
+Total Events: 7
+
+=== PLAYER STATUS ===
+  Using: R-99
+  Using: Health/Shield
+  Using: R-99
+  Using: Health/Shield
+
+=== INVENTORY ===
+  inventory_8: unknown_221 x3
+  inventory_8: unknown_221 x2
+  inventory_8: unknown_221 x1
+
+============================================================
+
+GAMEPLAY SUMMARY:
+============================================================
+Here's a frame-by-frame style breakdown and how it lines up with the extracted API data.
+
+1) What happens in the video (key actions/events)
+- Immediate priority is healing: The player repeatedly uses Shield Cells behind hard cover (an orange "SECURITY" container) while the ring is closing in Round 1 *Correct*.
+- Peeking and repositioning: Between heals, the player briefly peeks over a grassy rise toward a ping 95m away *Cannot verify 95m*, then tucks back behind the container to finish recharging shields. They also creep along the container edges and toward a nearby ramp but keep returning to cover to heal *Correct*.
+- Team coordination toward a respawn: A teammate (ShadyDinoXL) pings a Mobile Respawn Beacon *Incorrect spelling, ShadyDrexXD*, and one squadmate's panel shows "DELIVER TO BEACON," indicating a teammate is eliminated and their banner is in-hand (or needs to be delivered) *Correct*.
+- Ongoing fight nearby: The killfeed shows "Enemy Shield Broken — Bloodhound" multiple times *Correct* and changes in Kill Leader status. The player becomes Kill Leader with 3 kills ("cookies is the new Kill Leader with 3 kills") during this sequence *Correct*, suggesting the squad had just finished or is between engagements, though no shots are fired in these specific frames *Correct*.
+- Weapons ready but no firing: The R-99 is out with 18 in the mag; the Sentinel is the secondary. No visible shooting occurs in these frames—this is a reset/heal phase *Correct*.
+
+2) Correlation to the provided game data
+- Using: R-99: Visible throughout; the active weapon is the R-99 with 18 rounds, which implies either no extended mag or a low-tier mag *Correct*.
+- Using: Health/Shield: The on-screen prompt "Shield Cell — Press to Cancel" and repeated use animation match the status events. You can see the charge progress (e.g., 0.9s remaining), and the player cancels/starts multiple times as they reposition *Correct*.
+- Inventory changes (inventory_8: unknown_221 x3 → x2 → x1): The item in use is clearly a Shield Cell (small blue canister with lightning decal), so unknown_221 corresponds to Shield Cells. The inventory counts decreasing align with the multiple cell uses captured by the API *Correct*.
+- Game phase: The HUD shows "ROUND 1 — CLOSING," consistent across frames. The ring wall is visible nearby, and the squad count is down to 7—early but already a low-squad lobby, which fits with a reset after an early fight *Incorrect squad count, shows 3 not 7*.
+- Armor state: The center HUD shows "NEXT LVL: 324 EVO," indicating Blue Evo armor needing 324 damage to purple—consistent with the choice to spend cells (25 shield per use) to top off *Incorrect, shows "NEXT LVL: 524 EVO"*.
+
+3) Important moments identified
+- Combat context: While we don't see shots fired in these frames, the killfeed indicates active or very recent combat: "Enemy Shield Broken — Bloodhound" and the Kill Leader change. This implies the team cracked at least one opponent and then paused to heal/reset *Correct*.
+- Healing under pressure: Multiple Shield Cell uses behind hard cover, with occasional cancels and peeks, shows disciplined healing during a lull while staying ready to react *Correct*.
+- Teamplay/Resurrection plan: "ShadyDinoXL pinged a mobile respawn beacon" *Incorrect spelling* plus the teammate panel showing "DELIVER TO BEACON" signifies a plan to bring back a fallen teammate using a Mobile Respawn Beacon rather than rotating to a fixed respawn location—likely due to ring pressure or enemy presence *Correct reasoning*.
+- Positional awareness: The player uses the container for head-glitch peeks toward the 95m ping *Cannot verify distance* and briefly paths toward a building ramp, but consistently prioritizes finishing shields before committing *Correct*.
+
+4) Sequence and outcome
+- Sequence:
+  - After or between engagements (as indicated by the killfeed), the player pulls back to an orange SECURITY container *Correct*.
+  - They start healing with Shield Cells, peek the hill and toward the 95m ping *Cannot verify*, cancel/restart heals, then finish topping shields *Correct*.
+  - Teammate pings a Mobile Respawn Beacon; the team appears to have (or be near) a means to revive the eliminated teammate *Correct*.
+  - The player maintains the R-99 (18 rounds) with a Sentinel as secondary while scanning and repositioning slightly *Correct*.
+- Outcome of the clip:
+  - The player successfully recharges shields and becomes or remains Kill Leader with 3 kills *Correct*.
+  - One teammate is dead and flagged for respawn; the squad is coordinating to use a Mobile Respawn Beacon *Correct*.
+  - No additional downs or finishes are shown in these frames; it ends with the player healed, in cover, and assessing the area with 7 squads left *Incorrect squad count, shows 3* while Round 1 continues to close *Correct*.
+
+Extra observations
+- Location/map context appears to be Olympus (pink foliage, clean white structures) *Correct*. The ring wall is close, which could be why a mobile respawn is preferred *Correct reasoning*.
+- The repeated "Using: R-99" and "Using: Health/Shield" events, plus the inventory count down for unknown_221, map cleanly onto the visual sequence of weapon ready state and Shield Cell usage *Correct*.
+
+
+Statements: 23
+Incorrect Statements: 5
+Accuracy: 78%
+=====================
+keyframes_log_unparsed.txt
+
+Video: sample_data\collection_20251119_164939\gameplay_recording.mp4
+Log: sample_data\collection_20251119_164939\log_test.txt
+Number of Frames: 23
+Model: gpt-5
+
+
+============================================================
+TOKEN USAGE STATISTICS:
+============================================================
+Prompt tokens: 1,861
+Completion tokens: 4,884
+Total tokens: 6,745
+
+============================================================
+
+GAME EVENTS DATA:
+============================================================
+{"me":{"inventory_8":"{\"name\":\"unknown_221\",\"amount\":\"3\"}"}}
+{"me":{"inUse":"{\"inUse\":\"R-99\"}"}}
+{"me":{"inUse":"{\"inUse\":\"Health/Shield\"}"}}
+{"me":{"inventory_8":"{\"name\":\"unknown_221\",\"amount\":\"2\"}"}}
+{"me":{"inUse":"{\"inUse\":\"R-99\"}"}}
+{"me":{"inUse":"{\"inUse\":\"Health/Shield\"}"}}
+{"me":{"inventory_8":"{\"name\":\"unknown_221\",\"amount\":\"1\"}"}}
+
+============================================================
+
+GAMEPLAY SUMMARY:
+============================================================
+Here's what the clip shows and how it lines up with the game data you provided:
+
+1) Key actions and on-screen events
+- Repeated healing behind cover: You spend most of the clip tucked behind a red "SECURITY" container *Incorrect color, shows orange/red*, popping Shield Cells. You occasionally cancel the heal to check your surroundings, then resume healing *Correct*.
+- Brief weapon checks and peeks: Between heals you draw your SMG and peek up the grassy slope toward nearby buildings and a rooftop/ramp area, then fall back to cover to continue healing *Correct*.
+- Teammate status and objective: One teammate's banner has already been recovered (HUD shows "DELIVER TO BEACON") *Correct*, and another teammate's banner marker appears at range with a visible countdown (e.g., "95s") *Cannot verify exact timing*, indicating you still need to recover it before it expires *Incorrect, only one banner shown*.
+- Respawn planning: A squadmate pinged a Mobile Respawn Beacon (feed message), aligning with your team's intent to bring teammates back once you're stabilized *Correct*.
+- Kill leader status: The feed announces that you are the new Kill Leader with 3 kills *Correct*.
+- Round state: Round 1 is closing throughout these frames; the timer counts down as you hold edge cover. Squad count hovers in the low double digits (early-mid game tempo) *Incorrect, shows 3 squads not low double digits*.
+
+2) Correlation with the provided game data
+- Weapons used (R-99 + Sentinel):
+  - Data shows inUse switching to "R-99," matching the visual where you pull out an R-99 (18 rounds in the mag) *Correct*.
+  - The secondary weapon on your HUD is a Sentinel (visible icon/text), though you never fire it in these frames *Correct*.
+- Healing item usage:
+  - Data alternates between inUse "Health/Shield" and inUse "R-99," which matches you repeatedly starting/canceling Shield Cells and then re-equipping the SMG to check angles *Correct*.
+  - inventory_8 unknown_221 decreases 3 → 2 → 1 across the events. On-screen, you're clearly using Shield Cells, so unknown_221 corresponds to Shield Cells *Correct*.
+- Game phase:
+  - The HUD shows "Round 1 — Closing," matching the early-game, low-pressure rotations and the team's focus on recovering/respawning banners rather than heavy engagements *Correct*.
+
+3) Important moments identified
+- Combat-adjacent but no active shooting: There's no firing in the shown frames, but the kill feed includes "Enemy Shield Broken — Bloodhound," indicating recent or nearby fighting (likely connected to your team's earlier engagement) *Correct*.
+- Stabilization and reset:
+  - Multiple Shield Cell uses to top shields *Correct*.
+  - Cancel/resume behavior suggests you're wary of pushes while healing *Correct*.
+- Team interactions:
+  - A teammate pinged a Mobile Respawn Beacon (prepping for the respawn) *Correct*.
+  - One banner recovered (DELIVER TO BEACON in squad panel) *Correct*.
+  - Another banner still on the ground with a visible time remaining marker (e.g., 95s), pressing you to move soon *Incorrect, only one banner shown*.
+- Movement:
+  - Small, deliberate repositioning: from hard cover at the container to the grass ridge to sightlines toward the banner/building, then back to cover to finish healing *Correct*.
+
+4) Sequence of events and outcome
+- Start: You're in cover with partial shields, begin a Shield Cell *Correct*.
+- Mid: You cancel a cell, pull out the R-99, peek up the hill toward the banner/building, then go back to cover and resume healing. This cycle repeats a few times *Correct*.
+- Throughout: Round 1 continues closing, the kill feed notes your kill leader status, and you maintain awareness of the banner timer and the pinged Mobile Respawn Beacon *Correct*.
+- End state: You finish stabilizing (Shield Cells used drop from 3 to 1 as per the data), remain behind cover with R-99/Sentinel loadout, and appear ready to rotate toward the banner/respawn objective *Correct*. No new kills or knocks are shown, and no looting occurs in these frames *Correct*.
+
+Loadout and status snapshot (from the frames)
+- Weapons: R-99 (equipped in most peeks, 18 rounds visible in mag), Sentinel as secondary *Correct*.
+- Shields: Actively restored via Shield Cells; Evo progress indicator shows "NEXT LVL: 324 EVO." *Incorrect, shows 524 EVO*.
+- Team: You're alive; one teammate's banner recovered (deliver to beacon), another banner marked with a countdown *Incorrect, only one banner*, planning to respawn via a pinged Mobile Respawn Beacon *Correct*.
+- Game phase: Round 1 closing; early-mid game with ~10–11 squads left during the clip *Incorrect, shows 3 squads*.
+
+Overall, this segment captures a post-fight reset: heal, assess, and prepare to recover/respawn teammates while avoiding overexposure during Round 1's close *Correct summary*.
+
+
+Statements: 26
+Incorrect Statements: 6
+Accuracy: 77%
+=====================

@@ -1,0 +1,313 @@
+===================================
+event_frames_log.txt
+
+Log File: sample_data\collection_20251119_165050\log_test.txt
+Frames Folder: sample_data\collection_20251119_165050\frames
+Number of Frames: 20
+Log Size: 1771 characters
+Model: gpt-5
+
+
+============================================================
+TOKEN USAGE STATISTICS:
+============================================================
+Prompt tokens: 2,062
+Completion tokens: 3,846
+Total tokens: 5,908
+
+============================================================
+
+Here's a clear, chronological recap of the final fight and match wrap-up based on the logs and screenshots:
+
+- Situation before the final fight
+  - Only 2 squads were left as Ring 2 was closing *Correct*.
+  - Your whole team of three was alive (all three banners are up in the HUD) *Correct*.
+  - You had a Sentinel and an R-99 *Correct*; your ultimate was available (cooldown 0) *Correct*.
+
+- Opening tags and early damage
+  - You swapped from Sentinel to the R-99 to engage *Correct*.
+  - You started landing light R-99 hits on an enemy named CosecantCommando (the enemy legend is Fuse, per the killfeed HUD text) *Correct about target name, cannot verify Fuse from video*.
+  - Damage events recorded: 2, 13, 13, 10, 13 (R-99 bullet increments), moving your running total damage from 1090 → 1103 → 1116 *Correct*.
+  - The match tab briefly updated to 5 kills, 0 assists, 1191 damage with 2 squads remaining *Correct*.
+
+- The decisive spray
+  - You continued to beam the Fuse with the R-99 from cover near the blue container as the ring closed *Correct about R-99 and blue container*.
+  - Screenshots show cumulative damage numbers stacking rapidly: 13 → 65 → 78 → 101 → 114 → 153 *Cannot verify exact numbers from video*.
+  - You cracked Fuse's shields (Shield Broken – Fuse appears) and kept firing through "LOW AMMO," emptying the mag as the total landed damage in that sequence reached 153 *Correct about LOW AMMO*.
+
+- Finishing blow and final stats
+  - Those last R-99 bullets downed and eliminated the final enemy (Fuse) *Correct*, immediately triggering the "YOU ARE THE CHAMPION" banner *Correct*.
+  - Your personal damage counter advanced through 1168 → 1204 → 1217 → 1230 during this endgame sequence *Correct*; the match summary finalized at 6 kills, 0 assists, 1276 damage *Correct*.
+  - Victory was recorded (victory: true, teams dropped from 2 to 1) *Correct*.
+  - After the win, your ultimate showed a small cooldown value (5), indicating it was ticking post-fight *Correct*.
+
+Key takeaways
+- You closed out the match by swapping to the R-99 and securing the final kill on a Fuse with a sustained spray during Ring 2 closing *Correct*.
+- Team status remained strong (no downs shown) going into and during the last engagement *Correct*.
+- Final line: 6 kills, 0 assists, 1276 damage, Champion *Correct*.
+
+
+Statements: 16
+Incorrect Statements: 0
+Accuracy: 100%
+=====================
+raw_video.txt
+
+Video: sample_data\collection_20251119_165050\gameplay_recording.mp4
+Log: None
+Number of Frames: 165
+Model: gpt-5
+
+
+============================================================
+TOKEN USAGE STATISTICS:
+============================================================
+Prompt tokens: 11,595
+Completion tokens: 4,635
+Total tokens: 16,230
+
+============================================================
+
+GAMEPLAY SUMMARY:
+============================================================
+Here's a clear play-by-play of the endgame sequence shown in the frames, with the key actions, abilities, and combat moments.
+
+Context and loadout
+- Mode and phase: Final engagement with 2 squads left as the ring is closing *Correct*.
+- Map area: An Olympus industrial section with stacked crates, blue cargo containers, and yellow "Powerizer" tanks (looks like the outer decks around Hammond structures) *Correct*.
+- Your legend and weapons: You're running Sentinel (sniper) and an R-301 Carbine (iron sights) *Incorrect, it's R-99, not R-301*. You're low on light ammo throughout the sequence *Correct*.
+- Squad: Full trio alive and moving together; your teammates are close and pushing from your left/forward angles *Correct*.
+
+Key events and timeline
+1) Opening sightlines and setup
+   - You start scoped with a Sentinel, watching an enemy angle near the elevated walkways and a blue cargo container *Correct*.
+   - You're low on sniper ammo and don't take a committed shot; you swap to the R-301 to conserve/prepare for a closer fight *Incorrect, R-99 not R-301*.
+
+2) Enemy tactical lands nearby
+   - An enemy throws an ability that creates a glowing blue radius on the ground just ahead of you (Ash's Arc Snare) *Incorrect, no visible Ash Arc Snare in video*. You respect it and stay outside its snare radius, using the cargo container as hard cover *Incorrect reasoning*.
+
+3) Ring pressure and reposition
+   - As "RING CLOSING" hits, you creep up the right side of the blue container and then along stacked crates, staying inside the safe zone while maintaining cover *Correct*. Your squad pinches the remaining enemies from complementary angles *Correct*.
+
+4) Final duel at mid-range
+   - You anchor near the crates and take a clean angle on the last enemy holding by the yellow tanks/railing *Correct*.
+   - You ADS with the R-301 (iron sights) and beam consistently, despite the "LOW AMMO" warning *Incorrect weapon, but correct about LOW AMMO*.
+   - Hit confirmation shows sequential damage ticks; the log calls out "Enemy Shield Broken – Fuse," identifying the target *Correct*. You continue to track and land follow-up shots to finish *Correct*.
+
+5) Match end
+   - The final Fuse goes down, and the "YOU ARE THE CHAMPION" banner appears *Correct*.
+   - You perform a weapon inspect as the banner lingers *Correct*; post-fight text briefly mentions loot/arsenal reset messaging (likely mode UI carryover) *Correct*.
+
+What decided the fight
+- Smart cover use: You avoided the snare radius and pie-sliced around the blue container and crates, denying easy angles *Incorrect about snare, but correct about cover use*.
+- Timing with the ring: You advanced as the ring closed, forcing the last opponent into a worse position *Correct*.
+- Clean tracking with R-301: Despite low ammo and no optic, your mid-range beams broke shield and confirmed the final kill *Incorrect weapon*.
+- Team pressure: Teammates held wide/forward positions that limited the enemy's escape options and made your angle safe to take *Correct*.
+
+Notable ability interactions
+- Enemy Ash Arc Snare landed near you and was avoided *Incorrect, no Arc Snare visible*; no defensive ult (like Dome) is used *Correct*, and no smoke/walls are present *Correct*. The finish is mainly raw gunplay and positioning *Correct*.
+
+End result
+- Your team wipes the final enemy (Fuse) and secures the win. Champion screen follows immediately after the last burst from your R-301 *Incorrect weapon*.
+
+
+Statements: 22
+Incorrect Statements: 8
+Accuracy: 64%
+=====================
+keyframes_log_parsed.txt
+
+Video: sample_data\collection_20251119_165050\gameplay_recording.mp4
+Log: sample_data\collection_20251119_165050\log_test.txt
+Number of Frames: 13
+Model: gpt-5
+
+
+============================================================
+TOKEN USAGE STATISTICS:
+============================================================
+Prompt tokens: 1,635
+Completion tokens: 4,600
+Total tokens: 6,235
+
+============================================================
+
+GAME EVENTS DATA:
+============================================================
+Total Events: 21
+
+=== PLAYER STATUS ===
+  ultimate_cooldown: {"ultimate_cooldown":"0"}
+  Using: Sentinel
+  Using: R-99
+  totalDamageDealt: 1090
+  totalDamageDealt: 1103
+  totalDamageDealt: 1116
+  totalDamageDealt: 1168
+  totalDamageDealt: 1204
+  totalDamageDealt: 1217
+  totalDamageDealt: 1230
+  ultimate_cooldown: {"ultimate_cooldown":"5"}
+
+=== INVENTORY ===
+  inventory_9: unknown x?
+
+=== OTHER EVENTS ===
+  {'events': [{'name': 'damage', 'data': '{\r\n  "targetName": "CosecantCommando",\r\n  "damageAmount": "2.000000",\r\n  "armor": "false",\r\n  "headshot": "false"\r\n}'}]}
+  {'events': [{'name': 'damage', 'data': '{\r\n  "targetName": "CosecantCommando",\r\n  "damageAmount": "13.000000",\r\n  "armor": "false",\r\n  "headshot": "false"\r\n}'}]}
+  {'match_info': {'tabs': '{"kills":5,"assists":0,"teams":2,"players":null,"damage":1191,"cash":null}'}}
+  {'events': [{'name': 'damage', 'data': '{\r\n  "targetName": "CosecantCommando",\r\n  "damageAmount": "13.000000",\r\n  "armor": "false",\r\n  "headshot": "false"\r\n}'}]}
+  {'events': [{'name': 'damage', 'data': '{\r\n  "targetName": "CosecantCommando",\r\n  "damageAmount": "10.000000",\r\n  "armor": "false",\r\n  "headshot": "false"\r\n}'}]}
+  {'events': [{'name': 'damage', 'data': '{\r\n  "targetName": "CosecantCommando",\r\n  "damageAmount": "13.000000",\r\n  "armor": "false",\r\n  "headshot": "false"\r\n}'}]}
+  {'match_info': {'tabs': '{"kills":6,"assists":0,"teams":2,"players":null,"damage":1276,"cash":null}'}}
+  {'match_info': {'victory': 'true'}}
+  {'match_info': {'tabs': '{"kills":6,"assists":0,"teams":1,"players":null,"damage":1276,"cash":null}'}}
+
+============================================================
+
+GAMEPLAY SUMMARY:
+============================================================
+Here's what the video frames show and how they line up with the extracted match data:
+
+1) Key on-screen actions and events
+- Endgame setup (2 squads left): The POV player is on Olympus (pink cherry trees visible) around a raised industrial platform *Correct*. A blue Gibraltar Dome of Protection is active to the left, indicating your team set defensive cover as you take positions near a short wall/blue crate *Incorrect, no Gibraltar dome visible*.
+- Weapons and stance: You alternate between a Sentinel (sniper) and an R-99 (SMG) *Correct*. The HUD shows Sentinel equipped with 2 rounds left, then you swap to the R-99 (18 in mag, 17 reserve) while the "LOW AMMO" warning is present *Correct*. You crouch and headglitch behind low cover to watch the ramp/ledge ahead *Correct*.
+- Mid-fight posture: You ADS and hold angles rather than wide swinging, suggesting your team is playing the final circle patiently *Correct*. The "Press Z to Upgrade" prompt is on-screen (you have an armor upgrade available from the new Evo/upgrade system) *Incorrect, it's "Press 2 to Upgrade" and it's a Legend Upgrade, not armor/Evo* but you ignore it due to the fight *Correct*.
+- Ring pressure and finish: As "RING CLOSING" appears, the final elimination happens *Correct*. The kill feed shows a teammate (cokkies) securing a pick right before the match ends *Incorrect, kill feed shows "cookies" getting a kill on StatisticSharpshooter, not CosecantCommando*. Immediately, the Champion banner appears: "YOU ARE THE CHAMPION." *Correct*
+- Post-win banner: "LOOT BINS AND ARSENALS RESET" flashes alongside the Champion screen (Season 20+ systems), but this is moot since the match is over *Correct*.
+
+2) Correlation with the provided data
+- Weapons used: Matches exactly—API lists "Using: Sentinel" and "Using: R-99," and both are visible in the HUD and hands *Correct*.
+- Damage ticks and target: The API shows several small damage events to "CosecantCommando" for 2, 10, and 13 (all "armor": false, "headshot": false). Those flesh-only, low-value increments are consistent with R-99 body shots at mid-range and/or damage falloff—what we'd expect while you're taking safe peeks from cover near the end *Correct*.
+- Total damage progression: Player status snapshots climb 1090 → 1103 → 1116 → 1168 → 1204 → 1217 → 1230, and match tabs later show 1191 (at 5 kills) then 1276 (at 6 kills). That trajectory matches late-fight chip damage followed by a final exchange that pushes your total to 1276 by the time victory is registered *Correct*.
+- Kills and victory: Match info shows kills rising from 5 to 6 with "teams": 2 → 1 and "victory": true, aligning with the visual Champion banner and the end of the final squad *Correct*.
+- Ultimate cooldown: The ultimate cooldown moves from 0 to 5 near the end, indicating your ultimate status changed just before/around the conclusion (either used or came off cooldown). No specific ultimate visuals are obvious in-frame, but the cooldown change matches a late-fight ability timing shift *Correct*.
+- Inventory cues: The "LOW AMMO" alert and R-99 count (18/17) on-screen match the endgame scarcity implied by the HUD *Correct*; the inventory detail in the data ("inventory_9: unknown x?") doesn't surface visibly, but ammo constraints clearly influenced your conservative peeking *Correct*.
+
+3) Important moments (combat, looting, movement, team play)
+- Combat:
+  - You chip the last enemy squad with R-99 flesh damage (per the 10–13 damage events and the "armor: false" flags) *Correct*.
+  - You hold angles behind cover and don't overcommit—likely preserving health while applying pressure *Correct*.
+  - A teammate secures a key elimination (kill feed shows "cokkies" getting a kill) during ring close, immediately preceding the win *Correct about teammate getting kill*.
+- Movement:
+  - Short, controlled repositioning from open ground to the low blue crate and then tight crouch-peeks on the ramp/ledge. No wide flanks; positioning stays disciplined inside/near safe zone as the ring closes *Correct*.
+- Team interactions:
+  - Gibraltar Dome is up on your left, indicating coordinated defensive utility from your squad *Incorrect, no Gibraltar dome visible*.
+  - Teammates are alive at the end (all three banners visible) and contributing—one confirms the final pick in kill feed *Correct*.
+- Looting:
+  - None mid-fight; no looting animation is shown *Correct*. The on-screen "Press Z to Upgrade" prompt indicates you've banked enough EVO/upgrade points, but you don't pause to use it during the final engagement *Incorrect button (Press 2, not Z) and incorrect system (Legend Upgrade, not EVO)*.
+
+4) Sequence of events and overall outcome
+- Final circle with 2 squads left on Olympus; ring is about to close *Correct*.
+- You anchor with a Sentinel/R-99 loadout, settle into cover, and chip the last squad with R-99 flesh damage *Correct*.
+- Teammate throws/has a Gibraltar Dome active *Incorrect, no dome visible*; your team plays the space methodically *Correct*.
+- The ring begins closing; a teammate (cokkies) finishes one of the remaining enemies (seen in kill feed) *Correct about teammate kill*.
+- The match immediately ends with "YOU ARE THE CHAMPION." *Correct*
+- Stats roll up to 6 kills and 1276 damage for you, and victory = true confirms the win in the API *Correct*.
+
+Net: A clean, controlled endgame. You maintain cover with low ammo, contribute final chip damage, your teammate confirms a crucial elimination as the ring closes, and your squad wins the match *Correct*.
+
+
+Statements: 28
+Incorrect Statements: 6
+Accuracy: 79%
+=====================
+keyframes_log_unparsed.txt
+
+Video: sample_data\collection_20251119_165050\gameplay_recording.mp4
+Log: sample_data\collection_20251119_165050\log_test.txt
+Number of Frames: 13
+Model: gpt-5
+
+
+============================================================
+TOKEN USAGE STATISTICS:
+============================================================
+Prompt tokens: 1,620
+Completion tokens: 4,615
+Total tokens: 6,235
+
+============================================================
+
+GAME EVENTS DATA:
+============================================================
+{"me":{"ultimate_cooldown":"{\"ultimate_cooldown\":\"0\"}"}}
+{"me":{"inUse":"{\"inUse\":\"Sentinel\"}"}}
+{"me":{"inUse":"{\"inUse\":\"R-99\"}"}}
+{"me":{"totalDamageDealt":"1090"}}
+{"me":{"totalDamageDealt":"1103"}}
+{"me":{"totalDamageDealt":"1116"}}
+{"events":[{"name":"damage","data":"{\r\n  \"targetName\": \"CosecantCommando\",\r\n  \"damageAmount\": \"2.000000\",\r\n  \"armor\": \"false\",\r\n  \"headshot\": \"false\"\r\n}"}]}
+{"events":[{"name":"damage","data":"{\r\n  \"targetName\": \"CosecantCommando\",\r\n  \"damageAmount\": \"13.000000\",\r\n  \"armor\": \"false\",\r\n  \"headshot\": \"false\"\r\n}"}]}
+{"match_info":{"tabs":"{\"kills\":5,\"assists\":0,\"teams\":2,\"players\":null,\"damage\":1191,\"cash\":null}"}}
+{"events":[{"name":"damage","data":"{\r\n  \"targetName\": \"CosecantCommando\",\r\n  \"damageAmount\": \"13.000000\",\r\n  \"armor\": \"false\",\r\n  \"headshot\": \"false\"\r\n}"}]}
+{"me":{"totalDamageDealt":"1168"}}
+{"events":[{"name":"damage","data":"{\r\n  \"targetName\": \"CosecantCommando\",\r\n  \"damageAmount\": \"10.000000\",\r\n  \"armor\": \"false\",\r\n  \"headshot\": \"false\"\r\n}"}]}
+{"events":[{"name":"damage","data":"{\r\n  \"targetName\": \"CosecantCommando\",\r\n  \"damageAmount\": \"13.000000\",\r\n  \"armor\": \"false\",\r\n  \"headshot\": \"false\"\r\n}"}]}
+{"me":{"totalDamageDealt":"1204"}}
+{"me":{"totalDamageDealt":"1217"}}
+{"me":{"totalDamageDealt":"1230"}}
+{"match_info":{"tabs":"{\"kills\":6,\"assists\":0,\"teams\":2,\"players\":null,\"damage\":1276,\"cash\":null}"}}
+{"match_info":{"victory":"true"}}
+{"match_info":{"tabs":"{\"kills\":6,\"assists\":0,\"teams\":1,\"players\":null,\"damage\":1276,\"cash\":null}"}}
+{"me":{"inventory_9":"{}"}}
+{"me":{"ultimate_cooldown":"{\"ultimate_cooldown\":\"5\"}"}}
+
+============================================================
+
+GAMEPLAY SUMMARY:
+============================================================
+Here's a detailed breakdown of what happens in the closing moments of the match, tying the on-screen action to the telemetry you provided.
+
+1) Key actions and events in the video
+- Endgame setup (2 squads left): The squad is in Olympus-style industrial terrain (cherry blossoms visible), taking cover around a blue cargo bin and the adjacent platform/walkway *Correct*. You initially hold a long-angle with the Sentinel, then prepare to push *Correct*.
+- Weapon swap for the close: You switch from the Sentinel to the R-99 as you move up to the right-side cover, clearly anticipating a close-quarters finish *Correct*. The HUD flashes "LOW AMMO" on the R-99 (18 in mag, 17 reserve) *Correct*.
+- Team pressure and pings: A teammate pings the final enemy's position up on/near the structure (visible marker on the walkway) *Correct*. A blue circular field/zone (a defensive/utility ability) is active nearby as your team holds ground and edges forward *Incorrect, no visible blue defensive zone/ability*.
+- Last damage and cleanup: You chip the final opponent with multiple small flesh hits (no armor) using the R-99 *Correct*. The kill feed shows your teammate "cookies" eliminating an enemy ("StatisticalSharpshooter") *Correct*, and moments later the round ends in your squad's favor *Correct*.
+- Ring timing: "RING CLOSING" appears as the final exchanges resolve—your team wins as the zone closes *Correct*.
+- Win screen: "YOU ARE THE CHAMPION" banner fills the screen *Correct*. A system message "LOOT BINS AND ARSENALS RESET" displays afterward (post-match/system messaging) *Correct*.
+
+2) Correlation with the game data
+- Weapons used:
+  - Telemetry confirms inUse: Sentinel, then inUse: R-99, matching the footage (you're aiming the Sentinel first, then swap to the R-99 for the push) *Correct*.
+- Damage events:
+  - The damage logs show small, non-armor hits on "CosecantCommando": 2, 13, 13, 10, 13 (all armor: false, headshot: false). These are consistent with close-range SMG body shots as you finish the last fight *Correct*.
+  - Total damage increments track this sequence: your totalDamageDealt climbs through 1090 → 1103 → 1116 → 1168 → 1204 → 1217 → 1230, then the match tab updates to 1276 by the end, reflecting the full final skirmish damage *Correct*.
+- Match progression:
+  - tabs moves from kills: 5 to kills: 6 near the end, aligning with the final engagement and the last enemy going down *Correct*.
+  - teams drops from 2 to 1 with victory: true—this aligns with the Champion banner *Correct*.
+- Inventory:
+  - inventory_9: {} indicates an empty slot (likely a consumable/grenade slot empty), which fits the late-game resource strain *Correct*; the HUD also shows "LOW AMMO" on the R-99 (18/17) *Correct*.
+- Ultimate:
+  - ultimate_cooldown is 0 during the endgame (available), then reads 5 right after victory—likely a post-match state change captured by the API rather than in-combat usage (no clear ultimate use is visible on-screen) *Correct*.
+
+3) Important moments identified
+- Combat:
+  - Final close-range engagement handled with the R-99, delivering a string of flesh hits to finish out the last opponent *Correct*.
+  - Teammate contribution is visible in the kill feed (cookies secures a pick right before the win) *Correct*.
+- Movement and positioning:
+  - You transition from a long-range hold (Sentinel) to aggressive cover play at the blue bin and the wall, setting up a safe angle for the R-99 *Correct*.
+- Utility/abilities:
+  - A blue circular field is active near your push route—likely a defensive/utility zone aiding your team's hold as the ring closes *Incorrect, no visible blue defensive zone*.
+- Resource management:
+  - Low light ammo on the R-99 forces a measured, controlled finish (you don't dump the mag; you take brief peeks and chip shots) *Correct*.
+- Team interactions:
+  - Active pings mark the last enemy's position *Correct*.
+  - Teammates maintain crossfire/pressure, evidenced by the kill feed and their positions up by the structure *Correct*.
+
+4) Sequence of events and outcome
+- With 2 squads left in Round 2, you hold a sightline with the Sentinel, then rotate to close cover *Correct*.
+- You swap to the R-99 for the impending close-range fight, despite low ammo *Correct*.
+- Teammate "cookies" secures a crucial elimination (seen in the kill feed), reducing the last squad's numbers *Correct*.
+- You land a series of R-99 flesh hits on "CosecantCommando" (2, 13, 13, 10, 13) as the ring begins to close *Correct*.
+- Your total damage climbs to 1276, kills tick up from 5 to 6, and the last squad is wiped *Correct*.
+- The game ends with "YOU ARE THE CHAMPION." *Correct*
+- Final telemetry summary: victory: true; tabs: kills 6, assists 0, damage 1276, teams 1. Ultimate transitions to a small cooldown value post-match; one inventory slot shows empty, consistent with a tight endgame *Correct*.
+
+Overall: You and your squad play the final ring patiently, switch roles from long-range to CQC at the right moment, manage low ammo carefully, and, with a timely teammate pick plus your own finishing shots, close out the win cleanly *Correct*.
+
+
+Statements: 30
+Incorrect Statements: 2
+Accuracy: 93%
+=====================
